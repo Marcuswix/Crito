@@ -1,0 +1,38 @@
+.h4
+{
+    font-family: inherit;
+    font-size: 1rem;
+    color: #F94D1C;
+}
+
+.h3
+{
+    font-family: DM Sans;
+    font-weight: bold;
+
+}
+
+.h5
+{
+    font-family: DM Sans;
+    color: #F94D1C; 
+    font-weight: bold;  
+}
+
+.img1
+
+{
+    display: block;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+.square
+{
+    height: 2rem;
+    width: 2rem;
+    color:aqua;
+}
+

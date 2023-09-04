@@ -1,0 +1,137 @@
+.h4
+{
+    font-family: inherit;
+    font-size: 1rem;
+    color: #F94D1C;
+}
+
+.h3
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+
+}
+
+.h5
+{
+    color: #F94D1C; 
+    font-weight: bold;
+    padding-left: 0.5rem;
+    font-size: 1rem;  
+}
+
+.p1
+{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    padding-top: -0.5rem;
+    padding-bottom: 0;
+}
+
+.img1
+
+{
+    display: block;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+  .container
+  {
+    display: flex;
+    justify-content:left;
+    align-content: normal;
+    align-items: center;
+    
+
+  }
+
+  .gfg {
+
+    position: relative;
+    
+}
+
+/*This CSS code is defining the styles for a container that holds text*/
+.text-container {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    left: -3.5rem;
+    top: 24.6rem;
+    background-color: #BEEBFF;
+    width: 21.5rem;
+    height: 11.5rem;
+    padding: 2rem;
+
+
+}
+
+.text-container2
+{
+   display: flex;
+   align-items: baseline;
+}
+
+.pagedesign
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+    margin: 1rem auto;
+
+}
+
+.text-container3
+{
+    padding-left: rem;
+    margin-left: 10rem;
+    margin-right: 32rem;
+}
+
+.p2
+{
+    font-weight:lighter ;
+}
+
+.h12
+{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 0.8rem 2.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4rem 2px;
+    cursor: pointer;
+    background-color: #191919;
+    border-radius: 1.5rem;
+  }
+
+  .button2
+  {
+    color: black;
+    background-color: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    border: none;
+
+  }
+
+  .bi bi-play-circle
+  {
+        font-weight: 100;
+        
+
+  }
