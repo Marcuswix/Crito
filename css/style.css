@@ -1,38 +1,250 @@
-.h4
-{
-    font-family: inherit;
-    font-size: 1rem;
-    color: #F94D1C;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+html, body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.h3
-{
-    font-family: DM Sans;
-    font-weight: bold;
-
+.btn-theme {
+  background-color: #F9D783;
+  border-color: #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+.btn-theme a {
+  font-weight: 500;
+  color: #191919;
+  margin-left: 0.2rem;
+}
+.btn-theme:hover {
+  background-color: #1d1d1d;
+  border: #191919;
+  color: #F0EFE9;
+}
+.btn-theme:active {
+  background-color: #868686;
+  border: #191919;
+  color: #F0EFE9;
 }
 
-.h5
-{
-    font-family: DM Sans;
-    color: #F94D1C; 
-    font-weight: bold;  
+header {
+  background-color: #F0EFE9;
+  padding: 1rem;
 }
-
-.img1
-
-{
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+header .container .menu-bars {
+  border: none;
+  font-size: 25px;
+  background-color: #F0EFE9;
+}
+header .container .menu-bars .fa-solid fa-bars {
+  color: black;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
+header .container .menu {
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
     display: block;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 10rem;
-    padding-top: 10rem;
+  }
+}
+header .container .menu .top-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #DAD9D3;
+  padding-bottom: 0.2rem;
+  align-items: center;
+}
+header .container .menu .top-menu .contact-information {
+  display: flex;
+  align-items: center;
+}
+header .container .menu .top-menu .contact-information .box-content {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid #DAD9D3;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+header .container .menu .top-menu .contact-information .box-content i {
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  color: #666666;
+}
+header .container .menu .top-menu .contact-information .box-content-last {
+  margin-right: 2rem;
+  padding-right: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  border: none;
+}
+header .container .menu .top-menu .contact-information .box-content-last i {
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  color: #666666;
+}
+header .container .menu .top-menu .social-media a {
+  color: #191919;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+header .container .menu .top-menu .social-media a:hover {
+  color: #666666;
+}
+header .container .menu .main-meny {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+header .container .menu .main-meny nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 2.5rem;
+  position: relative;
+}
+header .container .menu .main-meny nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 0.2rem;
+  width: 1rem;
+  background-color: #191919;
+  left: 50%;
+  bottom: -0.5rem;
+  transform: translate(calc(50% - 15px));
+}
+header .container .menu .main-meny nav a:active {
+  color: #868686;
 }
 
-.square
-{
-    height: 2rem;
-    width: 2rem;
-    color:aqua;
+.h4 {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #F94D1C;
 }
 
+.h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.h5 {
+  color: #F94D1C;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.p1 {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+  padding-top: -0.5rem;
+  padding-bottom: 0;
+}
+
+.img1 {
+  display: block;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-content: normal;
+  align-items: center;
+}
+
+.gfg {
+  position: relative;
+}
+
+/*This CSS code is defining the styles for a container that holds text*/
+.text-container {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  left: -3.5rem;
+  top: 24.6rem;
+  background-color: #BEEBFF;
+  width: 21.5rem;
+  height: 11.5rem;
+  padding: 2rem;
+}
+
+.text-container2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.pagedesign {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem;
+  margin: 1rem auto;
+}
+
+.text-container3 {
+  padding-left: rem;
+  margin-left: 10rem;
+  margin-right: 32rem;
+}
+
+.p2 {
+  font-weight: lighter;
+}
+
+.h12 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 0.8rem 2.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4rem 2px;
+  cursor: pointer;
+  background-color: #191919;
+  border-radius: 1.5rem;
+}
+
+.button2 {
+  color: black;
+  background-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.bi bi-play-circle {
+  font-weight: 100;
+}
