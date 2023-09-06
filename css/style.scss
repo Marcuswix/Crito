@@ -11,13 +11,13 @@ font-weight: 400;
 
 h3
 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .h4
 {
-font-size: 1.15rem;
+font-size: 1.05rem;
 font-weight: 200;
 color: #F94D1C;
 }
@@ -26,7 +26,7 @@ p {
     font-weight: 100;
     padding-top: 0.5rem;
     line-height: 2rem;
-    font-size: 0.98rem;
+    font-size: 0.95rem;
 
 }
 
@@ -671,3 +671,53 @@ display: inline-flex;
     justify-content: center;
 }
 
+.section6
+{
+    display: flex;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 18rem;
+
+    .container
+    {
+        width: 39rem;
+    }
+
+    .elements
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        .svg{
+            padding-bottom: 2rem;
+        }
+    }
+
+    .text{
+        padding-left: 1.6rem;
+
+        .height
+        {
+            line-height: 0.3rem;
+        }
+
+    }
+
+    .rectangel
+    {
+        position: relative;
+        left: 10rem;
+        top: 8rem;
+        background-color:#F0EFE9;
+        width: 114rem;
+        height: 26rem;
+    }
+
+    .image{
+        position: absolute;
+        top: -12rem;
+        left: 7rem;
+    }
+}
