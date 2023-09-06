@@ -1,9 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&display=swap");
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: 1.15rem;
+  font-weight: 200;
+  color: #F94D1C;
+}
+
+p {
+  font-weight: 100;
+  padding-top: 0.5rem;
+  line-height: 2rem;
+  font-size: 0.98rem;
+}
+
+.headers {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  font-size: 2.6rem;
 }
 
 .btn-theme {
@@ -176,7 +203,6 @@ header .container .menu .main-meny nav a:active {
 }
 
 .section1 {
-  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&display=swap");
   background-color: #F0EFE9;
   background-position: left;
   display: block;
@@ -253,14 +279,6 @@ header .container .menu .main-meny nav a:active {
   justify-content: center;
   padding-top: 3rem;
 }
-.section3 .advice .top .business p {
-  font-weight: 100;
-  padding-top: 0.5rem;
-}
-.section3 .advice .top .business h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
 .section3 .advice .top .icon {
   margin-bottom: 2.5rem;
 }
@@ -276,14 +294,6 @@ header .container .menu .main-meny nav a:active {
   display: block;
   padding-top: 3rem;
 }
-.section3 .advice .bottom .business p {
-  font-weight: 100;
-  padding-top: 0.5rem;
-}
-.section3 .advice .bottom .business h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
 .section3 .advice .bottom .icon {
   margin-bottom: 2.5rem;
 }
@@ -293,19 +303,6 @@ header .container .menu .main-meny nav a:active {
   padding-top: 5rem;
   width: 36rem;
   padding-right: 6rem;
-}
-.section3 .heading .Features {
-  color: #F94D1C;
-  padding-bottom: 0.5rem;
-  padding-top: 2.5 rem;
-}
-.section3 .heading h1 {
-  font-family: DM Sans, sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-  margin-right: 0rem;
 }
 .section3 .heading .button {
   color: #191919;
@@ -337,43 +334,16 @@ header .container .menu .main-meny nav a:active {
 }
 
 .section4 {
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /*This CSS code is defining the styles for a container that holds text*/
-}
-.section4 .h4 {
-  font-family: inherit;
-  font-size: 1rem;
-  color: #F94D1C;
-}
-.section4 .h3 {
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding-bottom: 1rem;
-}
-.section4 .h5 {
-  color: #F94D1C;
-  font-weight: bold;
-  padding-left: 0.5rem;
-  font-size: 1rem;
-}
-.section4 .p1 {
-  text-align: left;
-  color: rgb(0, 0, 0);
-  font-weight: lighter;
-  padding-top: -0.5rem;
-  padding-bottom: 0;
-}
-.section4 .img1 {
-  display: block;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-bottom: 10rem;
-  padding-top: 10rem;
 }
 .section4 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10rem;
 }
 .section4 .gfg {
   position: relative;
@@ -384,25 +354,39 @@ header .container .menu .main-meny nav a:active {
   left: -3.5rem;
   top: 24.6rem;
   background-color: #BEEBFF;
-  width: 21.5rem;
-  height: 11.5rem;
+  width: 23rem;
+  height: 11.3rem;
   padding: 2rem;
 }
-.section4 .text-container2 {
+.section4 .text-container .Samantha {
   display: flex;
   align-items: baseline;
+  padding-top: 0.5rem;
 }
-.section4 .text-container3 {
-  padding-left: rem;
-  margin-left: 10rem;
-  margin-right: 32rem;
-}
-.section4 .p2 {
-  font-weight: lighter;
-}
-.section4 .h12 {
+.section4 .text-container .Samantha .h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
   padding-bottom: 1rem;
-  padding-top: 1rem;
+}
+.section4 .text-container .Samantha .h5 {
+  color: #F94D1C;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+.section4 .text-container .p1 {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+  font-size: 0.96rem;
+  line-height: 1.8rem;
+}
+.section4 .text-container2 {
+  margin-left: 5rem;
+  width: 32rem;
+  line-height: 1.8rem;
+  font-weight: 100;
+  font-size: 1rem;
 }
 .section4 .button {
   border: none;
@@ -415,17 +399,83 @@ header .container .menu .main-meny nav a:active {
   margin: 4rem 2px;
   cursor: pointer;
   background-color: #191919;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
+}
+.section4 .button:hover {
+  background-color: #868686;
+}
+.section4 .button:active {
+  background-color: #DAD9D3;
 }
 .section4 .button2 {
   color: black;
   background-color: transparent;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
   margin-left: 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: none;
+}
+.section4 .button2 .playicon {
+  height: 3.2rem;
+  margin-right: 0.6rem;
+}
+.section4 .button2:hover {
+  background-color: #DAD9D3;
+}
+.section4 .button2:active {
+  background-color: #868686;
 }
 .section4 .bi bi-play-circle {
   font-weight: 100;
+}
+
+.section5 {
+  background-color: #F0EFE9;
+  padding: 8rem;
+  padding-right: 18rem;
+  padding-left: 18rem;
+}
+.section5 .part1 {
+  display: flex;
+  width: 35rem;
+  display: block;
+  justify-content: start;
+}
+.section5 .container2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3.4rem;
+  padding-top: 1.2rem;
+}
+.section5 .container2 .elements {
+  color: #191919;
+  background-color: #FFFFFF;
+  width: 19.2rem;
+  height: 20.5rem;
+  padding: 1.5rem;
+}
+.section5 .container2 .elements .line {
+  border-color: #191919;
+  color: #191919;
+  border-width: 0.2rem;
+  width: 25%;
+  margin-right: auto;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+.section5 .container2 .elements.yellow {
+  background-color: #F9D783;
+}
+.section5 .container2 .elements .circlearrow {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
 }

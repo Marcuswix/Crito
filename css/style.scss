@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&display=swap');
 
 html, body
 {
@@ -6,6 +7,36 @@ color: #191919;
 font-family: 'Inter', sans-serif;
 font-size: 1rem;
 font-weight: 400;
+}
+
+h3
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.h4
+{
+font-size: 1.15rem;
+font-weight: 200;
+color: #F94D1C;
+}
+
+p {
+    font-weight: 100;
+    padding-top: 0.5rem;
+    line-height: 2rem;
+    font-size: 0.98rem;
+
+}
+
+.headers
+{
+padding-bottom: 1rem;
+padding-top: 1rem;
+font-weight: 600;
+line-height: 3.4rem;
+font-size: 2.6rem;
 }
 
 .btn-theme {
@@ -250,7 +281,7 @@ header
 .section1
 {
  
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&display=swap');
+    
     background-color: #F0EFE9;
     background-position: left;
     display: block;
@@ -353,17 +384,6 @@ display: inline-flex;
             display: block;
             justify-content: center;
             padding-top: 3rem;
-            
-            p {
-                font-weight: 100;
-                padding-top: 0.5rem;
-            }
-
-            h3
-            {
-                font-size: 1.3rem;
-                font-weight: 600;
-            }
 
         }
         .icon
@@ -383,17 +403,6 @@ display: inline-flex;
         {
             display: block;
             padding-top: 3rem;
-
-            p {
-                font-weight: 100;
-                padding-top: 0.5rem;
-            }
-
-            h3
-            {
-                font-size: 1.3rem;
-                font-weight: 600;
-            }
         }
 
         .icon
@@ -411,22 +420,7 @@ display: inline-flex;
         width: 36rem;
         padding-right: 6rem;
 
-       .Features
-        {
-        color: #F94D1C; 
-        padding-bottom: 0.5rem;
-        padding-top: 2.5 rem;
-        }
 
-        h1
-        {
-        font-family: DM Sans, sans-serif;
-        font-weight: 700;
-        font-size: 3rem;
-        padding-bottom: 2rem;
-        padding-top: 0.5rem;
-        margin-right: 0rem;
-        }
 
         .button
         {
@@ -475,55 +469,16 @@ display: inline-flex;
 
 .section4
 {
-
-    .h4
-    {
-    font-family: inherit;
-    font-size: 1rem;
-    color: #F94D1C;
-    }
-
-    .h3
-    {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
-
-    }
-
-    .h5
-    {
-    color: #F94D1C; 
-    font-weight: bold;
-    padding-left: 0.5rem;
-    font-size: 1rem;  
-    }
-
-    .p1
-    {
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-    padding-top: -0.5rem;
-    padding-bottom: 0;
-    }
-
-    .img1
-
-    {
-    display: block;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 10rem;
-    padding-top: 10rem;
-    }
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .container
     {
     display: flex;
     align-items: center;  
     justify-content: space-between;
-    padding-left: 10rem;
     }
 
   .gfg {
@@ -535,39 +490,63 @@ display: inline-flex;
 /*This CSS code is defining the styles for a container that holds text*/
     .text-container 
     {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    left: -3.5rem;
-    top: 24.6rem;
-    background-color: #BEEBFF;
-    width: 21.5rem;
-    height: 11.5rem;
-    padding: 2rem;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        left: -3.5rem;
+        top: 24.6rem;
+        background-color: #BEEBFF;
+        width: 23rem;
+        height: 11.3rem;
+        padding: 2rem;
+
+        .Samantha
+        {
+            display: flex;
+            align-items: baseline;
+            padding-top: 0.5rem;
+
+            .h3
+            {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+
+            }
+
+            .h5
+            {
+            color: #F94D1C; 
+            font-weight: bold;
+            padding-left: 0.5rem;
+            font-size: 1rem;  
+            }
+
+        }
+        .p1
+        {
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-weight: lighter;
+        font-size: 0.96rem;
+        line-height: 1.8rem;
+        }
     }
+
+
 
     .text-container2
     {
-   display: flex;
-   align-items: baseline;
+    margin-left: 5rem;
+    width: 32rem;
+    line-height: 1.8rem;
+    font-weight: 100;
+    font-size: 1rem;
+
+
+
     }
 
-    .text-container3
-    {
-    padding-left: rem;
-    margin-left: 10rem;
-    margin-right: 32rem;
-    }
 
-    .p2
-    {
-    font-weight:lighter ;
-    }
-
-    .h12
-    {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    }
 
     .button {
     border: none;
@@ -580,7 +559,16 @@ display: inline-flex;
     margin: 4rem 2px;
     cursor: pointer;
     background-color: #191919;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+
+    &:hover{
+        background-color: #868686;
+    }
+
+    &:active{
+        background-color: #DAD9D3;
+    }
+
     }
 
     .button2
@@ -589,9 +577,27 @@ display: inline-flex;
     background-color: transparent;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
     margin-left: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     border: none;
+
+    .playicon
+    {
+        height: 3.2rem;
+        margin-right: 0.6rem;
+    }
+
+
+        &:hover{
+            background-color: #DAD9D3;
+        }
+
+        &:active{
+            background-color: #868686;
+        }
+
     }
 
   .bi bi-play-circle
@@ -600,4 +606,68 @@ display: inline-flex;
         
 
         }
+}
+
+.section5
+{
+    background-color: #F0EFE9;
+    padding: 8rem;
+    padding-right: 18rem;
+    padding-left: 18rem;
+
+    .part1
+    {
+        display: flex;
+        width:35rem;
+        display: block;
+        justify-content:start;
     }
+
+    .container2
+    {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.4rem;
+    padding-top: 1.2rem;
+                     
+        .elements
+        {
+                color:#191919;
+                background-color: #FFFFFF;
+                width: 19.2rem;
+                height: 20.5rem;   
+                padding:1.5rem;
+
+            .line
+            {
+                    border-color: #191919;
+                    color: #191919;
+                    border-width: 0.2rem;
+                    width: 25%;
+                    margin-right: auto;
+                    border-radius: 2rem;
+                    margin-bottom: 3rem;
+
+            }
+
+                &.yellow
+                {
+                    background-color: #F9D783;
+                }
+
+                .circlearrow
+                {
+                    display: flex;
+                    align-items: end;
+                    justify-content: end;
+                }
+            }
+    }   
+}
+
+.end
+{
+    display:flex;
+    justify-content: center;
+}
+
