@@ -11,37 +11,89 @@ font-weight: 400;
 .btn-theme {
     background-color:#F9D783;
     border-color: #F9D783;
-    color: #191919;
-    text-decoration: none;
+    border-style: none;
     padding: 0.8rem 2rem;
     border-radius: 2rem;
-    font-weight: 600;
+    font-weight: 400;
+    margin-right: 1rem;
+    text-decoration: none;
+    color:#191919;
 
     a {
-        font-weight: 500;
+        font-weight: 400;
         color: #191919;
-        margin-left: 0.2rem;
+        margin-left: 0.9rem;
+        text-decoration: none;
+
+            .arrow
+        {
+            margin-left: 1rem;
+        }       
     }
+
+
 
     &:hover
     {
         background-color:#1d1d1d;
         border:#191919;
-        color:#F0EFE9;
+    
+        a 
+        {
+            color:#DAD9D3;
+        }
     }
+
 
     &:active
     {
         background-color:#868686;
         border:#191919;
+    }
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: #191919;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-weight: 400;
+
+    a {
+        font-weight: 500;
+        color: #191919;
+        margin-left: 0.2rem;
+        text-decoration: none;
+        
+        .arrow
+        {
+            margin-left: 1rem;
+        }   
+    }
+
+    &:hover
+    {
+        background-color:#1d1d1d;
+        border:solid 2px #191919;
+
+        a{
+            color:#DAD9D3
+        }
+    }
+
+    &:active
+    {
+        background-color:#868686;
+        border:solid2px #191919;
         color:#F0EFE9;
     }
 }
 
+
 header
 {
     background-color: #F0EFE9;
-    padding: 1rem;
+    padding-top: 1rem;
 
 
 
@@ -174,7 +226,11 @@ header
                         left: 50%;
                         bottom: -0.5rem;
                         transform: translate((calc(50% - 15px)));
+                            
+                        a {
+                            color:#DAD9D3
                         }
+                    }
 
                         &:active
                         {
@@ -191,66 +247,294 @@ header
     }
 }
 
-.h4
+.section1
 {
+ 
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&display=swap');
+    background-color: #F0EFE9;
+    background-position: left;
+    display: block;
+
+    .image
+    {
+        position:relative;
+        background-color: transparent;
+        top: 45.3rem;
+        width: 33rem;
+    }  
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+
+        h1 
+        {
+        font-size: 5rem;
+        font-weight: 800;
+        padding-bottom: 1rem;
+
+        }
+
+        p 
+        {
+            font-weight: 100;
+            padding-bottom: 2rem;
+            margin-right: 2rem;
+        }
+
+        a 
+        {
+            margin-right: 1rem;
+        }
+
+    }
+
+}
+
+.section2
+{
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .container
+    {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        
+        .logo
+        {
+            margin-right: 5.6rem;
+            margin-left: 1.5rem;
+        }
+
+    }
+
+}
+
+.section3
+{
+
+border-style: solid;
+border-color: rgba(22, 22, 22, 0.171);
+margin-left: 10rem;
+margin-right: 10rem;
+padding-right: 2rem;
+justify-content: space-between;
+display: inline-flex;
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700;800&display=swap');
+
+    .advice
+    {   
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    flex: 1;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+
+    .top{ 
+        padding-top: 3rem;
+        width: 25rem;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        padding-right: 8rem;
+
+
+    .business
+        {
+            display: block;
+            justify-content: center;
+            padding-top: 3rem;
+            
+            p {
+                font-weight: 100;
+                padding-top: 0.5rem;
+            }
+
+            h3
+            {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+        }
+        .icon
+        {
+            margin-bottom: 2.5rem;
+        }
+    }
+    .bottom{
+        padding-top: 3rem;
+        width: 25rem;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        padding-right: 8rem;
+
+    .business
+        {
+            display: block;
+            padding-top: 3rem;
+
+            p {
+                font-weight: 100;
+                padding-top: 0.5rem;
+            }
+
+            h3
+            {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+
+        .icon
+        {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+    .heading
+    {
+        margin-left: 5rem;
+        display: block;
+        padding-top: 5rem;
+        width: 36rem;
+        padding-right: 6rem;
+
+       .Features
+        {
+        color: #F94D1C; 
+        padding-bottom: 0.5rem;
+        padding-top: 2.5 rem;
+        }
+
+        h1
+        {
+        font-family: DM Sans, sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 0.5rem;
+        margin-right: 0rem;
+        }
+
+        .button
+        {
+           color: #191919;
+           background-color: #F9D783;
+           border-style: none;
+           text-align: center;
+           border-radius: 2rem;
+           padding: 0.8rem 10.8rem;
+
+           a {
+            color:#191919;
+            text-decoration: none;
+           }
+
+
+           .arrow
+           {
+            margin-left: 1rem;
+            width: 1rem;
+            height: 1rem;
+           }
+
+           &:hover
+           {
+                color: #F0EFE9;
+                background-color: #191919;
+                a {
+                    color:#F0EFE9;
+                    text-decoration: none;
+                   }
+
+           }
+
+           &:active
+           {
+            background-color: #868686;
+           }
+        
+           
+           
+        }
+    }
+}
+
+
+.section4
+{
+
+    .h4
+    {
     font-family: inherit;
     font-size: 1rem;
     color: #F94D1C;
-}
+    }
 
-.h3
-{
+    .h3
+    {
     font-weight: bold;
     font-size: 1.2rem;
     padding-bottom: 1rem;
 
-}
+    }
 
-.h5
-{
+    .h5
+    {
     color: #F94D1C; 
     font-weight: bold;
     padding-left: 0.5rem;
     font-size: 1rem;  
-}
+    }
 
-.p1
-{
+    .p1
+    {
     text-align: left;
     color: rgb(0, 0, 0);
     font-weight: lighter;
     padding-top: -0.5rem;
     padding-bottom: 0;
-}
+    }
 
-.img1
+    .img1
 
-{
+    {
     display: block;
     padding-left: 10rem;
     padding-right: 10rem;
     padding-bottom: 10rem;
     padding-top: 10rem;
-}
+    }
 
-  .container
-  {
+    .container
+    {
     display: flex;
-    justify-content:left;
-    align-content: normal;
-    align-items: center;
-    
-
-  }
+    align-items: center;  
+    justify-content: space-between;
+    padding-left: 10rem;
+    }
 
   .gfg {
 
     position: relative;
     
-}
+    }
 
 /*This CSS code is defining the styles for a container that holds text*/
-.text-container {
+    .text-container 
+    {
     position: absolute;
     color: rgb(0, 0, 0);
     left: -3.5rem;
@@ -259,44 +543,33 @@ header
     width: 21.5rem;
     height: 11.5rem;
     padding: 2rem;
+    }
 
-
-}
-
-.text-container2
-{
+    .text-container2
+    {
    display: flex;
    align-items: baseline;
-}
+    }
 
-.pagedesign
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 10rem;
-    margin: 1rem auto;
-
-}
-
-.text-container3
-{
+    .text-container3
+    {
     padding-left: rem;
     margin-left: 10rem;
     margin-right: 32rem;
-}
+    }
 
-.p2
-{
+    .p2
+    {
     font-weight:lighter ;
-}
+    }
 
-.h12
-{
+    .h12
+    {
     padding-bottom: 1rem;
     padding-top: 1rem;
-}
+    }
 
-.button {
+    .button {
     border: none;
     color: white;
     padding: 0.8rem 2.2rem;
@@ -308,10 +581,10 @@ header
     cursor: pointer;
     background-color: #191919;
     border-radius: 1.5rem;
-  }
+    }
 
-  .button2
-  {
+    .button2
+    {
     color: black;
     background-color: transparent;
     padding-left: 1rem;
@@ -319,12 +592,12 @@ header
     margin-left: 2rem;
     border-radius: 1rem;
     border: none;
-
-  }
+    }
 
   .bi bi-play-circle
-  {
+        {
         font-weight: 100;
         
 
-  }
+        }
+    }
