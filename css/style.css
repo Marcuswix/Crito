@@ -7,12 +7,20 @@ html, body {
   font-weight: 400;
 }
 
+.big-headlines {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  font-size: 2.6rem;
+}
+
 h3 {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.h4 {
+.orange-headlines {
   font-size: 1.05rem;
   font-weight: 200;
   color: #F94D1C;
@@ -23,14 +31,6 @@ p {
   padding-top: 0.5rem;
   line-height: 2rem;
   font-size: 0.95rem;
-}
-
-.headers {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  font-weight: 600;
-  line-height: 3.4rem;
-  font-size: 2.6rem;
 }
 
 .btn-theme {
@@ -91,7 +91,9 @@ p {
 .btn-transparent:active {
   background-color: #868686;
   border: solid2px #191919;
-  color: #F0EFE9;
+}
+.btn-transparent:active a {
+  color: #191919;
 }
 
 header {
@@ -169,7 +171,10 @@ header .container .menu .top-menu .social-media a {
   margin-left: 1rem;
 }
 header .container .menu .top-menu .social-media a:hover {
-  color: #666666;
+  color: white;
+  background-color: #000000;
+  padding: 0.4rem;
+  border-radius: 1rem;
 }
 header .container .menu .main-meny {
   display: flex;
@@ -184,71 +189,70 @@ header .container .menu .main-meny nav a {
   margin-right: 2.5rem;
   position: relative;
 }
-header .container .menu .main-meny nav a:hover::after {
-  content: "";
-  position: absolute;
-  font-weight: 500;
-  height: 0.2rem;
-  width: 1rem;
+header .container .menu .main-meny nav a:hover {
+  position: flex;
   background-color: #191919;
-  left: 50%;
-  bottom: -0.5rem;
-  transform: translate(calc(50% - 15px));
-}
-header .container .menu .main-meny nav a:hover::after a {
-  color: #DAD9D3;
+  border: #191919;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: #FFFFFF;
 }
 header .container .menu .main-meny nav a:active {
-  color: #868686;
+  color: #FFFFFF;
+  background-color: #868686;
 }
 
-.section1 {
+.section1-main-page {
   background-color: #F0EFE9;
-  background-position: left;
-  display: block;
 }
-.section1 .image {
+.section1-main-page .image1 {
   position: relative;
   background-color: transparent;
-  top: 45.3rem;
-  width: 33rem;
+  width: 48rem;
+  height: 11.8rem;
+  top: 40rem;
 }
-.section1 .container {
+.section1-main-page .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  height: 40rem;
 }
-.section1 .container h1 {
+.section1-main-page .container h1 {
   font-size: 5rem;
   font-weight: 800;
   padding-bottom: 1rem;
 }
-.section1 .container p {
+.section1-main-page .container p {
   font-weight: 100;
   padding-bottom: 2rem;
   margin-right: 2rem;
 }
-.section1 .container a {
+.section1-main-page .container a {
   margin-right: 1rem;
 }
+.section1-main-page .container .image2 {
+  position: relative;
+  top: -5.35rem;
+}
 
-.section2 {
+.section2-company-logotypes {
   padding: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.section2 .container {
+.section2-company-logotypes .container {
   display: block;
   justify-content: space-around;
   align-items: center;
 }
-.section2 .container .logo {
+.section2-company-logotypes .container .logo {
   margin-right: 5.6rem;
   margin-left: 1.5rem;
 }
 
-.section3 {
+.section3-features {
   border-style: solid;
   border-color: rgba(22, 22, 22, 0.171);
   margin-left: 10rem;
@@ -258,7 +262,7 @@ header .container .menu .main-meny nav a:active {
   display: inline-flex;
   @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700;800&display=swap");
 }
-.section3 .advice {
+.section3-features .advice {
   display: flex;
   justify-content: space-between;
   padding-left: 4rem;
@@ -266,7 +270,7 @@ header .container .menu .main-meny nav a:active {
   padding-bottom: 6rem;
   padding-top: 2rem;
 }
-.section3 .advice .top {
+.section3-features .advice .top {
   padding-top: 3rem;
   width: 25rem;
   display: flexbox;
@@ -274,15 +278,15 @@ header .container .menu .main-meny nav a:active {
   align-items: center;
   padding-right: 8rem;
 }
-.section3 .advice .top .business {
+.section3-features .advice .top .business {
   display: block;
   justify-content: center;
   padding-top: 3rem;
 }
-.section3 .advice .top .icon {
+.section3-features .advice .top .icon {
   margin-bottom: 2.5rem;
 }
-.section3 .advice .bottom {
+.section3-features .advice .bottom {
   padding-top: 3rem;
   width: 25rem;
   display: flexbox;
@@ -290,21 +294,21 @@ header .container .menu .main-meny nav a:active {
   align-items: center;
   padding-right: 8rem;
 }
-.section3 .advice .bottom .business {
+.section3-features .advice .bottom .business {
   display: block;
   padding-top: 3rem;
 }
-.section3 .advice .bottom .icon {
+.section3-features .advice .bottom .icon {
   margin-bottom: 2.5rem;
 }
-.section3 .heading {
+.section3-features .heading {
   margin-left: 5rem;
   display: block;
   padding-top: 5rem;
   width: 36rem;
   padding-right: 6rem;
 }
-.section3 .heading .button {
+.section3-features .heading .button {
   color: #191919;
   background-color: #F9D783;
   border-style: none;
@@ -312,43 +316,44 @@ header .container .menu .main-meny nav a:active {
   border-radius: 2rem;
   padding: 0.8rem 10.8rem;
 }
-.section3 .heading .button a {
+.section3-features .heading .button a {
   color: #191919;
   text-decoration: none;
 }
-.section3 .heading .button .arrow {
+.section3-features .heading .button .arrow {
   margin-left: 1rem;
   width: 1rem;
   height: 1rem;
 }
-.section3 .heading .button:hover {
+.section3-features .heading .button:hover {
   color: #F0EFE9;
   background-color: #191919;
 }
-.section3 .heading .button:hover a {
+.section3-features .heading .button:hover a {
   color: #F0EFE9;
   text-decoration: none;
 }
-.section3 .heading .button:active {
+.section3-features .heading .button:active {
   background-color: #868686;
 }
 
-.section4 {
-  padding: 8rem;
+.section4-about-company {
+  padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   /*This CSS code is defining the styles for a container that holds text*/
 }
-.section4 .container {
+.section4-about-company .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.section4 .gfg {
+.section4-about-company .gfg {
   position: relative;
+  display: flex;
 }
-.section4 .text-container {
+.section4-about-company .text-container {
   position: absolute;
   color: rgb(0, 0, 0);
   left: -3.5rem;
@@ -358,37 +363,36 @@ header .container .menu .main-meny nav a:active {
   height: 11.3rem;
   padding: 2rem;
 }
-.section4 .text-container .Samantha {
+.section4-about-company .text-container .Samantha {
   display: flex;
   align-items: baseline;
-  padding-top: 0.5rem;
+  padding-top: 0.2rem;
 }
-.section4 .text-container .Samantha .h3 {
+.section4-about-company .text-container .Samantha .h3 {
   font-weight: bold;
   font-size: 1.2rem;
   padding-bottom: 1rem;
 }
-.section4 .text-container .Samantha .h5 {
+.section4-about-company .text-container .Samantha .h5 {
   color: #F94D1C;
   font-weight: bold;
   padding-left: 0.5rem;
   font-size: 1rem;
 }
-.section4 .text-container .p1 {
+.section4-about-company .text-container .p1 {
   text-align: left;
   color: rgb(0, 0, 0);
   font-weight: lighter;
   font-size: 0.96rem;
   line-height: 1.8rem;
 }
-.section4 .text-container2 {
-  margin-left: 5rem;
+.section4-about-company .text-container2 {
   width: 32rem;
   line-height: 1.8rem;
   font-weight: 100;
   font-size: 1rem;
 }
-.section4 .button {
+.section4-about-company .button {
   border: none;
   color: white;
   padding: 0.8rem 2.2rem;
@@ -401,13 +405,13 @@ header .container .menu .main-meny nav a:active {
   background-color: #191919;
   border-radius: 2rem;
 }
-.section4 .button:hover {
+.section4-about-company .button:hover {
   background-color: #868686;
 }
-.section4 .button:active {
+.section4-about-company .button:active {
   background-color: #DAD9D3;
 }
-.section4 .button2 {
+.section4-about-company .button2 {
   color: black;
   background-color: transparent;
   padding-left: 1rem;
@@ -418,46 +422,46 @@ header .container .menu .main-meny nav a:active {
   border-radius: 2rem;
   border: none;
 }
-.section4 .button2 .playicon {
+.section4-about-company .button2 .playicon {
   height: 3.2rem;
   margin-right: 0.6rem;
 }
-.section4 .button2:hover {
+.section4-about-company .button2:hover {
   background-color: #DAD9D3;
 }
-.section4 .button2:active {
+.section4-about-company .button2:active {
   background-color: #868686;
 }
-.section4 .bi bi-play-circle {
+.section4-about-company .bi bi-play-circle {
   font-weight: 100;
 }
 
-.section5 {
+.section5-our-services {
   background-color: #F0EFE9;
   padding: 8rem;
   padding-right: 18rem;
   padding-left: 18rem;
 }
-.section5 .part1 {
+.section5-our-services .part1 {
   display: flex;
   width: 35rem;
   display: block;
   justify-content: start;
 }
-.section5 .container2 {
+.section5-our-services .container2 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 3.4rem;
   padding-top: 1.2rem;
 }
-.section5 .container2 .elements {
+.section5-our-services .container2 .elements {
   color: #191919;
   background-color: #FFFFFF;
   width: 19.2rem;
   height: 20.5rem;
   padding: 1.5rem;
 }
-.section5 .container2 .elements .line {
+.section5-our-services .container2 .elements .line {
   border-color: #191919;
   color: #191919;
   border-width: 0.2rem;
@@ -466,45 +470,44 @@ header .container .menu .main-meny nav a:active {
   border-radius: 2rem;
   margin-bottom: 3rem;
 }
-.section5 .container2 .elements.yellow {
+.section5-our-services .container2 .elements.yellow {
   background-color: #F9D783;
 }
-.section5 .container2 .elements .circlearrow {
+.section5-our-services .container2 .elements .circlearrow {
   display: flex;
   align-items: end;
   justify-content: end;
 }
-
-.end {
+.section5-our-services .end {
   display: flex;
   justify-content: center;
 }
 
-.section6 {
+.section6-why-us {
   display: flex;
   align-items: center;
   padding-top: 8rem;
   padding-bottom: 8rem;
   padding-left: 18rem;
 }
-.section6 .container {
+.section6-why-us .container {
   width: 39rem;
 }
-.section6 .elements {
+.section6-why-us .elements {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section6 .elements .svg {
+.section6-why-us .elements .svg {
   padding-bottom: 2rem;
 }
-.section6 .text {
+.section6-why-us .text {
   padding-left: 1.6rem;
 }
-.section6 .text .height {
+.section6-why-us .text .height {
   line-height: 0.3rem;
 }
-.section6 .rectangel {
+.section6-why-us .rectangel {
   position: relative;
   left: 10rem;
   top: 8rem;
@@ -512,8 +515,109 @@ header .container .menu .main-meny nav a:active {
   width: 114rem;
   height: 26rem;
 }
-.section6 .image {
+.section6-why-us .image {
   position: absolute;
   top: -12rem;
   left: 7rem;
+}
+
+.section7-project .headline {
+  display: flex;
+  justify-content: center;
+}
+.section7-project .pictures {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.section7-project .pictures .line {
+  border-color: rgba(25, 25, 25, 0.3882352941);
+  border-width: 2px;
+  color: #FFFFFF;
+}
+.section7-project .pictures .text {
+  padding-top: 2.6rem;
+}
+.section7-project .pictures .btn-readmore {
+  display: flex;
+  justify-content: right;
+  align-items: last;
+  padding: 1rem;
+}
+.section7-project .pictures .btn-readmore .readmore-text {
+  color: #191919;
+  text-decoration: none;
+}
+.section7-project .btn-position {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+.section7-project .btn-position .btn-black {
+  background-color: #191919;
+  border-color: #000000;
+  border-style: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-weight: 400;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.section7-project .btn-position .btn-black a {
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-left: 0.9rem;
+  text-decoration: none;
+}
+.section7-project .btn-position .btn-black a .arrow {
+  margin-left: 1rem;
+}
+.section7-project .btn-position .btn-black:hover {
+  background-color: #868686;
+  border: #191919;
+}
+.section7-project .btn-position .btn-black:hover a {
+  color: #FFFFFF;
+}
+.section7-project .btn-position .btn-black:active {
+  background-color: #DAD9D3;
+  border: #191919;
+}
+
+.section8-Our-team {
+  background-color: #F9D783;
+}
+.section8-Our-team .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 18rem;
+  padding-right: 18rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.section8-Our-team .yellow {
+  border: solid 2px black;
+}
+.section8-Our-team .yellow .arrow {
+  padding: 0.02rem;
+}
+.section8-Our-team .pictures {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.section8-Our-team .pictures .text-container {
+  padding-top: 1.8rem;
+}
+.section8-Our-team .pictures .text-container p {
+  margin-top: -0.6rem;
+}
+.section8-Our-team .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  padding-top: 2.4rem;
 }

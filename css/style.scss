@@ -1,3 +1,4 @@
+//Font-familys//
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&display=swap');
 
@@ -9,28 +10,8 @@ font-size: 1rem;
 font-weight: 400;
 }
 
-h3
-{
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.h4
-{
-font-size: 1.05rem;
-font-weight: 200;
-color: #F94D1C;
-}
-
-p {
-    font-weight: 100;
-    padding-top: 0.5rem;
-    line-height: 2rem;
-    font-size: 0.95rem;
-
-}
-
-.headers
+//Big headlines on different sections//
+.big-headlines
 {
 padding-bottom: 1rem;
 padding-top: 1rem;
@@ -39,7 +20,33 @@ line-height: 3.4rem;
 font-size: 2.6rem;
 }
 
-.btn-theme {
+//Small headlines in differnet sections//
+h3
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+//Orange text on differnet sections//
+.orange-headlines
+{
+font-size: 1.05rem;
+font-weight: 200;
+color: #F94D1C;
+}
+
+//Small text on different sections//
+p {
+    font-weight: 100;
+    padding-top: 0.5rem;
+    line-height: 2rem;
+    font-size: 0.95rem;
+}
+
+
+
+.btn-theme 
+{
     background-color:#F9D783;
     border-color: #F9D783;
     border-style: none;
@@ -83,7 +90,8 @@ font-size: 2.6rem;
     }
 }
 
-.btn-transparent {
+.btn-transparent
+{
     background-color: transparent;
     border-color: #191919;
     padding: 0.8rem 2rem;
@@ -116,17 +124,21 @@ font-size: 2.6rem;
     {
         background-color:#868686;
         border:solid2px #191919;
-        color:#F0EFE9;
+
+        a
+        {
+            color:#191919
+        }
     }
-}
+
+
+}   
 
 
 header
 {
     background-color: #F0EFE9;
     padding-top: 1rem;
-
-
 
     .container
     {
@@ -223,7 +235,11 @@ header
                         margin-left: 1rem;
 
                         &:hover {
-                            color: #666666;
+                            color: invert($color: #000000);
+                            background-color: #000000;
+                            padding: 0.4rem;
+                            border-radius: 1rem;
+                            
                         }
 
                     }
@@ -246,26 +262,20 @@ header
                         position: relative;
                     
                         
-                        &:hover::after 
+                        &:hover
                         {
-                        content: '';
-                        position: absolute;    
-                        font-weight: 500;
-                        height:0.2rem;
-                        width: 1rem;
+                        position: flex;  
                         background-color: #191919;
-                        left: 50%;
-                        bottom: -0.5rem;
-                        transform: translate((calc(50% - 15px)));
-                            
-                        a {
-                            color:#DAD9D3
+                        border:#191919;
+                        padding: 0.5rem;
+                        border-radius: 2rem;
+                        color: #FFFFFF;   
                         }
-                    }
 
                         &:active
                         {
-                            color: #868686;
+                            color: #FFFFFF;
+                            background-color: #868686;
                         }
 
 
@@ -278,27 +288,24 @@ header
     }
 }
 
-.section1
-{
- 
-    
+.section1-main-page
+{ 
     background-color: #F0EFE9;
-    background-position: left;
-    display: block;
 
-    .image
+    .image1
     {
         position:relative;
         background-color: transparent;
-        top: 45.3rem;
-        width: 33rem;
+        width: 48rem;
+        height: 11.8rem;
+        top: 40rem;
     }  
     .container
     {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-   
+        align-items: start;
+        height: 40rem;
 
         h1 
         {
@@ -320,11 +327,18 @@ header
             margin-right: 1rem;
         }
 
+        .image2
+        {
+            position: relative;
+            top: -5.35rem;
+        }
+    
+
     }
 
 }
 
-.section2
+.section2-company-logotypes
 {
     padding: 6rem;
     display: flex;
@@ -347,7 +361,7 @@ header
 
 }
 
-.section3
+.section3-features
 {
 
 border-style: solid;
@@ -466,10 +480,9 @@ display: inline-flex;
     }
 }
 
-
-.section4
+.section4-about-company
 {
-    padding: 8rem;
+    padding: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -484,6 +497,8 @@ display: inline-flex;
   .gfg {
 
     position: relative;
+    display: flex;
+
     
     }
 
@@ -503,7 +518,7 @@ display: inline-flex;
         {
             display: flex;
             align-items: baseline;
-            padding-top: 0.5rem;
+            padding-top: 0.2rem;
 
             .h3
             {
@@ -536,14 +551,10 @@ display: inline-flex;
 
     .text-container2
     {
-    margin-left: 5rem;
     width: 32rem;
     line-height: 1.8rem;
     font-weight: 100;
     font-size: 1rem;
-
-
-
     }
 
 
@@ -608,7 +619,7 @@ display: inline-flex;
         }
 }
 
-.section5
+.section5-our-services
 {
     background-color: #F0EFE9;
     padding: 8rem;
@@ -662,16 +673,16 @@ display: inline-flex;
                     justify-content: end;
                 }
             }
-    }   
-}
-
-.end
-{
+    }
+    
+    .end
+    {
     display:flex;
     justify-content: center;
+    }
 }
 
-.section6
+.section6-why-us
 {
     display: flex;
     align-items: center;
@@ -720,4 +731,153 @@ display: inline-flex;
         top: -12rem;
         left: 7rem;
     }
+}
+
+.section7-project
+{
+    .headline
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pictures
+    {
+        display: flex;
+        justify-content:center;
+        gap: 1.8rem;
+
+        .line
+        {
+            border-color: #19191963;
+            border-width: 2px;
+            color: #FFFFFF;
+        }
+
+        .text
+        {
+            padding-top: 2.6rem;
+        }
+
+        .btn-readmore
+        {
+            display: flex;
+            justify-content: right;
+            align-items: last;
+            padding: 1rem; 
+
+            .readmore-text
+            {
+            color: #191919;
+            text-decoration: none;
+            }
+        }
+    }
+
+    .btn-position
+    {
+
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+        padding-top: 4rem;
+
+        .btn-black
+        {
+        background-color:#191919;
+        border-color: #000000;
+        border-style: none;
+        padding: 0.8rem 2rem;
+        border-radius: 2rem;
+        font-weight: 400;
+        margin-right: 1rem;
+        text-decoration: none;
+
+        a {
+        font-weight: 400;
+        color:#FFFFFF;
+        margin-left: 0.9rem;
+        text-decoration: none;
+        
+            .arrow
+            {
+            margin-left: 1rem;
+            }       
+        }
+
+        &:hover
+        {
+        background-color: #868686;
+        border:#191919;
+    
+            a 
+            {
+            color: #FFFFFF;
+            }
+        }
+
+        &:active
+        {
+        background-color:#DAD9D3;
+        border:#191919;
+        }
+    }
+}
+
+
+
+}
+
+.section8-Our-team
+{
+    background-color: #F9D783;
+
+    .header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 18rem;
+        padding-right: 18rem;
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+    }
+
+    .yellow
+    {
+        border: solid 2px black;
+    
+        .arrow
+        {
+            padding: 0.02rem;
+        }
+    }
+
+    .pictures
+    {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        .text-container
+        {
+            padding-top: 1.8rem;
+        
+           p {
+            margin-top: -0.6rem;
+           }
+        }
+    }
+
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+        padding-top: 2.4rem;
+    
+    }
+
+
 }
