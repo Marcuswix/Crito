@@ -43,8 +43,6 @@ p {
     font-size: 0.95rem;
 }
 
-
-
 .btn-theme 
 {
     background-color:#F9D783;
@@ -131,9 +129,51 @@ p {
         }
     }
 
+    
+
 
 }   
 
+.btn-black
+{
+    background-color:#191919;
+    border-color: #000000;
+    border-style: none;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-weight: 400;
+    margin-right: 1rem;
+    text-decoration: none;
+
+    a {
+    font-weight: 400;
+    color:#FFFFFF;
+    margin-left: 0.9rem;
+    text-decoration: none;
+    
+        .arrow
+        {
+        margin-left: 1rem;
+        }       
+    }
+
+    &:hover
+    {
+    background-color: #868686;
+    border:#191919;
+
+        a 
+        {
+        color: #FFFFFF;
+        }
+    }
+
+    &:active
+    {
+    background-color:#DAD9D3;
+    border:#191919;
+    }
+}
 
 header
 {
@@ -619,6 +659,7 @@ display: inline-flex;
         }
 }
 
+//5. Fifth section / "Our Services"
 .section5-our-services
 {
     background-color: #F0EFE9;
@@ -672,6 +713,50 @@ display: inline-flex;
                     align-items: end;
                     justify-content: end;
                 }
+
+                .btn-round-white
+                {
+                    border-radius: 50%;
+                    height: 3.5rem;
+                    width: 3.5rem;      
+                    background-color: white;
+                    border: none;
+
+                    &:hover
+                    {
+                        background-color: #868686;
+                        color: #191919;
+                    }
+
+                    &:active
+                    {
+                        background-color: #868686;
+
+                    }
+                }
+
+                
+                .btn-round-black
+                {
+                    border-radius: 50%;
+                    height: 3.5rem;
+                    width: 3.5rem;      
+                    background-color: black;
+                    border: none;
+
+                    &:hover
+                    {
+                        background-color: #868686;
+                        color: #191919;
+                    }
+
+                    &:active
+                    {
+                        background-color: #868686;
+
+                    }
+                }
+
             }
     }
     
@@ -682,12 +767,13 @@ display: inline-flex;
     }
 }
 
+//6. Sixth section / "Why Choose Us"
 .section6-why-us
 {
     display: flex;
     align-items: center;
     padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
     padding-left: 18rem;
 
     .container
@@ -719,10 +805,10 @@ display: inline-flex;
     .rectangel
     {
         position: relative;
-        left: 10rem;
+        left: 0rem;
         top: 8rem;
         background-color:#F0EFE9;
-        width: 114rem;
+        width: 60rem;
         height: 26rem;
     }
 
@@ -733,6 +819,7 @@ display: inline-flex;
     }
 }
 
+//7. Seventh section / "Project & Case studies"
 .section7-project
 {
     .headline
@@ -828,6 +915,7 @@ display: inline-flex;
 
 }
 
+//8. Eight section / "Meet Our Team"
 .section8-Our-team
 {
     background-color: #F9D783;
@@ -880,4 +968,85 @@ display: inline-flex;
     }
 
 
+}
+
+//9. Ninth section / "Testimonial"
+.section9-testimonial
+{
+    background-color: #F9D783;
+    padding: 2rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+
+    .white-background
+    {
+        background-color: #FFFFFF;
+        border: solid 2px black;
+        
+        .orange-headlines
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 8rem;
+        }
+
+        .big-headlines
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clients
+        {
+            display: flex;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
+    }
+
+    .container
+    {
+        width: 20rem;
+
+        p
+        {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .orange-headlines
+        {
+            display: block;
+            padding: 0.05rem;
+        }
+
+        .foto-name-title
+        {
+            display: flex;
+
+            .name-title
+            {
+                display: block;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0.5rem;
+                margin-left:1rem;
+
+                .orange-headlines
+                {
+                    display: block;
+                    margin-top: -0.1rem;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .end-of-section
+    {
+        display: flex;
+        justify-content: center; 
+        padding-bottom: 6rem;   
+    }
 }
