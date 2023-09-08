@@ -10,6 +10,7 @@ font-size: 1rem;
 font-weight: 400;
 }
 
+
 //Big headlines on different sections//
 .big-headlines
 {
@@ -43,7 +44,8 @@ p {
     font-size: 0.95rem;
 }
 
-.btn-theme 
+//Buttons
+.btn-yellow 
 {
     background-color:#F9D783;
     border-color: #F9D783;
@@ -97,7 +99,6 @@ p {
     font-weight: 400;
 
     a {
-        font-weight: 500;
         color: #191919;
         margin-left: 0.2rem;
         text-decoration: none;
@@ -146,7 +147,6 @@ p {
     text-decoration: none;
 
     a {
-    font-weight: 400;
     color:#FFFFFF;
     margin-left: 0.9rem;
     text-decoration: none;
@@ -175,6 +175,7 @@ p {
     }
 }
 
+// Header
 header
 {
     background-color: #F0EFE9;
@@ -328,6 +329,7 @@ header
     }
 }
 
+//1. First section / "Main page"
 .section1-main-page
 { 
     background-color: #F0EFE9;
@@ -378,6 +380,7 @@ header
 
 }
 
+//2. Second section / "Company logotypes"
 .section2-company-logotypes
 {
     padding: 6rem;
@@ -401,6 +404,7 @@ header
 
 }
 
+//3. Third section / "About company"
 .section3-features
 {
 
@@ -520,6 +524,7 @@ display: inline-flex;
     }
 }
 
+//4. Forth section/ "Features"
 .section4-about-company
 {
     padding: 6rem;
@@ -538,8 +543,6 @@ display: inline-flex;
 
     position: relative;
     display: flex;
-
-    
     }
 
 /*This CSS code is defining the styles for a container that holds text*/
@@ -565,7 +568,6 @@ display: inline-flex;
             font-weight: bold;
             font-size: 1.2rem;
             padding-bottom: 1rem;
-
             }
 
             .h5
@@ -587,8 +589,6 @@ display: inline-flex;
         }
     }
 
-
-
     .text-container2
     {
     width: 32rem;
@@ -597,18 +597,14 @@ display: inline-flex;
     font-size: 1rem;
     }
 
-
-
-    .button {
+    .btn-black {
     border: none;
     color: white;
     padding: 0.8rem 2.2rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4rem 2px;
-    cursor: pointer;
     background-color: #191919;
     border-radius: 2rem;
 
@@ -622,7 +618,7 @@ display: inline-flex;
 
     }
 
-    .button2
+    .btn-transparent
     {
     color: black;
     background-color: transparent;
@@ -916,7 +912,7 @@ display: inline-flex;
 }
 
 //8. Eight section / "Meet Our Team"
-.section8-Our-team
+.section8-our-team
 {
     background-color: #F9D783;
 
@@ -981,7 +977,6 @@ display: inline-flex;
     .white-background
     {
         background-color: #FFFFFF;
-        border: solid 2px black;
         
         .orange-headlines
         {
@@ -1049,4 +1044,110 @@ display: inline-flex;
         justify-content: center; 
         padding-bottom: 6rem;   
     }
+}
+
+//10. Tenth section / "Article & News"
+.section10-article
+{
+    padding-left: 18rem;
+    padding-right: 18rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+   .header
+   {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-left: 0.7rem;
+    padding-bottom: 1.5rem;
+    .big-headlines
+    {
+        padding: 0;
+        padding-top: 1rem;
+        margin-bottom: -0.75rem;
+    }
+}
+
+   .container
+   {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3.1rem;
+   }
+
+   .articels
+   {
+     width:25rem;
+     padding-top: 2rem;
+
+        .image-container
+        {
+            position: relative;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        .date
+        {
+            position:absolute;
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding:1rem;
+            top: 7%;
+            left:4%;
+            width: 3.4rem;
+            height: 4rem;
+            background-color: #F9D783;
+
+            .number
+            {
+                margin-top: -0.1rem;
+            }
+
+            .month
+            {
+                margin-top: -1.45rem;
+                margin-left: -0.08rem;
+            }
+        }
+
+    }
+
+    .footer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+}
+
+// 11. ELEVENTH SECTION / "Get news updates by signup"
+.section11-get-news
+{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #F0EFE9;
+
+    .content 
+    {
+        display: flex;
+        justify-content: space-between;
+        
+        .buttons
+        {
+            display: flex;
+            justify-content: space-between;
+    
+        }
+    }
+
+
+
+
 }

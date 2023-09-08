@@ -33,7 +33,7 @@ p {
   font-size: 0.95rem;
 }
 
-.btn-theme {
+.btn-yellow {
   background-color: #F9D783;
   border-color: #F9D783;
   border-style: none;
@@ -44,23 +44,23 @@ p {
   text-decoration: none;
   color: #191919;
 }
-.btn-theme a {
+.btn-yellow a {
   font-weight: 400;
   color: #191919;
   margin-left: 0.9rem;
   text-decoration: none;
 }
-.btn-theme a .arrow {
+.btn-yellow a .arrow {
   margin-left: 1rem;
 }
-.btn-theme:hover {
+.btn-yellow:hover {
   background-color: #1d1d1d;
   border: #191919;
 }
-.btn-theme:hover a {
+.btn-yellow:hover a {
   color: #DAD9D3;
 }
-.btn-theme:active {
+.btn-yellow:active {
   background-color: #868686;
   border: #191919;
 }
@@ -73,7 +73,6 @@ p {
   font-weight: 400;
 }
 .btn-transparent a {
-  font-weight: 500;
   color: #191919;
   margin-left: 0.2rem;
   text-decoration: none;
@@ -107,7 +106,6 @@ p {
   text-decoration: none;
 }
 .btn-black a {
-  font-weight: 400;
   color: #FFFFFF;
   margin-left: 0.9rem;
   text-decoration: none;
@@ -423,26 +421,24 @@ header .container .menu .main-meny nav a:active {
   font-weight: 100;
   font-size: 1rem;
 }
-.section4-about-company .button {
+.section4-about-company .btn-black {
   border: none;
   color: white;
   padding: 0.8rem 2.2rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4rem 2px;
-  cursor: pointer;
   background-color: #191919;
   border-radius: 2rem;
 }
-.section4-about-company .button:hover {
+.section4-about-company .btn-black:hover {
   background-color: #868686;
 }
-.section4-about-company .button:active {
+.section4-about-company .btn-black:active {
   background-color: #DAD9D3;
 }
-.section4-about-company .button2 {
+.section4-about-company .btn-transparent {
   color: black;
   background-color: transparent;
   padding-left: 1rem;
@@ -453,14 +449,14 @@ header .container .menu .main-meny nav a:active {
   border-radius: 2rem;
   border: none;
 }
-.section4-about-company .button2 .playicon {
+.section4-about-company .btn-transparent .playicon {
   height: 3.2rem;
   margin-right: 0.6rem;
 }
-.section4-about-company .button2:hover {
+.section4-about-company .btn-transparent:hover {
   background-color: #DAD9D3;
 }
-.section4-about-company .button2:active {
+.section4-about-company .btn-transparent:active {
   background-color: #868686;
 }
 .section4-about-company .bi bi-play-circle {
@@ -644,10 +640,10 @@ header .container .menu .main-meny nav a:active {
   border: #191919;
 }
 
-.section8-Our-team {
+.section8-our-team {
   background-color: #F9D783;
 }
-.section8-Our-team .header {
+.section8-our-team .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -656,24 +652,24 @@ header .container .menu .main-meny nav a:active {
   padding-top: 8rem;
   padding-bottom: 5rem;
 }
-.section8-Our-team .yellow {
+.section8-our-team .yellow {
   border: solid 2px black;
 }
-.section8-Our-team .yellow .arrow {
+.section8-our-team .yellow .arrow {
   padding: 0.02rem;
 }
-.section8-Our-team .pictures {
+.section8-our-team .pictures {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.section8-Our-team .pictures .text-container {
+.section8-our-team .pictures .text-container {
   padding-top: 1.8rem;
 }
-.section8-Our-team .pictures .text-container p {
+.section8-our-team .pictures .text-container p {
   margin-top: -0.6rem;
 }
-.section8-Our-team .footer {
+.section8-our-team .footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -689,7 +685,6 @@ header .container .menu .main-meny nav a:active {
 }
 .section9-testimonial .white-background {
   background-color: #FFFFFF;
-  border: solid 2px black;
 }
 .section9-testimonial .white-background .orange-headlines {
   display: flex;
@@ -737,4 +732,78 @@ header .container .menu .main-meny nav a:active {
   display: flex;
   justify-content: center;
   padding-bottom: 6rem;
+}
+
+.section10-article {
+  padding-left: 18rem;
+  padding-right: 18rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.section10-article .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-left: 0.7rem;
+  padding-bottom: 1.5rem;
+}
+.section10-article .header .big-headlines {
+  padding: 0;
+  padding-top: 1rem;
+  margin-bottom: -0.75rem;
+}
+.section10-article .container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3.1rem;
+}
+.section10-article .articels {
+  width: 25rem;
+  padding-top: 2rem;
+}
+.section10-article .articels .image-container {
+  position: relative;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.section10-article .articels .date {
+  position: absolute;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  top: 7%;
+  left: 4%;
+  width: 3.4rem;
+  height: 4rem;
+  background-color: #F9D783;
+}
+.section10-article .articels .date .number {
+  margin-top: -0.1rem;
+}
+.section10-article .articels .date .month {
+  margin-top: -1.45rem;
+  margin-left: -0.08rem;
+}
+.section10-article .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.section11-get-news {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  background-color: #F0EFE9;
+}
+.section11-get-news .content {
+  display: flex;
+  justify-content: space-between;
+}
+.section11-get-news .content .buttons {
+  display: flex;
+  justify-content: space-between;
 }
