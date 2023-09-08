@@ -10,7 +10,6 @@ font-size: 1rem;
 font-weight: 400;
 }
 
-
 //Big headlines on different sections//
 .big-headlines
 {
@@ -75,6 +74,7 @@ p {
     {
         background-color:#1d1d1d;
         border:#191919;
+        color: white;
     
         a 
         {
@@ -93,8 +93,8 @@ p {
 .btn-transparent
 {
     background-color: transparent;
-    border-color: #191919;
     padding: 0.8rem 2rem;
+    border: solid 1px #191919;
     border-radius: 2rem;
     font-weight: 400;
 
@@ -112,22 +112,20 @@ p {
     &:hover
     {
         background-color:#1d1d1d;
-        border:solid 2px #191919;
-
-        a{
-            color:#DAD9D3
+        border:#191919;
+        color: white;
+    
+        a 
+        {
+            color:#DAD9D3;
         }
     }
+
 
     &:active
     {
         background-color:#868686;
-        border:solid2px #191919;
-
-        a
-        {
-            color:#191919
-        }
+        border:#191919;
     }
 
     
@@ -139,6 +137,7 @@ p {
 {
     background-color:#191919;
     border-color: #000000;
+    color:#FFFFFF;
     border-style: none;
     padding: 0.8rem 2rem;
     border-radius: 2rem;
@@ -170,8 +169,35 @@ p {
 
     &:active
     {
-    background-color:#DAD9D3;
+    background-color:#868686;
     border:#191919;
+    color:#000000;
+        
+        a{
+            &:active
+            {
+                color:#000000;
+            }
+        }
+    }
+}
+
+.btn-play
+{
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    a
+    {
+        text-decoration: none;
+        color:#191919;
+
+        &:hover
+        {
+            color: #666666;  
+        }
     }
 }
 
@@ -273,14 +299,18 @@ header
                     a {
                         color:#191919;
                         font-size: 1.5rem;
-                        margin-left: 1rem;
+                        padding: 0.5rem;
 
                         &:hover {
                             color: invert($color: #000000);
                             background-color: #000000;
-                            padding: 0.4rem;
-                            border-radius: 1rem;
-                            
+                            border-radius: 20%;  
+                        }
+
+                        &:active
+                        {
+                            color:#FFFFFF;
+                            background-color: #868686;    
                         }
 
                     }
@@ -304,27 +334,19 @@ header
                     
                         
                         &:hover
-                        {
-                        position: flex;  
-                        background-color: #191919;
-                        border:#191919;
-                        padding: 0.5rem;
-                        border-radius: 2rem;
-                        color: #FFFFFF;   
+                        { 
+                        border-bottom: solid 1px #666666;  
                         }
 
                         &:active
                         {
-                            color: #FFFFFF;
-                            background-color: #868686;
+                            color: #868686;
+                            border-bottom: solid 1px #868686; 
                         }
-
-
                     }
                     
                 }
             }
-
         }
     }
 }
@@ -333,14 +355,14 @@ header
 .section1-main-page
 { 
     background-color: #F0EFE9;
+    padding-bottom: 38.4rem;
 
     .image1
     {
         position:relative;
         background-color: transparent;
-        width: 48rem;
-        height: 11.8rem;
-        top: 40rem;
+        margin-left: -0.5rem;
+        top: 38.4rem;
     }  
     .container
     {
@@ -348,6 +370,10 @@ header
         justify-content: space-between;
         align-items: start;
         height: 40rem;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         h1 
         {
@@ -404,7 +430,7 @@ header
 
 }
 
-//3. Third section / "About company"
+//3. Third section / "Features"
 .section3-features
 {
 
@@ -414,10 +440,7 @@ margin-left: 10rem;
 margin-right: 10rem;
 padding-right: 2rem;
 justify-content: space-between;
-display: inline-flex;
-
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700;800&display=swap');
+display: flex;
 
     .advice
     {   
@@ -436,7 +459,6 @@ display: inline-flex;
         align-items: center;
         padding-right: 8rem;
 
-
     .business
         {
             display: block;
@@ -449,6 +471,7 @@ display: inline-flex;
             margin-bottom: 2.5rem;
         }
     }
+    
     .bottom{
         padding-top: 3rem;
         width: 25rem;
@@ -477,54 +500,10 @@ display: inline-flex;
         padding-top: 5rem;
         width: 36rem;
         padding-right: 6rem;
-
-
-
-        .button
-        {
-           color: #191919;
-           background-color: #F9D783;
-           border-style: none;
-           text-align: center;
-           border-radius: 2rem;
-           padding: 0.8rem 10.8rem;
-
-           a {
-            color:#191919;
-            text-decoration: none;
-           }
-
-
-           .arrow
-           {
-            margin-left: 1rem;
-            width: 1rem;
-            height: 1rem;
-           }
-
-           &:hover
-           {
-                color: #F0EFE9;
-                background-color: #191919;
-                a {
-                    color:#F0EFE9;
-                    text-decoration: none;
-                   }
-
-           }
-
-           &:active
-           {
-            background-color: #868686;
-           }
-        
-           
-           
-        }
     }
 }
 
-//4. Forth section/ "Features"
+//4. Forth section/ "About comapny"
 .section4-about-company
 {
     padding: 6rem;
@@ -536,17 +515,17 @@ display: inline-flex;
     {
     display: flex;
     align-items: center;  
-    justify-content: space-between;
+    justify-content: center;
+    gap: 12rem;
     }
 
-  .gfg {
-
+  .blue-text-container
+   {
     position: relative;
     display: flex;
     }
 
-/*This CSS code is defining the styles for a container that holds text*/
-    .text-container 
+    .text-container-blue 
     {
         position: absolute;
         color: rgb(0, 0, 0);
@@ -597,61 +576,22 @@ display: inline-flex;
     font-size: 1rem;
     }
 
-    .btn-black {
-    border: none;
-    color: white;
-    padding: 0.8rem 2.2rem;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4rem 2px;
-    background-color: #191919;
-    border-radius: 2rem;
 
-    &:hover{
-        background-color: #868686;
-    }
 
-    &:active{
-        background-color: #DAD9D3;
-    }
-
-    }
-
-    .btn-transparent
-    {
-    color: black;
-    background-color: transparent;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.25rem;
-    padding-top: 0.25rem;
-    margin-left: 2rem;
-    border-radius: 2rem;
-    border: none;
-
-    .playicon
-    {
+        .playicon
+        {
         height: 3.2rem;
         margin-right: 0.6rem;
-    }
-
 
         &:hover{
             background-color: #DAD9D3;
-        }
+            border-radius: 50%;
+            
+            }
 
-        &:active{
+            &:active{
             background-color: #868686;
-        }
-
-    }
-
-  .bi bi-play-circle
-        {
-        font-weight: 100;
-        
-
+            }
         }
 }
 
@@ -801,7 +741,6 @@ display: inline-flex;
     .rectangel
     {
         position: relative;
-        left: 0rem;
         top: 8rem;
         background-color:#F0EFE9;
         width: 60rem;
@@ -1177,8 +1116,6 @@ display: inline-flex;
 // FOOTER
 .footer
 {
-    
-    padding-top: 6rem;
     background-color: #000000;
 
     .grey-element
@@ -1262,10 +1199,8 @@ display: inline-flex;
                 &:active
                 {
                 background-color: #868686;
-                zoom: 120%;
                 }
             }
         }
     }
-
 }
