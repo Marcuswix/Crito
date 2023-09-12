@@ -10,14 +10,27 @@ font-size: 1rem;
 font-weight: 400;
 }
 
-//Big headlines on different sections//
-.big-headlines
+//h1 - Big headlines on different sections//
+h1
 {
 padding-bottom: 1rem;
 padding-top: 1rem;
 font-weight: 600;
 line-height: 3.4rem;
 font-size: 2.6rem;
+
+    @media (max-width: 1200px)
+    {
+    text-align: center;
+    font-size: 34px;
+    }
+
+    @media (max-width: 768px)
+    {
+    text-align: center;
+    font-size: 34px;
+    }
+
 }
 
 //Small headlines in differnet sections//
@@ -27,12 +40,17 @@ h3
     font-weight: 600;
 }
 
-//Orange text on differnet sections//
-.orange-headlines
+//Orange-headlines on differnet sections//
+h4
 {
 font-size: 1.05rem;
 font-weight: 200;
 color: #F94D1C;
+
+    @media (max-width: 1200px)
+    {
+    text-align: center;
+    }
 }
 
 //Small text on different sections//
@@ -41,6 +59,11 @@ p {
     padding-top: 0.5rem;
     line-height: 2rem;
     font-size: 0.95rem;
+
+    @media (max-width: 998px)
+    {
+        font-size: 16px;
+    }
 }
 
 //Buttons
@@ -59,13 +82,7 @@ p {
     a {
         font-weight: 400;
         color: #191919;
-        margin-left: 0.9rem;
-        text-decoration: none;
-
-            .arrow
-        {
-            margin-left: 1rem;
-        }       
+        text-decoration: none;    
     }
 
 
@@ -87,6 +104,12 @@ p {
     {
         background-color:#868686;
         border:#191919;
+    }
+
+    @media (max-width: 998px)
+    {
+        font-size: 16px;
+        padding: 10px;
     }
 }
 
@@ -100,13 +123,7 @@ p {
 
     a {
         color: #191919;
-        margin-left: 0.2rem;
-        text-decoration: none;
-        
-        .arrow
-        {
-            margin-left: 1rem;
-        }   
+        text-decoration: none;  
     }
 
     &:hover
@@ -128,9 +145,12 @@ p {
         border:#191919;
     }
 
-    
+    @media (max-width: 998px)
+    {
+        font-size: 16px;
+        width: 120px;
 
-
+    }
 }   
 
 .btn-black
@@ -147,13 +167,7 @@ p {
 
     a {
     color:#FFFFFF;
-    margin-left: 0.9rem;
-    text-decoration: none;
-    
-        .arrow
-        {
-        margin-left: 1rem;
-        }       
+    text-decoration: none;     
     }
 
     &:hover
@@ -180,6 +194,11 @@ p {
             }
         }
     }
+
+    @media (max-width: 998px)
+    {
+        font-size: 16px;
+    }
 }
 
 .btn-play
@@ -199,44 +218,66 @@ p {
             color: #666666;  
         }
     }
+    @media (max-width: 998px)
+    {
+        font-size: 28px;
+    }
+}
+
+.arrow
+{
+    margin-left: 1rem;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+
+    @media (max-width: 998px)
+    {
+        font-size: 28px;
+    }
+
+    @media (max-width: 1200px)
+    {
+        display: none;
+    }
+} 
+
+.responsive
+{
+    width: 100%;
+    height: auto;
 }
 
 // Header
 header
 {
     background-color: #F0EFE9;
-    padding-top: 1rem;
 
     .container
     {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        gap: 2rem;
-
+        gap: 1%;
+  
         .menu-bars 
         {
-            border: none;
-            font-size: 25px;
+            font-size: 30px;
             background-color: #F0EFE9;
+            border: none;
+            padding-right: 20px;
 
-            .fa-solid fa-bars
-            {
-                color:black;
-            }
 
-            @media (min-width: 992px)
+            @media (min-width: 995px)
             {
-                display:none;
+                display: none;
             }
         }
 
         .menu
         {
             display:none;
-            flex: 1;
 
-            @media (min-width: 992px)
+            @media (min-width: 995px)
             {
                 display:block;
             }
@@ -269,10 +310,7 @@ header
                             margin-right: 0.4rem;
                             font-size: 1.2rem;
                             color:#666666;
-                        }
-                        
-                        
-
+                        }                  
                     } 
                     
                     .box-content-last
@@ -351,79 +389,113 @@ header
     }
 }
 
-//1. First section / "Main page"
+//1. First section / "Showcase"
 .section1-main-page
 { 
     background-color: #F0EFE9;
-    padding-bottom: 38.4rem;
 
-    .image1
-    {
-        position:relative;
-        background-color: transparent;
-        margin-left: -0.5rem;
-        top: 38.4rem;
-    }  
     .container
     {
+
         display: flex;
-        justify-content: space-between;
-        align-items: start;
-        height: 40rem;
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        align-items: center;
 
-        h1 
+        @media (max-width: 1200px)
         {
-        font-size: 5rem;
-        font-weight: 800;
-        padding-bottom: 1rem;
-
+            display: block;
         }
 
-        p 
-        {
-            font-weight: 100;
-            padding-bottom: 2rem;
-            margin-right: 2rem;
+        .content
+        {   
+
+            .btn
+            {
+
+
+                @media (max-width: 1200px)
+                {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                }
+            }
+
+            h1 
+            {
+            font-size: 76px;
+            font-weight: 900;
+            padding-bottom: 1rem;
+            line-height: 1.2;
+            text-align: left;
+
+                @media (max-width: 1200px)
+                {
+                text-align: center;
+                font-size: 64px;
+                }
+
+                @media (max-width: 768px)
+                {
+                text-align: center;
+                font-size: 44px;
+                }
+
+            }
+
+            p 
+            {
+            font-size: 16px;
+            padding-bottom: 40px;
+            margin-right: 5rem;
+
+                @media (max-width: 1200px)
+                {
+                text-align: center;
+                }
+            }
         }
 
-        a 
+        .image-man
         {
-            margin-right: 1rem;
+            width: 100%;
         }
 
-        .image2
-        {
-            position: relative;
-            top: -5.35rem;
-        }
-    
+        img{
+            display: none;
 
+            @media (min-width: 1200px)
+            {
+                display: block;
+            }
+        }
     }
-
 }
 
 //2. Second section / "Company logotypes"
 .section2-company-logotypes
 {
-    padding: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
     .container
     {
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-        
+        display: flex;
+        padding: 3rem;
+
+        @media (max-width: 1200px)
+        {
+            display: block;
+            justify-content: right;
+            padding: 30px;
+        }
+
+
         .logo
         {
-            margin-right: 5.6rem;
-            margin-left: 1.5rem;
+            padding: 3.2rem;
+
+            @media (max-width: 1200px)
+            {
+                display: block;
+                padding: 30px;
+            }
         }
 
     }
@@ -431,77 +503,147 @@ header
 }
 
 //3. Third section / "Features"
-.section3-features
+section
 {
 
-border-style: solid;
-border-color: rgba(22, 22, 22, 0.171);
-margin-left: 10rem;
-margin-right: 10rem;
-padding-right: 2rem;
-justify-content: space-between;
 display: flex;
+justify-content: center;
+padding: 2rem;
 
-    .advice
-    {   
+
+.wrapper-grid
+{
     display: flex;
-    justify-content: space-between;
-    padding-left: 4rem;
-    flex: 1;
-    padding-bottom: 6rem;
-    padding-top: 2rem;
+    border: solid 2px rgba(22, 22, 22, 0.171);
 
-    .top{ 
-        padding-top: 3rem;
-        width: 25rem;
-        display: flexbox;
-        justify-content: center;
-        align-items: center;
-        padding-right: 8rem;
-
-    .business
-        {
-            display: block;
-            justify-content: center;
-            padding-top: 3rem;
-
-        }
-        .icon
-        {
-            margin-bottom: 2.5rem;
-        }
-    }
-    
-    .bottom{
-        padding-top: 3rem;
-        width: 25rem;
-        display: flexbox;
-        justify-content: center;
-        align-items: center;
-        padding-right: 8rem;
-
-    .business
-        {
-            display: block;
-            padding-top: 3rem;
-        }
-
-        .icon
-        {
-            margin-bottom: 2.5rem;
-        }
-    }
-}
-
-    .heading
+    @media (max-width: 1300px)
     {
-        margin-left: 5rem;
         display: block;
-        padding-top: 5rem;
-        width: 36rem;
-        padding-right: 6rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .headings
+    {
+        width: 28rem;
+        margin-top: 3rem;
+        margin-left: 5rem;
+
+
+        @media (max-width: 1200px)
+        {
+            margin: 0;
+            width: 300px;
+            text-align: center; 
+        }
+     
+        .btn-yellow
+        {
+            width:28rem;
+            margin-left: -1rem;
+
+            @media (max-width: 1300px)
+            {
+                width: 20rem;
+                margin-left: -0.5rem;
+            }
+        }
     }
 }
+
+.advices
+{  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+
+        @media (max-width: 1300px)
+        {
+            grid-template-columns: 1fr;
+        }
+
+        article
+        {
+            width: 22rem;
+            padding-left: 4rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            @media (max-width: 1300px)
+            {
+                padding: 0rem;
+                width: 15rem;
+            }
+
+                .addition-height
+                {
+                height: 8px;
+                width: 2px;
+                background-color:#a8a8a8a1;
+                position: relative;
+                right: -6.6%;
+                top: 0.3rem;
+                }
+
+                .addition-width
+                {
+                height: 2px;
+                width: 8px;
+                background-color:#a8a8a8a1;
+                position: relative;
+                right: -5.5%;
+                }
+
+            .addition-1
+            {
+                position:relative;
+                right: -0%;
+                top: 1rem;
+                
+                @media (max-width: 1300px)
+                {
+                    position:relative;
+                    right: -43%;
+                    top: 1rem;
+                }
+            }
+
+            .addition-2
+            {
+                position:relative;
+                right: -12%;
+                top: 1.8rem;
+                @media (max-width: 1300px)
+                {
+                    position:relative;
+                    right: -52%;
+                    top: 0.7rem;
+                }
+                
+            }
+
+            .addition-3
+            {
+                position:relative;
+                right: -9%;
+                top: 0.2rem; 
+                @media (max-width: 1300px)
+                {
+                    position:relative;
+                    right: -56%;
+                    top: 1rem;
+                } 
+            }
+
+            .icon
+            {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
 
 //4. Forth section/ "About comapny"
 .section4-about-company
@@ -517,6 +659,13 @@ display: flex;
     align-items: center;  
     justify-content: center;
     gap: 12rem;
+        
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
+    
+
     }
 
   .blue-text-container
@@ -609,6 +758,11 @@ display: flex;
         width:35rem;
         display: block;
         justify-content:start;
+
+        @media (max-width: 998px)
+        {
+            display: block;
+        }
     }
 
     .container2
@@ -617,6 +771,11 @@ display: flex;
     justify-content: space-between;
     padding-bottom: 3.4rem;
     padding-top: 1.2rem;
+
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
                      
         .elements
         {
@@ -715,6 +874,11 @@ display: flex;
     .container
     {
         width: 39rem;
+
+        @media (max-width: 998px)
+        {
+            display: block;
+        }
     }
 
     .elements
@@ -754,100 +918,81 @@ display: flex;
     }
 }
 
-//7. Seventh section / "Project & Case studies"
-.section7-project
+// 7. SEVENTH SECTION / "News & articles"
+.project-and-case
 {
-    .headline
-    {
-        display: flex;
-        justify-content: center;
-    }
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    .pictures
-    {
-        display: flex;
-        justify-content:center;
-        gap: 1.8rem;
+    .container{
 
-        .line
+        .section-title
         {
-            border-color: #19191963;
-            border-width: 2px;
-            color: #FFFFFF;
+            text-align: center;
         }
-
-        .text
+        
+        .project-and-cases
         {
-            padding-top: 2.6rem;
-        }
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
 
-        .btn-readmore
-        {
-            display: flex;
-            justify-content: right;
-            align-items: last;
-            padding: 1rem; 
+            @media (min-width: 768px) 
+            {grid-template-columns: 1fr 1fr;}
 
-            .readmore-text
+            article
             {
-            color: #191919;
-            text-decoration: none;
+                img
+                {
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 30px;
+                    padding-top: 20px;
+                }
+
+                h3{
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.201);
+                    padding-bottom: 10px;
+                }
+
+                a
+                {
+                    margin-right: 10px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: right;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#191919;
+                    padding-top: 15px;
+
+                    .arrow
+                    {
+                        padding: 0rem;
+                        margin-left: 0.5rem;
+                    }
+
+                    &:hover{
+                        color:#868686;
+                        
+                    }
+        
+                    &:active
+                    {
+                        color: #DAD9D3;
+                    }
+                }
             }
         }
     }
 
     .btn-position
     {
-
         display: flex;
         justify-content: center;
-        padding-bottom: 5rem;
-        padding-top: 4rem;
-
-        .btn-black
-        {
-        background-color:#191919;
-        border-color: #000000;
-        border-style: none;
-        padding: 0.8rem 2rem;
-        border-radius: 2rem;
-        font-weight: 400;
-        margin-right: 1rem;
-        text-decoration: none;
-
-        a {
-        font-weight: 400;
-        color:#FFFFFF;
-        margin-left: 0.9rem;
-        text-decoration: none;
-        
-            .arrow
-            {
-            margin-left: 1rem;
-            }       
-        }
-
-        &:hover
-        {
-        background-color: #868686;
-        border:#191919;
-    
-            a 
-            {
-            color: #FFFFFF;
-            }
-        }
-
-        &:active
-        {
-        background-color:#DAD9D3;
-        border:#191919;
-        }
+        padding: 4rem;
     }
-}
-
-
-
 }
 
 //8. Eight section / "Meet Our Team"
@@ -864,6 +1009,13 @@ display: flex;
         padding-right: 18rem;
         padding-top: 8rem;
         padding-bottom: 5rem;
+
+        
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
+    
     }
 
     .yellow
@@ -881,6 +1033,13 @@ display: flex;
         display: flex;
         justify-content: center;
         gap: 2rem;
+
+        
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
+    
 
         .text-container
         {
@@ -913,10 +1072,15 @@ display: flex;
     padding-left: 18rem;
     padding-right: 18rem;
 
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
+
     .white-background
     {
         background-color: #FFFFFF;
-        
+
         .orange-headlines
         {
             display: flex;
@@ -937,12 +1101,18 @@ display: flex;
             display: flex;
             padding-top: 3rem;
             padding-bottom: 4rem;
+
+            @media (max-width: 998px)
+            {
+                display: block;
+            }
         }
     }
 
     .container
     {
         width: 20rem;
+        
 
         p
         {
@@ -1001,6 +1171,11 @@ display: flex;
     padding-left: 0.7rem;
     padding-bottom: 1.5rem;
 
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
+
     .big-headlines
     {
         padding: 0;
@@ -1014,6 +1189,11 @@ display: flex;
     display: flex;
     justify-content: space-evenly;
     gap: 3.1rem;
+
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
    }
 
    .articels
@@ -1080,6 +1260,11 @@ display: flex;
         display: flex;
         align-items: center;
         padding-left: 5rem;
+
+        @media (max-width: 998px)
+        {
+            display: block;
+        }
         
         .buttons
         {
@@ -1108,7 +1293,7 @@ display: flex;
     .grey-element
     {
         position: relative;
-        left: 16%;
+        left: 15.5%;
         top: 30%;
     }
 }
@@ -1117,6 +1302,11 @@ display: flex;
 .footer
 {
     background-color: #000000;
+
+    @media (max-width: 998px)
+    {
+        display: block;
+    }
 
     .grey-element
     {
@@ -1151,7 +1341,6 @@ display: flex;
         {
             color: #DAD9D3;
             border-color: #DAD9D3;
-            zoom: 120%;
         }
     }
 
@@ -1166,6 +1355,11 @@ display: flex;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 998px)
+        {
+            display: block;
+        }
 
         .the-sections
         {
