@@ -21,7 +21,7 @@ font-size: 2.6rem;
     @media (max-width: 768px)
     {
     text-align: center;
-    font-size: 34px;
+    font-size: 32px;
     }
 
 }
@@ -57,6 +57,17 @@ p {
     {
         font-size: 16px;
     }
+}
+
+.hr-768px
+{
+    display: none;
+    @media (max-width: 768px)
+    {
+        display: flex;
+        border-color: #868686;
+    }
+    
 }
 
 //Buttons
@@ -653,6 +664,8 @@ padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     gap: 12em;
+    border: solid 2px black;
+    
  
     @media (max-width: 1400px)
     {
@@ -666,34 +679,40 @@ padding-bottom: 2rem;
         }
     }
 
-    @media (max-width: 800px)
+    @media (max-width: 768px)
     {
-        flex-direction: column;
-        gap: 12em;
-
+        text-align: center;
+        width: 20.5rem;
         img
         {
-            width:80%;
+            width:100%;
             height: auto;
         }
     }
     
+    .content2
+    {
+        width: 32rem;
 
+        @media (max-width: 768px)
+        {
+            width: 18rem;
+        }
+    }
     }
 
   .blue-text-container
     {
     position: relative;
     display: flex;
-
-
+    
         @media (max-width: 1600px)
-            {
+        {
         display: flex;
         justify-content: center;
         left: 0rem;
         top: 0rem;
-            }
+        }
 
 
     .text-container-blue 
@@ -706,6 +725,7 @@ padding-bottom: 2rem;
         width: 23rem;
         height: 11.3rem;
         padding: 2rem;
+        border: solid 2px red;
         
         
 
@@ -717,7 +737,7 @@ padding-bottom: 2rem;
             top: 60%;
         }
 
-        @media (max-width: 800px)
+        @media (max-width: 768px)
         {
         display: flex;
         flex-direction: column;
@@ -755,43 +775,26 @@ padding-bottom: 2rem;
         }
     }
 
-    .content2
+}
+
+.playicon
+{
+height: 3.2rem;
+margin-right: 0.6rem;
+
+&:hover
     {
-    width: 30rem;
-    line-height: 1.8rem;
-    font-weight: 100;
-    font-size: 1rem;
-    border: solid 2px green;
-    
+    background-color: #dad9d37e;
+    border-radius: 50%;
+    }
 
-        .playicon
-        {
-        height: 3.2rem;
-        margin-right: 0.6rem;
-        
-
-        &:hover
-            {
-            background-color: #DAD9D3;
-            border-radius: 50%;
-            }
-
-            &:active
-            {
-            background-color: #868686;
-            }
-        }
-
-        @media (max-width: 800px)
-        {
-            display: flex;
-            justify-content: center;
-        }
-
-        }
+    &:active
+    {
+    background-color: #868686b0;
     }
 }
 
+}
 
 //5. Fifth section / "Our Services"
 .section5-our-services
@@ -813,6 +816,11 @@ padding-bottom: 2rem;
         justify-content: center;
     }
 
+    @media (max-width: 768px)
+    {
+        padding: 4rem;
+    }
+
     .container
     {
         margin: 0;
@@ -820,7 +828,6 @@ padding-bottom: 2rem;
         text-align: left;
         width: 30rem;
         display: block;
-        border: solid 2px red;
 
         @media (max-width: 998px)
         {
@@ -839,7 +846,6 @@ padding-bottom: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 3.4rem;
     padding-top: 1.2rem;
-    border: solid 2px yellow;
     align-items: center;
 
     @media (max-width: 1810px)
@@ -862,7 +868,7 @@ padding-bottom: 2rem;
                 width: 19.2rem;
                 height: 20.5rem;   
                 padding:1.5rem;
-                border: solid 2px black;
+                border: solid 2px rgba(0, 0, 0, 0.132);
 
             .line
             {
@@ -972,11 +978,14 @@ padding-bottom: 2rem;
     .container
     {
         width: 39rem;
-        border: solid 2px black;
 
         @media (max-width:768px)
         {
             width: 20.5rem;
+            padding-top: 3rem;
+            border: solid 2px #DAD9D3;
+            border-radius: 1rem;
+            margin-top: 4rem;
         }
     }
 
@@ -985,6 +994,8 @@ padding-bottom: 2rem;
         display:flex;
         justify-content: center;
         align-items: center;
+        margin-top: 2rem;
+
 
         .svg{
             padding-bottom: 2rem;
@@ -1024,13 +1035,21 @@ padding-bottom: 2rem;
 
 }
 
-// 7. SEVENTH SECTION / "News & articles"
+// 7. SEVENTH SECTION / "Projects and Case Studies"
 .project-and-case
 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 
     .container{
+
+        @media (max-width:768px)
+        {
+            width: 20.5rem;
+            padding-top: 3rem;
+            border: solid 2px #DAD9D3;
+            border-radius: 1rem;
+        }
 
         .section-title
         {
@@ -1113,6 +1132,11 @@ padding-bottom: 2rem;
     @media (max-width: 998px)
     {
         padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+
     }
 
     .header
@@ -1128,6 +1152,8 @@ padding-bottom: 2rem;
         display: block;
         text-align: center;
         padding: 1rem;
+        padding-top: 3rem;
+        width: 20rem;
     }
     
     }
@@ -1161,8 +1187,10 @@ padding-bottom: 2rem;
     @media (max-width: 768px)
     {
         grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
         text-align: center;
-
+        padding-top: 2rem;
     }
     
 

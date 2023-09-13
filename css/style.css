@@ -15,7 +15,7 @@ h1 {
 @media (max-width: 768px) {
   h1 {
     text-align: center;
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
@@ -44,6 +44,16 @@ p {
 @media (max-width: 998px) {
   p {
     font-size: 16px;
+  }
+}
+
+.hr-768px {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hr-768px {
+    display: flex;
+    border-color: #868686;
   }
 }
 
@@ -502,6 +512,7 @@ header .container .menu .main-meny nav a:active {
   display: flex;
   flex-direction: row;
   gap: 12em;
+  border: solid 2px black;
 }
 @media (max-width: 1400px) {
   .section4-about-company .container {
@@ -513,14 +524,22 @@ header .container .menu .main-meny nav a:active {
     height: auto;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .section4-about-company .container {
-    flex-direction: column;
-    gap: 12em;
+    text-align: center;
+    width: 20.5rem;
   }
   .section4-about-company .container img {
-    width: 80%;
+    width: 100%;
     height: auto;
+  }
+}
+.section4-about-company .container .content2 {
+  width: 32rem;
+}
+@media (max-width: 768px) {
+  .section4-about-company .container .content2 {
+    width: 18rem;
   }
 }
 .section4-about-company .blue-text-container {
@@ -544,6 +563,7 @@ header .container .menu .main-meny nav a:active {
   width: 23rem;
   height: 11.3rem;
   padding: 2rem;
+  border: solid 2px red;
 }
 @media (max-width: 1600px) {
   .section4-about-company .blue-text-container .text-container-blue {
@@ -553,7 +573,7 @@ header .container .menu .main-meny nav a:active {
     top: 60%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .section4-about-company .blue-text-container .text-container-blue {
     display: flex;
     flex-direction: column;
@@ -582,29 +602,16 @@ header .container .menu .main-meny nav a:active {
   font-size: 0.96rem;
   line-height: 1.8rem;
 }
-.section4-about-company .blue-text-container .content2 {
-  width: 30rem;
-  line-height: 1.8rem;
-  font-weight: 100;
-  font-size: 1rem;
-  border: solid 2px green;
-}
-.section4-about-company .blue-text-container .content2 .playicon {
+.section4-about-company .playicon {
   height: 3.2rem;
   margin-right: 0.6rem;
 }
-.section4-about-company .blue-text-container .content2 .playicon:hover {
-  background-color: #DAD9D3;
+.section4-about-company .playicon:hover {
+  background-color: rgba(218, 217, 211, 0.4941176471);
   border-radius: 50%;
 }
-.section4-about-company .blue-text-container .content2 .playicon:active {
-  background-color: #868686;
-}
-@media (max-width: 800px) {
-  .section4-about-company .blue-text-container .content2 {
-    display: flex;
-    justify-content: center;
-  }
+.section4-about-company .playicon:active {
+  background-color: rgba(134, 134, 134, 0.6901960784);
 }
 
 .section5-our-services {
@@ -625,13 +632,17 @@ header .container .menu .main-meny nav a:active {
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  .section5-our-services {
+    padding: 4rem;
+  }
+}
 .section5-our-services .container {
   margin: 0;
   padding: 0;
   text-align: left;
   width: 30rem;
   display: block;
-  border: solid 2px red;
 }
 @media (max-width: 998px) {
   .section5-our-services .container {
@@ -649,7 +660,6 @@ header .container .menu .main-meny nav a:active {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 3.4rem;
   padding-top: 1.2rem;
-  border: solid 2px yellow;
   align-items: center;
 }
 @media (max-width: 1810px) {
@@ -670,7 +680,7 @@ header .container .menu .main-meny nav a:active {
   width: 19.2rem;
   height: 20.5rem;
   padding: 1.5rem;
-  border: solid 2px black;
+  border: solid 2px rgba(0, 0, 0, 0.132);
 }
 .section5-our-services .grid-container .grid-items .line {
   border-color: #191919;
@@ -749,17 +759,21 @@ header .container .menu .main-meny nav a:active {
 }
 .section6-why-us .container {
   width: 39rem;
-  border: solid 2px black;
 }
 @media (max-width: 768px) {
   .section6-why-us .container {
     width: 20.5rem;
+    padding-top: 3rem;
+    border: solid 2px #DAD9D3;
+    border-radius: 1rem;
+    margin-top: 4rem;
   }
 }
 .section6-why-us .content {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 .section6-why-us .content .svg {
   padding-bottom: 2rem;
@@ -789,8 +803,16 @@ header .container .menu .main-meny nav a:active {
 }
 
 .project-and-case {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .project-and-case .container {
+    width: 20.5rem;
+    padding-top: 3rem;
+    border: solid 2px #DAD9D3;
+    border-radius: 1rem;
+  }
 }
 .project-and-case .container .section-title {
   text-align: center;
@@ -852,6 +874,10 @@ header .container .menu .main-meny nav a:active {
 @media (max-width: 998px) {
   .section8-our-team {
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
 .section8-our-team .header {
@@ -865,6 +891,8 @@ header .container .menu .main-meny nav a:active {
     display: block;
     text-align: center;
     padding: 1rem;
+    padding-top: 3rem;
+    width: 20rem;
   }
 }
 .section8-our-team .yellow {
@@ -890,7 +918,10 @@ header .container .menu .main-meny nav a:active {
 @media (max-width: 768px) {
   .section8-our-team .container {
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
     text-align: center;
+    padding-top: 2rem;
   }
 }
 .section8-our-team .container .text-container {
