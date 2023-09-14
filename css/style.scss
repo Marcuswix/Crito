@@ -418,6 +418,7 @@ header
 
         display: flex;
         align-items: center;
+        gap: 30px;
 
         @media (max-width: 1200px)
         {
@@ -427,8 +428,15 @@ header
         .content
         {   
 
+            width: 70rem;
+
             .btn
             {
+                display: flex;
+                justify-content: start;
+                gap: 2rem;
+                padding-inline: 0rem;
+
                 @media (max-width: 1200px)
                 {
                 display: flex;
@@ -558,8 +566,9 @@ header
 .wrapper-grid
 {
     display: flex;
+    justify-content: center;
     padding-inline: 2rem;
-    padding-block: 2rem;
+    padding-bottom: 2rem;
 
     @media (max-width: 768px)
     {
@@ -1056,7 +1065,6 @@ margin-right: 0.6rem;
     {
     display:flex;
     justify-content: center;
-    border: solid 2px black;
     }
 
     .arrow-in-circle
@@ -1072,7 +1080,7 @@ margin-right: 0.6rem;
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
-    padding-block: 8rem;
+    padding-block: 4rem;
     padding-left: 18rem;
 
     @media (max-width: 1800px)
@@ -1588,8 +1596,7 @@ margin-right: 0.6rem;
     display: flex;
     justify-content: center;
     padding: 3rem;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-block: 3rem;
     background-color: #F0EFE9;
 
     .content 
@@ -1686,16 +1693,20 @@ margin-right: 0.6rem;
     }
 }
 
-// 12. TWELTH SECTION / "Crito information"
-.section12-Crito-info
+// 12. FOOTER
+.footer
 {
+    .container1
+    {
     background-color: #000000;
+    display: flex;
+    flex-direction: column;
 
     .grey-element
     {
         position:relative;
         left: 84%;
-        top: 23rem;
+        top: 20rem;
 
         @media (max-width: 1900px)
         {
@@ -1708,11 +1719,10 @@ margin-right: 0.6rem;
     {
         display: flex;
         flex-direction: column;
+        justify-items: center;
+        align-items: center;
         width: 1320px;
-        margin-left: 20rem;
-        margin-right: 2rem;
-        padding-inline: 0rem;
-        padding-top: 4rem;
+        padding-inline: 2rem;
 
 
         @media (max-width: 768px)
@@ -1882,29 +1892,30 @@ margin-right: 0.6rem;
         }
     
     }
-}
-
-    
 
 
-// FOOTER
-.page-end
-{
-    background-color: #000000;
+    .end
+    {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+    .page-end
+    {
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 8rem;
-    padding-block: 1rem;
-    width: 1320px;
+    width: 1250px;
+    margin: none;
+    padding: none;
 
     @media (max-width: 768px)
     {
         flex-direction: column;
         text-align: center;
         padding: 0rem;
-        margin-left: 3rem;
 
         .copy-right{
             order: 2;
@@ -1929,14 +1940,14 @@ margin-right: 0.6rem;
 
                 &:hover {
                     color: invert($color: #000000);
-                    background-color: #000000;
-                    border-radius: 20%;  
+                    background-color: #868686;
+                    border-radius: 10%;
                 }
 
                 &:active
                 {
                     color:#FFFFFF;
-                    background-color: #868686;    
+                    background-color: #DAD9D3;    
                 }
 
             }
@@ -1958,8 +1969,18 @@ margin-right: 0.6rem;
             background-color: #868686;
             }
         }
+         }
+        }
     }
+
+    }
+
 }
+
+    
+
+
+
 
 
 
@@ -2079,5 +2100,15 @@ margin-right: 0.6rem;
             }
         }
     }
+}
+
+// 4. SECTION FOUR / "Map"
+.map
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-inline: 0rem;
+    width: 100%;
 }
 
