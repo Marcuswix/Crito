@@ -1963,3 +1963,121 @@ margin-right: 0.6rem;
 
 
 
+//Contact.html
+
+.container
+{
+    padding-top: 1rem;
+}
+
+.lets-connect
+{
+    background-color: #F0EFE9;
+
+    .element
+    {
+        position: relative;
+        left: -1%;
+        top: 8rem;
+
+    }
+    .container
+    {
+        position: relative;
+        top: -16rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+// 2. SECTION TWO / "Vistit-Call-Email"
+.visit-call-email
+{
+    .container
+        {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding-block: 4rem; 
+        
+        .content
+        {
+            display: flex;
+            justify-content: center;
+            border: solid 2px #F0EFE9;
+            padding: 2rem;
+            gap: 3rem;
+
+            .text-content
+            {
+                h2
+                {
+                    font-size: 22px;
+                }
+            }
+    
+        }    
+    }
+}
+
+// 3. SECTION THREE / "Leave-us-a-message"
+.leave-us-a-message
+{
+    .wrapper-grid
+    {
+        padding-inline: 4rem;
+        
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid 2px rgb(112, 87, 87);
+            background-color: #F0EFE9;
+            padding-block: 6rem;
+
+            .textbox
+            {
+                text-align: center;
+                width: 420px;
+                padding-bottom: 1rem;
+            }
+
+            .buttons
+            {
+                border: solid 2px red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 52rem;
+                gap: 1.8rem;
+
+                .input
+                {
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    width: 100%;
+                    border: none;
+                }
+                .input-message
+                {
+                    text-align:left;
+                    padding: 1rem;
+                    border: none;
+                    border-radius: 2rem;
+                    width: 100%;
+                    padding-bottom: 100px;
+                }
+
+                .btn-yellow
+                {
+                    
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
+
