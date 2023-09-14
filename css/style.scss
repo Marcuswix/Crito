@@ -79,7 +79,6 @@ p {
     padding: 0.8rem 2rem;
     border-radius: 2rem;
     font-weight: 400;
-    margin-right: 1rem;
     text-decoration: none;
     color:#191919;
 
@@ -262,10 +261,14 @@ header
 {
     background-color: #F0EFE9;
 
+    @media (max-width: 768px)
+    {
+    }
+
     .container
     {
         display: flex;
-        gap: 1%;
+        justify-content: space-between;
   
         .menu-bars 
         {
@@ -405,6 +408,11 @@ header
     background-color: #F0EFE9;
     padding-top: 2rem;
 
+    @media (max-width: 768px)
+    {
+        padding-block: 2rem;
+    }
+
     .container
     {
 
@@ -426,6 +434,11 @@ header
                 display: flex;
                 justify-content: center;
                 text-align: center;
+                }
+
+                @media (max-width: 768px)
+                {
+                    gap: 2rem;
                 }
             }
 
@@ -453,13 +466,20 @@ header
 
             p 
             {
-            font-size: 16px;
             padding-bottom: 40px;
             margin-right: 5rem;
 
                 @media (max-width: 1200px)
                 {
                 text-align: center;
+                }
+
+                @media (max-width: 768px)
+                {
+                text-align: center;
+                padding-bottom: 40px;
+                margin-right: 0;
+                margin-bottom: 0rem;
                 }
             }
         }
@@ -483,31 +503,50 @@ header
 //2. Second section / "Company logotypes"
 .section2-company-logotypes
 {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-block: 6rem;
+
+    @media (max-width: 768px)
+    {
+        padding: 4rem; 
+
+    }
+    
     .container
     {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        padding: 0rem;
+        margin: none;
 
-        @media (max-width: 1200px)
+
+        @media (max-width: 768px)
         {
-            flex-direction: column;
-            padding: 30px;
+            gap: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+
+            .gabona
+            {
+                grid-column: 1/3;
+            }
+
         }
 
 
         .logo
         {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 3.5rem;
-            padding-left: 3.5rem;
-            padding-top: 5rem;
-            padding-bottom: 2rem;
-            width: 60%;
-            height: auto;
+            padding-inline:3rem;
+
+            @media (max-width: 768px)
+            {
+                padding: 0rem; 
+                max-width: 83.69px;
+
+            }
+
+
         }
     }
 }
@@ -515,15 +554,19 @@ header
 //3. Third section / "Features"
 .section3-features
 {
-display: flex;
-justify-content: center;
-padding-bottom: 2rem;
-
 
 .wrapper-grid
 {
     display: flex;
-    border: solid 2px rgba(22, 22, 22, 0.171);
+    padding-inline: 2rem;
+    padding-block: 2rem;
+
+    @media (max-width: 768px)
+    {
+        padding-inline: 1rem;
+        padding-block: 1rem;
+    }
+
 
     @media (max-width: 1300px)
     {
@@ -532,11 +575,31 @@ padding-bottom: 2rem;
         align-items: center;
     }
 
-    .headings
+
+    .container{
+
+        display: flex;
+        border: solid 2px #DAD9D3;
+        padding: 4rem;
+
+        @media (max-width: 768px)
+        {
+            display: grid;
+            grid-column: 1fr;
+            border-radius: 1rem;
+            padding: 0rem;
+            width: 100%;
+        }
+
+    .content
     {
-        width: 28rem;
-        margin-top: 3rem;
-        margin-left: 5rem;
+        width: 32rem;
+        padding: 0rem;
+
+        h1
+        {
+            padding-block: 2rem;
+        }
 
 
         @media (max-width: 1200px)
@@ -545,18 +608,28 @@ padding-bottom: 2rem;
             width: 300px;
             text-align: center; 
         }
+
+        @media (max-width: 768px)
+        {
+            width: 90%;
+            margin: 0rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-inline: 0.5rem;
+
+        }
      
         .btn-yellow
         {
-            width:28rem;
-            margin-left: -1rem;
+            width:27rem;
 
             @media (max-width: 1300px)
             {
                 width: 20rem;
-                margin-left: -0.5rem;
             }
         }
+
+
     }
 }
 
@@ -564,7 +637,7 @@ padding-bottom: 2rem;
 {  
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 3rem;
+        padding-inline: 3rem;
 
         @media (max-width: 1300px)
         {
@@ -652,6 +725,7 @@ padding-bottom: 2rem;
         }
     }
 }
+}
 
 //4. Forth section/ "About comapny"
 .section4-about-company
@@ -659,12 +733,17 @@ padding-bottom: 2rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
 
+    @media (max-width: 768px)
+    {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+
     .container
     {
     display: flex;
     flex-direction: row;
     gap: 12em;
-    border: solid 2px black;
     
  
     @media (max-width: 1400px)
@@ -681,8 +760,11 @@ padding-bottom: 2rem;
 
     @media (max-width: 768px)
     {
+
         text-align: center;
-        width: 20.5rem;
+        width: 90%;
+        border: solid 2px #DAD9D3;
+        border-radius: 1rem;
         img
         {
             width:100%;
@@ -696,8 +778,33 @@ padding-bottom: 2rem;
 
         @media (max-width: 768px)
         {
-            width: 18rem;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
         }
+        
+        .btn{
+            padding:0%;
+            margin-top: 6rem;
+
+            @media (max-width: 768px)
+            {
+                display: block;
+
+                margin: 0rem;
+                padding: 1rem;
+
+            }
+
+            @media (max-width: 768px)
+            {
+            .btn-black
+                {
+                    margin: 0rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        } 
     }
     }
 
@@ -714,6 +821,13 @@ padding-bottom: 2rem;
         top: 0rem;
         }
 
+        @media (max-width: 768px)
+        {
+        display: flex;
+        justify-content: center;
+        top: 1rem;
+        }
+
 
     .text-container-blue 
     {
@@ -725,9 +839,6 @@ padding-bottom: 2rem;
         width: 23rem;
         height: 11.3rem;
         padding: 2rem;
-        border: solid 2px red;
-        
-        
 
         @media (max-width: 1600px)
         {
@@ -739,8 +850,11 @@ padding-bottom: 2rem;
 
         @media (max-width: 768px)
         {
-        display: flex;
-        flex-direction: column;
+            width: 90%;
+            top: 80%;
+            display: block;
+            text-align: left;
+            border-radius: 1rem;
         }
 
         .Samantha
@@ -836,7 +950,7 @@ margin-right: 0.6rem;
         }
         @media (max-width: 768px)
         {
-            width: 20rem;
+            width: 90%;
         }
     }
 
@@ -958,8 +1072,7 @@ margin-right: 0.6rem;
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
-    padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-block: 8rem;
     padding-left: 18rem;
 
     @media (max-width: 1800px)
@@ -981,11 +1094,11 @@ margin-right: 0.6rem;
 
         @media (max-width:768px)
         {
-            width: 20.5rem;
-            padding-top: 3rem;
+            width: 90%;
+            margin-block: 4rem;
+            padding-block: 2rem;
             border: solid 2px #DAD9D3;
             border-radius: 1rem;
-            margin-top: 4rem;
         }
     }
 
@@ -1038,14 +1151,13 @@ margin-right: 0.6rem;
 // 7. SEVENTH SECTION / "Projects and Case Studies"
 .project-and-case
 {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-block: 4rem;
 
     .container{
 
         @media (max-width:768px)
         {
-            width: 20.5rem;
+            width: 90%;
             padding-top: 3rem;
             border: solid 2px #DAD9D3;
             border-radius: 1rem;
@@ -1116,7 +1228,12 @@ margin-right: 0.6rem;
     {
         display: flex;
         justify-content: center;
-        padding: 4rem;
+        padding-top: 3rem;
+
+        .btn-black
+        {
+            margin: 0rem;
+        }
     }
 }
 
@@ -1153,7 +1270,7 @@ margin-right: 0.6rem;
         text-align: center;
         padding: 1rem;
         padding-top: 3rem;
-        width: 20rem;
+        width: 90%;
     }
     
     }
@@ -1248,6 +1365,7 @@ margin-right: 0.6rem;
         @media (max-width: 768px)
         {
             padding: 1rem;
+            border-radius: 1rem;
         }
 
 
@@ -1381,7 +1499,7 @@ margin-right: 0.6rem;
 
     @media (max-width: 768px)
     {
-        width: 17rem;
+        width: 90%;
     }
 
 }
@@ -1471,7 +1589,7 @@ margin-right: 0.6rem;
     justify-content: center;
     padding: 3rem;
     padding-bottom: 3rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     background-color: #F0EFE9;
 
     .content 
@@ -1504,16 +1622,18 @@ margin-right: 0.6rem;
             {
                 padding: 0rem;
                 display: grid;
+                grid-template-columns: 1fr;
                 justify-items: center;
                 padding-top: 3.5em;
                 padding-bottom: 1rem;
+                margin: 0rem;
+
+                .btn-yellow
+                {
+                    margin-right: 0.8rem;
+                }
             }
 
-            @media (max-width: 768px)
-            {
-                padding-left: 0rem;
-                margin-left: 0rem;
-            }
 
         }
 
@@ -1566,8 +1686,8 @@ margin-right: 0.6rem;
     }
 }
 
-// FOOTER
-.footer
+// 12. TWELTH SECTION / "Crito information"
+.section12-Crito-info
 {
     background-color: #000000;
 
@@ -1575,13 +1695,35 @@ margin-right: 0.6rem;
     {
         position:relative;
         left: 84%;
-        top: 19rem;
+        top: 23rem;
 
         @media (max-width: 1900px)
         {
             display: none;
         }
     }
+
+
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 1320px;
+        margin-left: 20rem;
+        margin-right: 2rem;
+        padding-inline: 0rem;
+        padding-top: 4rem;
+
+
+        @media (max-width: 768px)
+        {
+            width: 368px;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            padding-inline: 0rem;
+        }
+
+ 
 
     p {
         color: #FFFFFF;
@@ -1625,8 +1767,7 @@ margin-right: 0.6rem;
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
         border-radius: 1rem;
-        padding-left: 18rem;
-        padding-right:18rem;
+
 
         @media (max-width: 768px)
         {
@@ -1635,6 +1776,7 @@ margin-right: 0.6rem;
             display: block;
             text-align: center;
             margin: 2rem;
+            width: 90%;
         }
 
         @media (max-width: 998px)
@@ -1733,63 +1875,91 @@ margin-right: 0.6rem;
             }
         }
 
-        .p-company
-        {
+            .p-company
+            {
             width: 19rem;
+            }
         }
+    
     }
+}
 
     
-}
 
 
+// FOOTER
+.page-end
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8rem;
+    padding-block: 1rem;
+    width: 1320px;
 
-    .page-end
+    @media (max-width: 768px)
     {
-        padding-left: 18.5rem;
-        padding-right: 18.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0rem;
+        margin-left: 3rem;
 
-        @media (max-width: 998px)
-        {
-            flex-direction: column;
-            text-align: center;
-            padding: 0rem;
-
-            .copy-right{
-                order: 2;
-            }
-
-            .social-media{
-                order: 1;
-            }
-
+        .copy-right{
+            order: 2;
         }
 
-        .social-media
-        {
-            display: flex;
-            justify-content: right;
-            gap: 1.8rem;
+        .social-media{
+            order: 1;
+        }
 
-            @media (max-width: 768px)
-            {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                text-align: center;
-                padding: 0rem;
-                margin-top: 2rem;
-                margin-bottom: -1rem;
-            }
+    }
 
-            a 
-            {
+    .social-media
+    {
+        display: flex;
+        gap: 1.8rem;
+
+            a {
+                color:#FFFFFF;
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                
+
+                &:hover {
+                    color: invert($color: #000000);
+                    background-color: #000000;
+                    border-radius: 20%;  
+                }
+
                 &:active
                 {
-                background-color: #868686;
+                    color:#FFFFFF;
+                    background-color: #868686;    
                 }
+
+            }
+
+        @media (max-width: 768px)
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            text-align: center;
+            padding: 0rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        a 
+        {
+            &:active
+            {
+            background-color: #868686;
             }
         }
+    }
 }
+
+
+
