@@ -43,13 +43,13 @@
                       <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                   </div>
-    <!-- Main Meny -->
-                    <div class="main-meny">
+    <!-- Main Menu -->
+                    <div class="main-menu">
                       <nav>
                         <a href="index.html">Home</a>
-                        <a href="Service.html">Service</a>
-                        <a href="News.html">News</a>
-                        <a href="Contact">Contact</a>
+                        <a href="service.html">Service</a>
+                        <a href="news.html">News</a>
+                        <a href="contact.html">Contact</a>
                       </nav>
                         <button class="btn-yellow ">
                           <a  href="login.html">Login
@@ -65,8 +65,8 @@
 
 <!-- 1. SECTION ONE / "Let's connect"  -->
 <section class="lets-connect">
-    <div class="element">
-        <img src="images/Element.svg" alt="A design element"
+    <div class="element-container">
+        <img class="grey-element" src="images/Element.svg" alt="A design element"
     </div>
     <div class="container">
         <div class="content">
@@ -81,7 +81,7 @@
 <section class="visit-call-email">
     <div class="container">
         <div class="content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <g id="Icon" transform="translate(-360 -588)">
                   <circle id="Ellipse_10" data-name="Ellipse 10" cx="30" cy="30" r="30" transform="translate(360 588)" fill="#191919"/>
                   <g id="fluent:location-48-filled" transform="translate(378 606.75)">
@@ -98,7 +98,7 @@
             </div>
         </div>
         <div class="content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <g id="Icon" transform="translate(-810 -588)">
               <circle id="Ellipse_10" data-name="Ellipse 10" cx="30" cy="30" r="30" transform="translate(810 588)" fill="#191919"/>
               <g id="ic:round-call" transform="translate(828 606)">
@@ -113,7 +113,7 @@
             </div>
         </div>   
         <div class="content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <g id="Icon" transform="translate(-1263 -588)">
               <circle id="Ellipse_10" data-name="Ellipse 10" cx="30" cy="30" r="30" transform="translate(1263 588)" fill="#191919"/>
               <g id="dashicons:email-alt" transform="translate(1281 606)">
@@ -135,24 +135,26 @@
     <div class="wrapper-grid">
         <div class="container">
             <div class="textbox">
-            <h1>Leave us a message for any information.</h1>
+              <h1>Leave us a message for any information.</h1>
             </div>
             <div class="buttons">
-                    <input class="input" type="name" id="name" name="name" placeholder="Name*">
-                    <input class="input" type="email" id="email" name="email" placeholder="Email*">
-                    <input class="input-message" type="text" id="message" name="message" placeholder="Yor Message*">
-                    <button class="btn-yellow" onclick="alert('You have now subscribed!')">Subscribe
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                    </svg>   
-                    </button>
+                <input class="input" type="name" id="name" name="name" placeholder="Name*">
+                <input class="input" type="email" id="email" name="email" placeholder="Email*">
+                <input class="input-message" type="text" id="message" name="message" placeholder="Yor Message*">
+              <button class="btn-yellow" onclick="alert"('Thanks for your message! We'll be in touch soon.')>Send
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                </svg>   
+              </button>
             </div>
         </div>
     </div>
 </section>
+
 <!-- 4. SECTION FOUR / "Map" -->
 <section class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15218.90215123078!2d18.06346706264281!3d59.3332896355906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1694702183755!5m2!1ssv!2sse" width="1920" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="big-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15218.90215123078!2d18.06346706264281!3d59.3332896355906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1694702183755!5m2!1ssv!2sse" width="1920" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="small-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21940.039959008154!2d18.02775163404334!3d59.33507764623113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1694761329003!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <!-- 5. FOOTER -->

@@ -261,14 +261,12 @@ header
 {
     background-color: #F0EFE9;
 
-    @media (max-width: 768px)
-    {
-    }
-
     .container
     {
         display: flex;
         justify-content: space-between;
+        gap: 2rem;
+
   
         .menu-bars 
         {
@@ -287,10 +285,13 @@ header
         .menu
         {
             display:none;
+            padding-top: 1rem;
 
             @media (min-width: 995px)
             {
                 display:block;
+                width: 1200px;
+
             }
 
             .top-menu
@@ -335,7 +336,6 @@ header
                         
 
                         i {
-                        
                             margin-right: 0.4rem;
                             font-size: 1.2rem;
                             color:#666666;
@@ -368,7 +368,7 @@ header
                 }
             }
 
-            .main-meny{
+            .main-menu{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -376,18 +376,20 @@ header
                                 
                 nav {
 
+                    height: 40px;
+
                     a {
                         display: inline-block;
                         color: #191919;
                         text-decoration: none;
                         margin-right: 2.5rem;
-                        position: relative;
+
                     
                         
                         &:hover
                         { 
-                        border-bottom: solid 1px #666666;  
-                        }
+                        border-bottom: solid 1px #666666;
+                        border
 
                         &:active
                         {
@@ -395,7 +397,8 @@ header
                             border-bottom: solid 1px #868686; 
                         }
                     }
-                    
+
+                    }
                 }
             }
         }
@@ -1705,7 +1708,7 @@ margin-right: 0.6rem;
     .grey-element
     {
         position:relative;
-        left: 84%;
+        left: 1586px;
         top: 20rem;
 
         @media (max-width: 1900px)
@@ -1723,6 +1726,7 @@ margin-right: 0.6rem;
         align-items: center;
         width: 1320px;
         padding-inline: 2rem;
+        padding-top: 1rem;
 
 
         @media (max-width: 768px)
@@ -1731,6 +1735,8 @@ margin-right: 0.6rem;
             margin-left: 0rem;
             margin-right: 0rem;
             padding-inline: 0rem;
+            margin-block: 0rem;
+            padding-top: 1rem;
         }
 
  
@@ -1768,6 +1774,11 @@ margin-right: 0.6rem;
     {
         color: #DAD9D3;
         margin-bottom: -0.5rem;
+
+        @media (max-width: 768px) 
+        {
+            padding: none;   
+        }
     }
 
 
@@ -1778,21 +1789,20 @@ margin-right: 0.6rem;
         gap: 2rem;
         border-radius: 1rem;
 
-
         @media (max-width: 768px)
         {
             padding: 0rem;
-            padding-top: 2rem;
-            display: block;
+            display: flex;
+            flex-direction: column;
             text-align: center;
-            margin: 2rem;
-            width: 90%;
+            width: 320px;
+            gap: 0rem;
         }
 
         @media (max-width: 998px)
         {
             padding: 0rem;
-            padding-top: 2rem;
+            padding-top: 0rem;
             text-align: center;
             margin: 2rem;
         }
@@ -1916,6 +1926,7 @@ margin-right: 0.6rem;
         flex-direction: column;
         text-align: center;
         padding: 0rem;
+        width: 320px;
 
         .copy-right{
             order: 2;
@@ -1986,22 +1997,40 @@ margin-right: 0.6rem;
 
 //Contact.html
 
-.container
-{
-    padding-top: 1rem;
-}
+//Header
 
+// 1. SECTION ONE / "Let's connect"
 .lets-connect
 {
     background-color: #F0EFE9;
+    
+    @media (max-width: 768px)
+    {
+        height: 160px;
+    }
 
-    .element
+    .element-container
     {
         position: relative;
         left: -1%;
         top: 8rem;
 
+        @media (max-width: 768px)
+        {
+            left: -1%;
+            top: 6rem;
+        }
     }
+
+        .grey-element
+        {
+            @media (max-width: 768px)
+            {
+                width: 16rem;
+                height: auto;
+            }
+        }
+       
     .container
     {
         position: relative;
@@ -2009,6 +2038,11 @@ margin-right: 0.6rem;
         display: flex;
         justify-content: center;
         text-align: center;
+
+        @media (max-width: 768px)
+        {
+            top: -10rem;
+        }
     }
 }
 
@@ -2021,6 +2055,13 @@ margin-right: 0.6rem;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
         padding-block: 4rem; 
+
+        @media (max-width: 768px)
+        {
+            grid-template-columns: 1fr;
+            padding-block: 1rem;
+            gap: 1rem; 
+        }
         
         .content
         {
@@ -2030,11 +2071,41 @@ margin-right: 0.6rem;
             padding: 2rem;
             gap: 3rem;
 
+            @media (max-width: 768px)
+            {
+                border-radius: 1rem;
+                padding: 0rem;
+                gap: 2rem;
+            }
+
+            .icon
+            {
+                width: 60px;
+                height: 60px;
+
+                @media (max-width: 768px)
+                {
+                    width: 40px;
+                    height: auto;
+                }
+            }
+
             .text-content
             {
+                @media (max-width: 768px)
+                {
+                    
+                    margin-top: 1rem;
+                }
                 h2
                 {
                     font-size: 22px;
+
+                    @media (max-width: 768px)
+                    {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
                 }
             }
     
@@ -2048,31 +2119,58 @@ margin-right: 0.6rem;
     .wrapper-grid
     {
         padding-inline: 4rem;
+
+        @media (max-width: 768px)
+        {
+            padding-inline: 1rem;
+        }
         
         .container
         {
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: solid 2px rgb(112, 87, 87);
             background-color: #F0EFE9;
             padding-block: 6rem;
+
+            @media (max-width: 768px)
+            {
+                padding-inline: 1rem;
+                padding-block: 1rem;
+                border-radius: 1rem;
+            }
 
             .textbox
             {
                 text-align: center;
                 width: 420px;
                 padding-bottom: 1rem;
+
+                @media (max-width: 768px)
+                {
+                    width: 300px;
+                    height: auto;
+                    padding-bottom: 0rem;
+
+                    h1
+                    {
+                        font-size: 25px;
+                    }
+                }
             }
 
             .buttons
             {
-                border: solid 2px red;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 52rem;
                 gap: 1.8rem;
+
+                @media (max-width: 768px)
+                {
+                    width: 300px;
+                }
 
                 .input
                 {
@@ -2110,5 +2208,21 @@ margin-right: 0.6rem;
     padding-top: 6rem;
     padding-inline: 0rem;
     width: 100%;
-}
 
+    @media (min-width: 768px)
+    {
+        .small-map
+        {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px)
+    {
+        .big-map
+        {
+            display: none;
+        }
+        padding-top: 2rem;
+    }
+}
