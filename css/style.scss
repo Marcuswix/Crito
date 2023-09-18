@@ -621,7 +621,6 @@ p {
     @media (max-width: 768px)
     {
         padding-inline: 1rem;
-        padding-block: 1rem;
     }
 
 
@@ -643,16 +642,21 @@ p {
         @media (max-width: 768px)
         {
             display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-self: center;
             grid-column: 1fr;
             border-radius: 1rem;
-            padding: 0rem;
-            width: 100%;
+            padding-block: 2rem;
+            padding-inline: 0rem;
+            width: 340px;
         }
 
     .content
     {
         width: 32rem;
         padding: 0rem;
+        
 
         h1
         {
@@ -671,10 +675,9 @@ p {
         {
             width: 90%;
             margin: 0rem;
+            width: 325px;
             display: grid;
             grid-template-columns: 1fr;
-            padding-inline: 0.5rem;
-
         }
      
         .btn-yellow
@@ -694,6 +697,8 @@ p {
 .advices
 {  
         display: grid;
+        justify-self:center;
+        align-self: center;
         grid-template-columns: 1fr 1fr;
         padding-inline: 3rem;
 
@@ -702,18 +707,40 @@ p {
             grid-template-columns: 1fr;
         }
 
+        @media (max-width: 768px)
+        {
+            width: 320px;
+            padding-inline: 0rem;
+            padding-top: 2rem;
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-self: center;
+        }
+
         article
         {
-            width: 325px;
+            width: 320px;
             padding-inline: 3rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
+
+            @media (max-width: 768px)
+            {
+                width: 300px;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
 
             .image-holder
             {
                 width: 60px;
                 height: 60px;
                 position: relative;
+
 
                 .addition-height
                 {
@@ -774,8 +801,7 @@ p {
 
     @media (max-width: 768px)
     {
-        padding-bottom: 3rem;
-        padding-top: 3rem;
+        padding-block: 2rem;
     }
 
     .container
@@ -800,15 +826,12 @@ p {
     @media (max-width: 768px)
     {
 
+        display: flex;
+        justify-items: content;
         text-align: center;
         width: 90%;
         border: solid 2px #DAD9D3;
         border-radius: 1rem;
-        img
-        {
-            width:100%;
-            height: auto;
-        }
     }
     
     .content2
@@ -847,10 +870,26 @@ p {
     }
     }
 
-  .blue-text-container
+  .image-and-text-container
     {
     position: relative;
-    display: flex;
+
+        .image-samantha
+        {
+            width: 100%;  
+            height: auto;
+
+                @media (max-width: 1600px)
+                {
+                    width: 50%;
+                } 
+
+                @media (max-width: 768px)
+                {
+                    width: 100%;
+                    
+                } 
+        }
     
         @media (max-width: 1600px)
         {
@@ -889,8 +928,10 @@ p {
 
         @media (max-width: 768px)
         {
+            position: absolute;
             width: 90%;
-            top: 80%;
+            top: 84%;
+            left: 5%;
             display: block;
             text-align: left;
             border-radius: 1rem;
@@ -1160,7 +1201,7 @@ margin-right: 0.6rem;
         {
             width: 90%;
             margin-block: 4rem;
-            padding-block: 2rem;
+            padding-block: 1rem;
             border: solid 2px #DAD9D3;
             border-radius: 1rem;
         }
@@ -1216,14 +1257,18 @@ margin-right: 0.6rem;
 .project-and-case
 {
     padding-block: 4rem;
-    
+
+    @media (max-width:768px)
+    {
+        padding-block: 1rem;
+    }
 
     .container{
 
         @media (max-width:768px)
         {
             width: 90%;
-            padding-top: 3rem;
+            padding-top: 1rem;
             border: solid 2px #DAD9D3;
             border-radius: 1rem;
         }
@@ -1362,18 +1407,16 @@ margin-right: 0.6rem;
 
         @media(max-width: 768px)
             {
-                margin: 0 20px;
+                margin: 0rem;
+                padding: 0rem;
                 width: 250px;
-                height: 500px;
+                height: 400px;
                 display: flex;
                 overflow-x: scroll;
                 gap: 20px;
                 scroll-snap-type: x mandatory;
-                -ms-verrflow-style: none;
-                overflow: -moz-scrollbars-none;
                 box-shadow: 0px 0px 80px #f3c9ff2e;
                 border-radius: 10px;
-                padding-top: none;
 
                 .slider::-webkit-scrollbar
                 {
@@ -1386,19 +1429,18 @@ margin-right: 0.6rem;
                     width: 220px;
                     height: auto;
                     object-fit: cover;
-                    user-select: none;
-                    pointer-events: none;
 
                 }
 
                 .slider-item
                 {
                     scroll-snap-align: start;
-                    width: 250px;
-                    height: 250px;
+                    width: 240px;
+                    height: 100px;
                     user-select: none;
                     pointer-events: none;
                     margin: 0px;
+                    padding-top: -5rem;
                 }
             }
         
@@ -1902,11 +1944,26 @@ margin-right: 0.6rem;
         border-bottom: solid 1px #f0efe9b6;
         padding-block: 6rem;
 
+        @media (max-width: 768px)
+        {
+            padding-block: 2rem;
+        }
+
         .design-element-4
         {
             position: absolute;
             bottom: 0rem;
             right: 0;
+
+            .image-element-4
+            {
+                width: 100%;
+                height: auto;
+                @media (max-width: 768px)
+                {
+                    opacity: 0.5;
+                }
+            }
         }
 
         .container
@@ -1914,19 +1971,6 @@ margin-right: 0.6rem;
 
         z-index: 1;
         padding-inline: 0rem;
-
-        .container-parent
-        {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .logo
-            {
-                width: 300px;
-            }
-        }
-
 
         @media (max-width: 768px)
         {
@@ -1937,6 +1981,60 @@ margin-right: 0.6rem;
             margin-block: 0rem;
             padding-top: 1rem;
         }
+
+        .container-parent
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 768px)
+            {
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+                gap: 1rem;
+                
+
+                .section-company
+                {
+                    border: solid 1px #82beff;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    width: 300px;
+                }
+                .section-help
+                {
+                    border: solid 1px #fd8968;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    width: 300px;
+                }
+                .section-resorces
+                {
+                    border: solid 1px #fcc3b4;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    width: 300px;
+                }
+                .section-link
+                {
+                    border: solid 1px #fffd75;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    width: 300px;
+                }
+            }
+
+            .logo
+            {
+                width: 300px;
+            }
+        }
+
+
+
 
         p {
         color: #FFFFFF;
@@ -1992,6 +2090,7 @@ margin-right: 0.6rem;
         text-align: center;
         padding: 0rem;
         width: 320px;
+        gap: 1rem;
 
         .copy-right{
             order: 2;
