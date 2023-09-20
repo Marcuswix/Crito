@@ -31,6 +31,7 @@ h3
 {
     font-size: 1.2rem;
     font-weight: 600;
+    line-height: 150%;
 
     @media (max-width: 768px)
     {
@@ -259,12 +260,6 @@ p {
     }
 } 
 
-//Pictures to be responsive
-.responsive
-{
-    width: 100%;
-    height: auto;
-}
 
 // PAGE -- Index.html --
 
@@ -291,6 +286,50 @@ p {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
+
+        #menu {
+            display: none;
+            background-color: #F0EFE9;
+            color: #fff;
+            padding: 30px;
+            position: fixed;
+            right: 0;
+            border: solid 2px #DAD9D3;
+            border-radius: 2rem;
+            text-align: center;      
+          }
+
+          #menu-border
+          {
+            border: solid 2px #DAD9D3;
+          }
+          
+          #menu ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+          }
+          
+          #menu li
+          {
+            padding: 1rem;
+
+            a{
+                text-decoration: none;
+                color: #191919;
+
+                &:hover
+                {
+                    color: #868686;
+                    border-bottom: solid 1px #868686;
+                }
+
+                &:active
+                {
+                    color: #DAD9D3;
+                }
+            }
+          }
   
         .menu-bars 
         {
@@ -456,6 +495,12 @@ p {
         padding-inline: none;
         align-items: center;
         gap: 40px;  
+
+        #main-picture
+        {        
+            width: 100%;
+            height: auto;
+        }
 
         @media(min-width: 1900px)
         {
@@ -2922,6 +2967,21 @@ margin-right: 0.6rem;
         scroll-snap-type: x mandatory;
         -ms-verrflow-style: none;
         overflow: -moz-scrollbars-none;
+
+        a{
+            color:#191919;
+            text-decoration: none;
+
+            &:hover
+            {
+                color:#868686
+            }
+
+            &:active
+            {
+                color: #DAD9D3;
+            }
+        }
         
         .article-container
         {
@@ -2935,11 +2995,49 @@ margin-right: 0.6rem;
     }   
 }
 
-// 4. SECTION SLIDER / mobilversion
+// 4. SECTION SLIDER / "Mobil version"
 .wrapper-grid-news.slider
 {
     @media (min-width: 768px)
     {
         display: none;
     }
+}
+
+//PAGE -- Login.html
+.section.login
+{
+    background-color: #F0EFE9;
+    padding-block: 4rem;
+
+    .container.login
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 320px;
+    padding-block: 2rem;
+    border: solid 2px #dad9d3;
+    border-radius: 2rem;
+    
+
+    .form
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 320px;
+        padding-block: 4rem;
+        gap: 1rem;
+
+        .input
+        {
+            border: none;
+            border-radius: 2rem;
+            padding: 0.5rem;
+        }
+    }
+}
 }

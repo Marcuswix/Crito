@@ -5,8 +5,8 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Our news and articles">
+    <meta name="keywords" content="news, articels, digitalization, ChatGPT, CSS design">
     <script defer src="https://kit.fontawesome.com/4d5d7d75c3.js" crossorigin="anonymous">
     </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -24,8 +24,25 @@
 <header>
         <div class="container">
             <img src="images/Logo.svg" alt="Crito logotype">
-            <button class="menu-bars"><i class="fa-solid fa-bars"></i></button>
-                <div class="menu">
+            <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
+
+            <!-- Menu on mobil version -->
+              <nav id="menu" class="hidden">
+              <ul>
+                  <li id="options"><a href="index.html"><h3>Home</h3></a></li>
+                  <hr id="menu-border">
+                  <li id="options"><a href="#"><h3>Services</h3></a></li>
+                  <hr id="menu-border">
+                  <li id="options"><a href="news&articles.html"><h3>News</h3></a></li>
+                  <hr id="menu-border">
+                  <li id="options"><a href="contact.html"><h3>Contact</h3></a></li>
+              </ul>
+              </nav>
+              <script src="script.js"></script>
+          
+          <!-- Menu on desktop version -->   
+            
+            <div class="menu">
                   <div class="top-menu">
         <!-- Contact information -->
                     <div class="contact-information">
@@ -216,7 +233,7 @@
         
 
 <!-- Slider articles -->
-        <div class="slider">
+      <div class="slider">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
 
@@ -231,7 +248,7 @@
                             <img class="image-article" src="images/image-article1.png">
                         </div>
                         <p class="p-headline">Business</p>
-                        <h3>How To Use Digitalization In The Classroom</h3>
+                        <a href="articles.html"><h3>How To Use Digitalization In The Classroom</h3></a>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                       </article>
                   </div>
@@ -247,7 +264,7 @@
                             <img class="image-article" src="images/Image-article2.png">
                         </div>
                         <p class="p-headline">Business</p>
-                        <h3>How To Implement Chat GPT In Your Projects</h3>
+                        <a href="articles.html"><h3>How To Implement Chat GPT In Your Projects</h3></a>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                     </article>
                   </div>
@@ -262,11 +279,12 @@
                             <img  class="image-article"src="images/image-article3.png">
                         </div>
                         <p class="p-headline">Business</p>
-                        <h3>The Guide To Support Modern CSS Design</h3>
+                        <a href="articles.html"><h3>The Guide To Support Modern CSS Design</h3></a>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                     </article>
                   </div>
                 </div>
+<!-- Slider buttons -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                   <span class="visually-hidden">Previous</span>
@@ -276,9 +294,10 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            </div>
+      </div>
 
-        <nav aria-label="Page navigation example">
+<!-- Pagination -->
+      <nav aria-label="Page navigation example">
           <ul class="pagination">
             <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
             <li class="page-item"><a class="page-link" href="news&articles.html">1</a></li>
@@ -286,8 +305,7 @@
             <li class="page-item"><a class="page-link" href="news&articles-3.html">3</a></li>
             <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>
           </ul>
-          </nav>
-
+      </nav>
     </div>   
     
 

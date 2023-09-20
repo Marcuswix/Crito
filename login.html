@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script defer src="https://kit.fontawesome.com/4d5d7d75c3.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+
+<body>
+
+<!-- HEADER-->
+<div class="header-section-1">
+  <header>
+    <div class="container">
+        <img src="images/Logo.svg" alt="Crito logotype">
+        <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
+
+<!-- Menu on mobil version -->
+        <nav id="menu" class="hidden">
+            <ul>
+                <li id="options"><a href="index.html"><h3>Home</h3></a></li>
+                <hr id="menu-border">
+                <li id="options"><a href="#"><h3>Services</h3></a></li>
+                <hr id="menu-border">
+                <li id="options"><a href="news&articles.html"><h3>News</h3></a></li>
+                <hr id="menu-border">
+                <li id="options"><a href="contact.html"><h3>Contact</h3></a></li>
+            </ul>
+        </nav>
+        <script src="script.js"></script>
+
+<!-- Menu on desktop version -->
+            <div class="menu">
+              <div class="top-menu">
+    <!-- Contact information -->
+                <div class="contact-information">
+                  <div class="box-content">
+                    <i class="fa-solid fa-phone"></i>
+                    +46 (8) 121 470 50
+                  </div>
+                    <div class="box-content">
+                      <i class="fa-regular fa-envelope"></i>
+                      info@crito.com
+                  </div>
+                    <div class="box-content-last">
+                       <i class="fa-solid fa-location-dot"></i>
+                       Sveavägen 31, 111 34 STOCKHOLM
+                    </div>
+                  </div>
+    <!-- Social media -->
+                    <div class="social-media">
+                      <a href="https://www.facebook.com/campaign/landing.php?campaign_id=10823226160&extra_1=s%7Cc%7C514041439169%7Cb%7Cfacebook%7C&placement=&creative=514041439169&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D10823226160%26adgroupid%3D110178056158%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-11403291%26loc_physical_ms%3D1012475%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwo9unBhBTEiwAipC116HZpmxyfUmhluYdTArXaEbPa9jMVHk0s1f-1T9giPi9Ds_KqUhZcRoC6W0QAvD_BwE"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://twitter.com/X"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+    <!-- Main Menu -->
+                    <div class="main-menu">
+                      <nav>
+                        <a href="index.html">Home</a>
+                        <a href="service.html">Service</a>
+                        <a href="news&articles.html">News</a>
+                        <a href="contact.html">Contact</a>
+                      </nav>
+                     </div>
+                </div>
+            </div>
+  </header>
+</div>
+
+
+<!-- LOGIN -->
+<section class="section login">
+<div class="container login">
+    <h3>Login</h3>
+    <form class="form" action="process_login-php" method="post">
+    <label for="username">Username:</label>
+    <input class="input" typ="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input class="input" typ="text" id="password" name="password" required>
+    </form>
+    <button class="btn-black" onclick="alert('You can not login')" type="submit">Login<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+    </svg>  
+    </button>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></script>
+</body>
+</html>
+ 

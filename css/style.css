@@ -22,6 +22,7 @@ h1 {
 h3 {
   font-size: 1.2rem;
   font-weight: 600;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   h3 {
@@ -204,11 +205,6 @@ p {
   }
 }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
 .header-section-1 header {
   background-color: #F0EFE9;
   position: sticky;
@@ -224,6 +220,39 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+}
+.header-section-1 header .container #menu {
+  display: none;
+  background-color: #F0EFE9;
+  color: #fff;
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  border: solid 2px #DAD9D3;
+  border-radius: 2rem;
+  text-align: center;
+}
+.header-section-1 header .container #menu-border {
+  border: solid 2px #DAD9D3;
+}
+.header-section-1 header .container #menu ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.header-section-1 header .container #menu li {
+  padding: 1rem;
+}
+.header-section-1 header .container #menu li a {
+  text-decoration: none;
+  color: #191919;
+}
+.header-section-1 header .container #menu li a:hover {
+  color: #868686;
+  border-bottom: solid 1px #868686;
+}
+.header-section-1 header .container #menu li a:active {
+  color: #DAD9D3;
 }
 .header-section-1 header .container .menu-bars {
   font-size: 30px;
@@ -347,6 +376,10 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   padding-inline: none;
   align-items: center;
   gap: 40px;
+}
+.header-section-1 .section-showcase .container #main-picture {
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 1900px) {
   .header-section-1 .section-showcase .container {
@@ -2262,6 +2295,16 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   -ms-verrflow-style: none;
   overflow: -moz-scrollbars-none;
 }
+.section.section-article.article .slider a {
+  color: #191919;
+  text-decoration: none;
+}
+.section.section-article.article .slider a:hover {
+  color: #868686;
+}
+.section.section-article.article .slider a:active {
+  color: #DAD9D3;
+}
 .section.section-article.article .slider .article-container {
   position: relative;
 }
@@ -2275,4 +2318,33 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   .wrapper-grid-news.slider {
     display: none;
   }
+}
+
+.section.login {
+  background-color: #F0EFE9;
+  padding-block: 4rem;
+}
+.section.login .container.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 320px;
+  padding-block: 2rem;
+  border: solid 2px #dad9d3;
+  border-radius: 2rem;
+}
+.section.login .container.login .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 320px;
+  padding-block: 4rem;
+  gap: 1rem;
+}
+.section.login .container.login .form .input {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
 }

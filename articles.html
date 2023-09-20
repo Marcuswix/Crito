@@ -24,8 +24,24 @@
 <header>
         <div class="container">
             <img src="images/Logo.svg" alt="Crito logotype">
-            <button class="menu-bars"><i class="fa-solid fa-bars"></i></button>
-                <div class="menu">
+            <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
+
+            <!-- Menu on mobil version -->
+              <nav id="menu" class="hidden">
+              <ul>
+                  <li id="options"><a href="index.html"><h3>Home</h3></a></li>
+                  <hr id="menu-border">
+                  <li id="options"><a href="#"><h3>Services</h3></a></li>
+                  <hr id="menu-border">
+                  <li id="options"><a href="news&articles.html"><h3>News</h3></a></li>
+                  <hr id="menu-border">
+                  <li id="options"><a href="contact.html"><h3>Contact</h3></a></li>
+              </ul>
+              </nav>
+              <script src="script.js"></script>
+          
+          <!-- Menu on desktop version --> 
+            <div class="menu">
                   <div class="top-menu">
         <!-- Contact information -->
                     <div class="contact-information">
@@ -225,7 +241,7 @@
           </div>
         </div>
         <p>Business</p>
-        <h3>How To Use Digitalization In The Classroom</h3>
+        <a href="articles.html"><h3>How To Use Digitalization In The Classroom</h3></a>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
       </div>
   
@@ -236,7 +252,7 @@
           <div class="date"><h3 class="number">17</h3><p class="month">Mar</p></div>
         </div>
         <p>Business</p>
-        <h3>How To Implement Chat GPT In Your Projects</h3>
+        <a href="articles.html"><h3>How To Implement Chat GPT In Your Projects</h3></a>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
       </div>
   
@@ -247,7 +263,7 @@
             <div class="date"><h3 class="number">13</h3><p class="month">Mar</p></div>
           </div>
           <p>Business</p>
-          <h3>How To Use Digitalization In The Classroom</h3>
+          <a href="articles.html"><h3>How To Use Digitalization In The Classroom</h3></a>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
         </div>
 
@@ -257,7 +273,7 @@
 </section>
 
         
-<!-- 4. SECTION SLIDER / "Slider articles" -->
+<!-- 4. SECTION SLIDER / "Mobil version" -->
 <section class="wrapper-grid-news slider">
   <div class="slider">
             <div id="carouselExample" class="carousel slide">

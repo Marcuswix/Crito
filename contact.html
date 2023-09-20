@@ -20,8 +20,24 @@
   <header>
     <div class="container">
         <img src="images/Logo.svg" alt="Crito logotype">
-        <button class="menu-bars"><i class="fa-solid fa-bars"></i></button>
-            <div class="menu">
+        <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
+
+        <!-- Menu on mobil version -->
+          <nav id="menu" class="hidden">
+          <ul>
+              <li id="options"><a href="index.html"><h3>Home</h3></a></li>
+              <hr id="menu-border">
+              <li id="options"><a href="#"><h3>Services</h3></a></li>
+              <hr id="menu-border">
+              <li id="options"><a href="news&articles.html"><h3>News</h3></a></li>
+              <hr id="menu-border">
+              <li id="options"><a href="contact.html"><h3>Contact</h3></a></li>
+          </ul>
+          </nav>
+          <script src="script.js"></script>
+      
+    <!-- Menu on desktop version -->  
+        <div class="menu">
               <div class="top-menu">
     <!-- Contact information -->
                 <div class="contact-information">
