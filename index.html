@@ -69,7 +69,7 @@
 
 
 <!-- 1. FIRST SECTION / "Showcase"-->
-<section class="section1-main-page">
+<section class="section-showcase">
   
   <div class="design-element">
     <img class="image-element" src="images/Element.svg" alt="A design element">
@@ -110,7 +110,7 @@
 
 
 <!-- 2. SECOND SECTION / "Company logotypes" -->
-<section class="section2-company-logotypes">
+<section class="section-company-logotypes">
   <div class="container">
     <img class="logo paperz" src="images/Paperz logo.svg" alt="Paperz logo">
     <img class="logo dorfus" src="images/Dorfus logo.svg" alt="Dorfus logo">
@@ -123,7 +123,7 @@
 
 
 <!-- 3. THIRD SECTION / "Features" -->
-<section class="section3-features">
+<section class="section-features">
   <!-- The headings -->
   <div class="wrapper-grid">
     <div class="my-container">
@@ -251,7 +251,7 @@
 
 
 <!-- 4. FORTH SECTION / "About comapny" -->
-<section class="section4-about-company">
+<section class="section-about-company">
   
   <!-- Picture and blue textbox -->
   <div class="container">
@@ -303,7 +303,7 @@
 
 
 <!-- 5. FIFTH SECTION / "Our Services" -->
-<section class="section5-our-services">
+<section class="section-our-services">
 
   <div class="design-element-2">
     <img class="image-element-2" src="images/Element-right.svg">
@@ -414,7 +414,7 @@
 
 
 <!-- 6. SIXTH SECTION / "Why Choose Us"-->
-<section class="section6-why-us">
+<section class="section-why-us">
 
   <!-- Headlines -->
     <div class="container">
@@ -540,7 +540,7 @@
 
 
 <!-- 7. SEVENTH SECTION / "Projects and Case Studies" -->
-<section class="project-and-case">
+<section class="section-project-and-case">
   
   <!-- Headlines -->
   <div class="container">
@@ -610,7 +610,7 @@
 
 
 <!-- 8. EIGHT SECTION / "Meet Our Team" -->
-<section class="section8-our-team">
+<section class="section-our-team">
 
   <!-- Headlines -->
   <div class="headlines">
@@ -686,7 +686,7 @@
 
 
 <!-- 9. NINTH SECTION / "Testimonial" -->
-<section class="section9-testimonial">
+<section class="section-testimonial">
 
   <div class="white-background">
   
@@ -694,10 +694,12 @@
       <h4>Testimonial</h4>
       <hr class="hr-768px">
       <h1>What Our Client Says</h1>
-      
+  
+   <!-- Content -->  
     <div class="slider">
-      <div class="slider-item">
+    
   <!-- Client 1 Cassandra-->
+      <div class="slider-item">
         <div class="slider-content">
           <!-- Stars -->
           <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -725,23 +727,21 @@
             </g>
           </svg>
           <!-- Picture+name+title -->
-           <p>
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
-           </p>
-          <div class="foto-name-title">
+          <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
+            <div class="foto-name-title">
             <img src="images/Image-Cassandra.svg" alt="A picture on Cassandra Warren">
             <div class="name-title">
-              <h3>Cassandra Warren</h3>
-              <h4>Business Manager, Dorfus</h4>
+            <h3>Cassandra Warren</h3>
+            <h4>Business Manager, Dorfus</h4>
             </div>
           </div>
         </div>
       </div>
-      
+
+  <!-- Client 2 Amanda-->     
       <div class="slider-item">
-  <!-- Client 2 Amanda-->
         <div class="slider-content">
-      <!-- Stars -->
+        <!-- Stars -->
         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
               <g id="Star" transform="translate(-330 -7355)">
                 <g id="carbon:star-filled" transform="translate(330 7355)">
@@ -779,9 +779,9 @@
         </div>
         </div>
       </div>
-    
+
+  <!-- Client 3 Jack-->  
       <div class="slider-item">
-  <!-- Client 3 Jack-->
         <div class="slider-content">
       <!-- Stars -->
         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -821,17 +821,18 @@
         </div>
       </div>   
     </div>
-  
-    <!-- Button -->
-    <div class="end-of-section">
-      <button class="btn-black"><a href="AllReviws.html">All Reviews
-        <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/> 
+
+
+  <!-- Button -->
+  <div class="end-of-section">
+    <button class="btn-black"><a href="AllReviws.html">All Reviews
+      <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/> 
       </a>
     </button>
   </div>
   </div>
-  </section>
+</section>
 
 
 
@@ -843,7 +844,7 @@
       <hr class="hr-768px">
       <h1>Get Every Single Articles & News</h1>
     </div>
-    <div class="button"><button class="btn-transparent"><a href="BrowseArticles">Browse Articles
+    <div class="button"><button class="btn-transparent"><a href="news&articles.html">Browse Articles
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
       </svg>  
@@ -855,8 +856,8 @@
   <div class="slider">
 
   <!-- Article 1 -->
-    <div class="articels">
-      <div class="article-container">
+    <article class="articels">
+      <div class="image-and-date">
         <img class="image" src="images/image-article1.png" alt="A picture on a woman sitting beside a table">
         <div class="date"><h3 class="number">25</h3><p class="month">Mar</p>
         </div>
@@ -864,53 +865,94 @@
       <p>Business</p>
       <h3>How To Use Digitalization In The Classroom</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-    </div>
+    </article>
 
     <!-- Article 2 -->
-    <div class="articels">
-      <div class="article-container">
+    <article class="articels">
+      <div class="image-and-date">
         <img class="image" src="images/image-article2.png" alt="A picture on a computerscreen showing different texts">
         <div class="date"><h3 class="number">17</h3><p class="month">Mar</p></div>
       </div>
       <p>Business</p>
       <h3>How To Implement Chat GPT In Your Projects</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-    </div>
+    </article>
 
       <!-- Article 3 -->
-      <div class="articels">
-        <div class="article-container">
+      <article class="articels">
+        <div class="image-and-date">
           <img class="image" src="images/Image-article3.png" alt="A picture on two book about javascript and css">
           <div class="date"><h3 class="number">13</h3><p class="month">Mar</p></div>
         </div>
         <p>Business</p>
         <h3>How To Use Digitalization In The Classroom</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-      </div>
-  
+      </article>
   </div>
 
-  <!-- End of page -->
-  <div>
-    <div class="page-end">
-      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="12" viewBox="0 0 120 12">
-        <g id="dot" transform="translate(-900 -6962)">
-          <circle id="dot-2" data-name="dot" cx="6" cy="6" r="6" transform="translate(927 6962)" fill="#191919"/>
-          <circle id="dot-3" data-name="dot" cx="6" cy="6" r="6" transform="translate(900 6962)" fill="#191919" opacity="0.2"/>
-          <circle id="dot-4" data-name="dot" cx="6" cy="6" r="6" transform="translate(954 6962)" fill="#191919" opacity="0.2"/>
-          <circle id="dot-5" data-name="dot" cx="6" cy="6" r="6" transform="translate(981 6962)" fill="#191919" opacity="0.2"/>
-          <circle id="dot-6" data-name="dot" cx="6" cy="6" r="6" transform="translate(1008 6962)" fill="#191919" opacity="0.2"/>
-        </g>
-      </svg>    
+
+
+  <!-- Articles mobilversion -->
+  <div class="slider-mobilversion">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+<!-- Articel 1 -->    
+    <article class="articels">
+    <div class="image-and-date">
+      <img class="image" src="images/image-article1.png" alt="A picture on a woman sitting beside a table">
+      <div class="date"><h3 class="number">25</h3><p class="month">Mar</p>
     </div>
+    </div>
+    <p>Business</p>
+    <h3>How To Use Digitalization In The Classroom</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+    </article>
+          </div>
+
+          <div class="carousel-item">
+<!-- Articel 2 -->    
+            <article class="articels">
+              <div class="image-and-date">
+                <img class="image" src="images/image-article2.png" alt="A picture on a computerscreen showing different texts">
+                <div class="date"><h3 class="number">17</h3><p class="month">Mar</p></div>
+                </div>
+                <p class="p-headline">Business</p>
+                <h3>How To Implement Chat GPT In Your Projects</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </article>
+          </div>
+          <div class="carousel-item">
+<!-- Articel 3 -->    
+            <article class="articels">
+              <div class="image-and-date">
+                <img class="image" src="images/Image-article3.png" alt="A picture on two book about javascript and css">
+                <div class="date"><h3 class="number">13</h3><p class="month">Mar</p></div>
+              </div>
+                <p class="p-headline">Business</p>
+                <h3>The Guide To Support Modern CSS Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </article>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="false"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
   </div>
+  </div>   
 
 </section>
 
 
 
 <!-- 11. ELEVENTH SECTION / "Get news updates by signup" -->
-<section class="section11-get-news">
+<section class="section-get-news">
 
   <div class="design-element-3">
     <img class="image-element-3" src="images/Element grey.svg" alt="A design element">
@@ -1016,6 +1058,7 @@
   </div>
   </section>
 
+<!-- JAVASCRIPT / BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
