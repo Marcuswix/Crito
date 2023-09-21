@@ -19,25 +19,29 @@
 
 <div class="header-section-1">
 
-  <!-- HEADER-->
+<!-- HEADER-->
 <header>
   <div class="container">
       <img src="images/Logo.svg" alt="Crito logotype">
       <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
 
-  <!-- Menu on mobil version -->
-    <nav id="menu" class="hidden">
-    <ul>
-        <li id="options"><a href="index.html"><h3>Home</h3></a></li>
-        <hr id="menu-border">
-        <li id="options"><a href="#"><h3>Services</h3></a></li>
-        <hr id="menu-border">
-        <li id="options"><a href="news&articles.html"><h3>News</h3></a></li>
-        <hr id="menu-border">
-        <li id="options"><a href="contact.html"><h3>Contact</h3></a></li>
-    </ul>
-    </nav>
-    <script src="script.js"></script>
+      <!-- Menu on mobil version -->
+      <div id="overlay"></div>
+
+      <nav id="menu">
+      <ul>
+          <li id="option-home"><a href="index.html"><h3>Home</h3></a></li>
+          <hr class="menu-border">
+          <li id="option-services"><a href="services.html"><h3>Services</h3></a></li>
+          <hr class="menu-border">
+          <li id="option-news"><a href="news&articles.html"><h3>News</h3></a></li>
+          <hr class="menu-border">
+          <li id="option-contact"><a href="contact.html"><h3>Contact</h3></a></li>
+          <hr class="menu-border">
+          <li id="option-login"><a href="login.html"><h3>Login</h3></a></li>
+      </ul>
+      </nav>
+    
 
 <!-- Menu on desktop version --> 
       <div class="menu">
@@ -69,7 +73,7 @@
                   <div class="main-menu">
                     <nav>
                       <a href="index.html">Home</a>
-                      <a href="service.html">Service</a>
+                      <a href="services.html">Service</a>
                       <a href="news&articles.html">News</a>
                       <a href="contact.html">Contact</a>
                     </nav>
@@ -85,15 +89,17 @@
                 </div>
 </header>
 
-
 <!-- 1. FIRST SECTION / "Showcase"-->
 <section class="section-showcase">
   
   <div class="design-element">
-    <img class="image-element" src="images/Element.svg" alt="A design element">
+    <img class="image-element" src="images/Element-left.svg" alt="A design element">
   </div>
 
   <div class="container">
+    <div id="main-picture">
+      <img src="images/main-menu-picture.svg"  alt="image of a thinking man in a suit with a tablet">
+    </div>    
     <div class="content">
       <h1>We Provide The Best Business Solutions</h1>
       <p>Establish your vision and value proposition and turn them into testable prototypes.
@@ -110,17 +116,14 @@
       </button>
 <!-- Buttton transparent -->
       <button class="btn-transparent">
-        <a href="LearnMore.html">Learn More
+        <a href="services.html">Learn More
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
         </svg>
         </a>
       </button>
     </div>
-  </div>
-      <div>
-        <img id="main-picture" src="images/main-menu-picture.svg"  alt="image of a thinking man in a suit with a tablet">
-      </div>         
+  </div>     
   </div>
 </section>
 
@@ -147,7 +150,6 @@
     <div class="my-container">
       <div class="content">
         <h4>Features</h4>
-        <hr class="hr-768px">
         <h1>Our Accounting is trusted by thousand of companies</h1>
   <!-- Botton 1 -->
         <button class="btn-yellow"><a href="LearnMore.html">Learn More<svg class="arrow" xmlns="http://www.w3.org/2000/svg">
@@ -345,7 +347,7 @@
   
 <!-- button 1 -->
     <div class="circlearrow">
-      <button class="btn-round-black">
+      <button class="btn-round-black"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
           <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
           <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -353,6 +355,7 @@
           <path id="Vector-2" data-name="Vector" d="M0,0V16.366" transform="translate(21.097 32.409) rotate(-120)" stroke="#FFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
           <path id="Vector-3" data-name="Vector" d="M16.637,0,8.318,8.318,0,0" transform="translate(32.227 35.59) rotate(-120)" fill="none" stroke="#FFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
         </svg>
+        </a>
         </button>
     </div>
   </div>
@@ -363,7 +366,7 @@
   <h3>Startup Business</h3>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
   <div class="circlearrow">
-    <button class="btn-round-white">
+    <button class="btn-round-white"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
         <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
         <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -372,7 +375,8 @@
         <path id="Vector-3" data-name="Vector" d="M16.637,0,8.318,8.318,0,0" transform="translate(32.227 35.59) rotate(-120)" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
         </g>
         </g>
-        </svg>                
+        </svg>
+      </a>                
     </button>
   </div>
   </div>
@@ -383,7 +387,7 @@
     <h3>Financial Advice</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
     <div class="circlearrow">
-      <button class="btn-round-black">
+      <button class="btn-round-black"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
           <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
           <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -391,6 +395,7 @@
           <path id="Vector-2" data-name="Vector" d="M0,0V16.366" transform="translate(21.097 32.409) rotate(-120)" stroke="#FFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
           <path id="Vector-3" data-name="Vector" d="M16.637,0,8.318,8.318,0,0" transform="translate(32.227 35.59) rotate(-120)" fill="none" stroke="#FFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
         </svg>
+      </a>
       </button>
     </div>
   </div>
@@ -401,7 +406,7 @@
     <h3>Risk Management</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
     <div class="circlearrow">
-      <button class="btn-round-black">
+      <button class="btn-round-black"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
           <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
           <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -409,6 +414,7 @@
           <path id="Vector-2" data-name="Vector" d="M0,0V16.366" transform="translate(21.097 32.409) rotate(-120)" stroke="#FFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
           <path id="Vector-3" data-name="Vector" d="M16.637,0,8.318,8.318,0,0" transform="translate(32.227 35.59) rotate(-120)" fill="none" stroke="#FFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
         </svg>
+        </a>
       </button>
     </div>
   </div> 
@@ -418,7 +424,7 @@
 
   <!-- End of section / button -->
   <div class="end">
-    <button class="btn-transparent"><a href="BrowseService.html">Browse Service
+    <button class="btn-transparent"><a href="services.html">Browse Service
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
       </svg>
@@ -573,7 +579,7 @@
       <article>
           <img src="images/Image-paper.png" alt="A picture of a mans hands reading a business paper">
           <h3>Grow Yout Business</h3>
-          <a href="#">Read More
+          <a href="services.html">Read More
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
               </svg>
@@ -584,7 +590,7 @@
       <article>
           <img src="images/Image-stapler.png" alt="A picture on a stapler, glases and a pen laying on a desk">
           <h3>Why your client needs a responsive website</h3>
-          <a href="#">Read More
+          <a href="services.html">Read More
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
               </svg>
@@ -595,7 +601,7 @@
       <article>
           <img src="images/Image-notes.png" alt="A picture on a notebook, pen, ruler and ">
           <h3>Educate your employees to get better results</h3>
-          <a href="#">Read More
+          <a href="services.html">Read More
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
               </svg>
@@ -606,7 +612,7 @@
       <article>
           <img src="images/Image-computer.png" alt="A picture on a laptop showing different diagrams">
           <h3>Business Insights is a important piece of your business</h3>
-          <a href="#">Read More
+          <a href="services.html">Read More
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
               </svg>
@@ -717,7 +723,7 @@
     <div class="slider">
     
   <!-- Client 1 Cassandra-->
-      <div class="slider-item">
+      <div id="Cassandra" class="slider-item">
         <div class="slider-content">
           <!-- Stars -->
           <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -757,7 +763,7 @@
       </div>
 
   <!-- Client 2 Amanda-->     
-      <div class="slider-item">
+      <div id="Amanda" class="slider-item">
         <div class="slider-content">
         <!-- Stars -->
         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -799,7 +805,7 @@
       </div>
 
   <!-- Client 3 Jack-->  
-      <div class="slider-item">
+      <div id="Jack" class="slider-item">
         <div class="slider-content">
       <!-- Stars -->
         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -976,8 +982,6 @@
     <img class="image-element-3" src="images/Element grey.svg" alt="A design element">
   </div>
   <div class="container">
-
-  <div class="content">
     <h1>Get News Updates By Signup</h1>
     <div class="buttons">
       <input class="input" type="email" id="email" name="email" placeholder="username@domain.com">
@@ -987,12 +991,11 @@
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
         </svg>   
         </button>
-      </div>
     </div>
 </section>
 
 
-<!-- 12. FOOTER -->
+<!-- FOOTER -->
 <section class="footer">
 
   <div class="wrapper-grid">
@@ -1001,7 +1004,6 @@
       <img class="image-element-4" src="images/Element grey 2.svg" alt="A design element">
     </div>
 
-    <div class="container">    
       <div class="container-parent">
         <div class="logo"><img src="images/Logo-black.svg">
         <p class="p-company">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
@@ -1059,10 +1061,8 @@
         </div>
       </div>
     </div>
-</div>
 
   <footer>
-    <div class="end">
       <div class="page-end">
       <p class="copy-right">© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
       <div class="social-media">
@@ -1072,14 +1072,13 @@
         <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       </div>
-    </div>
     </footer>
   </div>
-  </section>
+</section>
 
 
 <!-- JAVASCRIPT / BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+<script src="script.js"></script>
 </body>
 </html>

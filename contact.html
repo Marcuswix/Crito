@@ -15,28 +15,30 @@
 
 <!-- HEADER & SECTION 1 -->
 <div class="header-section-1">
-
-<!-- HEADER-->
   <header>
     <div class="container">
         <img src="images/Logo.svg" alt="Crito logotype">
         <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
+  
+    <!-- Menu on mobil version -->
+    <div id="overlay"></div>
 
-        <!-- Menu on mobil version -->
-          <nav id="menu" class="hidden">
-          <ul>
-              <li id="options"><a href="index.html"><h3>Home</h3></a></li>
-              <hr id="menu-border">
-              <li id="options"><a href="#"><h3>Services</h3></a></li>
-              <hr id="menu-border">
-              <li id="options"><a href="news&articles.html"><h3>News</h3></a></li>
-              <hr id="menu-border">
-              <li id="options"><a href="contact.html"><h3>Contact</h3></a></li>
-          </ul>
-          </nav>
-          <script src="script.js"></script>
+    <nav id="menu">
+    <ul>
+        <li id="option-home"><a href="index.html"><h3>Home</h3></a></li>
+        <hr class="menu-border">
+        <li id="option-services"><a href="services.html"><h3>Services</h3></a></li>
+        <hr class="menu-border">
+        <li id="option-news"><a href="news&articles.html"><h3>News</h3></a></li>
+        <hr class="menu-border">
+        <li id="option-contact"><a href="contact.html"><h3>Contact</h3></a></li>
+        <hr class="menu-border">
+        <li id="option-login"><a href="login.html"><h3>Login</h3></a></li>
+    </ul>
+    </nav>
       
-    <!-- Menu on desktop version -->  
+  
+  <!-- Menu on desktop version --> 
         <div class="menu">
               <div class="top-menu">
     <!-- Contact information -->
@@ -66,7 +68,7 @@
                     <div class="main-menu">
                       <nav>
                         <a href="index.html">Home</a>
-                        <a href="service.html">Service</a>
+                        <a href="services.html">Service</a>
                         <a href="news&articles.html">News</a>
                         <a href="contact.html">Contact</a>
                       </nav>
@@ -81,13 +83,12 @@
                     </div>
                   </div>
   </header>
-  
 
 
 <!-- 1. SECTION ONE / "Let's connect"  -->
 <section class="lets-connect">
     <div class="element-container">
-        <img class="grey-element" src="images/Element.svg" alt="A design element"
+        <img class="grey-element" src="images/Element-left.svg" alt="A design element"
     </div>
     <div class="container">
         <div class="content">
@@ -180,7 +181,7 @@
   <iframe class="small-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21940.039959008154!2d18.02775163404334!3d59.33507764623113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1694761329003!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
-<!-- 5. FOOTER -->
+<!-- FOOTER -->
 <section class="footer">
 
   <div class="wrapper-grid">
@@ -189,7 +190,6 @@
       <img class="image-element-4" src="images/Element grey 2.svg" alt="A design element">
     </div>
 
-    <div class="container">    
       <div class="container-parent">
         <div class="logo"><img src="images/Logo-black.svg">
         <p class="p-company">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
@@ -247,10 +247,8 @@
         </div>
       </div>
     </div>
-</div>
 
   <footer>
-    <div class="end">
       <div class="page-end">
       <p class="copy-right">© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
       <div class="social-media">
@@ -260,10 +258,11 @@
         <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       </div>
-    </div>
     </footer>
   </div>
-  </section>
+</section>
 
+<!-- JAVASCRIPT / BOOTSTRAP -->
+<script src="script.js"></script>
 </body>
 </html>
