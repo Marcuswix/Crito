@@ -207,10 +207,7 @@ p {
 
 #overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.2588235294);
   display: none;
 }
@@ -236,11 +233,11 @@ p {
   display: none;
   background-color: #F0EFE9;
   color: #fff;
-  padding: 30px;
+  padding: 25px;
   position: fixed;
   right: 0;
   border: solid 2px #DAD9D3;
-  border-radius: 2rem;
+  border-radius: 1rem;
   text-align: center;
 }
 .header-section-1 header .container .menu-border {
@@ -248,11 +245,11 @@ p {
 }
 .header-section-1 header .container #menu ul {
   list-style-type: none;
-  padding: 0px;
+  padding-inline: 10px;
   margin: 0px;
 }
 .header-section-1 header .container #menu li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .header-section-1 header .container #menu li a {
   text-decoration: none;
@@ -697,7 +694,6 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   .section-about-company .container .content2 .btn {
     display: block;
     margin: 0rem;
-    padding: 0rem;
   }
   .section-about-company .container .content2 .btn .btn-black {
     margin-bottom: 1rem;
@@ -874,15 +870,16 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   width: 19.2rem;
   height: 20.5rem;
   padding: 1.5rem;
-  border: solid 2px rgba(0, 0, 0, 0.132);
+}
+@media (max-width: 768px) {
+  .section-our-services .wrapper-grid .grid-container .grid-items {
+    border: solid 2px rgba(0, 0, 0, 0.132);
+  }
 }
 .section-our-services .wrapper-grid .grid-container .grid-items .line {
   border-color: #191919;
-  color: #191919;
   border-width: 0.2rem;
   width: 25%;
-  margin-right: auto;
-  border-radius: 2rem;
   margin-bottom: 3rem;
 }
 .section-our-services .wrapper-grid .grid-container .grid-items.yellow {
@@ -1508,12 +1505,11 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   position: absolute;
   right: 0;
   bottom: 20%;
-  width: auto;
-  height: auto;
 }
 .section-get-news .design-element-3 .image-element-3 {
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 @media (max-width: 1600px) {
   .section-get-news .design-element-3 .image-element-3 {
@@ -1522,7 +1518,7 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
 }
 @media (max-width: 1600px) {
   .section-get-news {
-    padding: 4rem;
+    padding: 6rem;
   }
 }
 @media (max-width: 998px) {
@@ -1533,57 +1529,51 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
     justify-items: center;
   }
 }
-.section-get-news .container {
+.section-get-news .my-container {
   padding: 0rem;
   margin: 0rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
 }
-.section-get-news .container h1 {
+.section-get-news .my-container h1 {
   margin-bottom: 0rem;
 }
 @media (max-width: 768px) {
-  .section-get-news .container {
+  .section-get-news .my-container {
     flex-direction: column;
   }
 }
-.section-get-news .container .buttons {
+.section-get-news .my-container .buttons {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 @media (max-width: 998px) {
-  .section-get-news .container .buttons {
+  .section-get-news .my-container .buttons {
     padding: 0rem;
-    display: grid;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     justify-items: center;
-    padding-top: 3.5em;
-    padding-bottom: 1rem;
+    padding-block: 1rem;
     margin: 0rem;
   }
-  .section-get-news .container .buttons .btn-yellow {
-    margin-right: 0.8rem;
-  }
 }
-.section-get-news .container .input {
+.section-get-news .my-container .input {
   border-radius: 2rem;
   border: none;
-  padding: 0.9rem;
-  padding-right: 1rem;
+  padding: 0.8rem;
+  margin-right: 1rem;
 }
 @media (max-width: 998px) {
-  .section-get-news .container .input {
+  .section-get-news .my-container .input {
     padding: 1rem;
-    margin-bottom: 1.2rem;
+    margin: 1rem;
   }
 }
-.section-get-news .container .input:active {
+.section-get-news .my-container .input:active {
   border: none;
-}
-.section-get-news .container .email {
-  margin-left: 1rem;
 }
 
 .footer {
@@ -1601,7 +1591,7 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
 }
 .footer .wrapper-grid .design-element-4 {
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
   right: 0;
 }
 .footer .wrapper-grid .design-element-4 .image-element-4 {
@@ -1793,39 +1783,25 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
 
 .lets-connect {
   background-color: #F0EFE9;
-}
-@media (max-width: 768px) {
-  .lets-connect {
-    height: 160px;
-  }
-}
-.lets-connect .element-container {
   position: relative;
+  display: block;
+  margin: auto;
+}
+.lets-connect .element {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
   left: -1%;
-  top: 8rem;
-}
-@media (max-width: 768px) {
-  .lets-connect .element-container {
-    left: -1%;
-    top: 6rem;
-  }
-}
-@media (max-width: 768px) {
-  .lets-connect .grey-element {
-    width: 16rem;
-    height: auto;
-  }
 }
 .lets-connect .container {
-  position: relative;
-  top: -16rem;
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 5rem;
 }
 @media (max-width: 768px) {
   .lets-connect .container {
-    top: -10rem;
+    padding: 2rem;
   }
 }
 
@@ -1835,7 +1811,7 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   gap: 2rem;
   padding-block: 4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .visit-call-email .container {
     grid-template-columns: 1fr;
     padding-block: 1rem;
@@ -1849,7 +1825,7 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   padding: 2rem;
   gap: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .visit-call-email .container .content {
     border-radius: 1rem;
     padding: 0rem;
@@ -1860,13 +1836,13 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   width: 60px;
   height: 60px;
 }
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .visit-call-email .container .content .icon {
     width: 40px;
     height: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .visit-call-email .container .content .text-content {
     margin-top: 1rem;
   }
@@ -1905,46 +1881,40 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
 }
 .leave-us-a-message .wrapper-grid .container .textbox {
   text-align: center;
-  width: 420px;
   padding-bottom: 1rem;
 }
 @media (max-width: 768px) {
   .leave-us-a-message .wrapper-grid .container .textbox {
-    width: 300px;
-    height: auto;
     padding-bottom: 0rem;
   }
   .leave-us-a-message .wrapper-grid .container .textbox h1 {
     font-size: 25px;
   }
 }
-.leave-us-a-message .wrapper-grid .container .buttons {
+.leave-us-a-message .wrapper-grid .container .forms {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 52rem;
+  width: 75%;
   gap: 1.8rem;
+  padding-block: 1rem;
 }
 @media (max-width: 768px) {
-  .leave-us-a-message .wrapper-grid .container .buttons {
-    width: 300px;
+  .leave-us-a-message .wrapper-grid .container .forms {
+    width: 90%;
   }
 }
-.leave-us-a-message .wrapper-grid .container .buttons .input {
+.leave-us-a-message .wrapper-grid .container .forms textarea {
+  height: 8rem;
+}
+.leave-us-a-message .wrapper-grid .container .forms .input {
   padding: 1rem;
   border-radius: 2rem;
   width: 100%;
   border: none;
+  outline: none;
 }
-.leave-us-a-message .wrapper-grid .container .buttons .input-message {
-  text-align: left;
-  padding: 1rem;
-  border: none;
-  border-radius: 2rem;
-  width: 100%;
-  padding-bottom: 100px;
-}
-.leave-us-a-message .wrapper-grid .container .buttons .btn-yellow {
+.leave-us-a-message .wrapper-grid .container .forms .btn-yellow {
   width: 100%;
 }
 
@@ -2117,7 +2087,8 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
 .wrapper-grid-news.articles {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 @media (max-width: 768px) {
   .wrapper-grid-news.articles {
@@ -2413,11 +2384,16 @@ border .header-section-1 header .container .menu .main-menu nav a:hover:active {
   align-items: center;
   justify-items: center;
   width: 320px;
-  padding-block: 4rem;
+  padding-block: 2rem;
   gap: 1rem;
+}
+.section.login .container.login .form .btn-black {
+  margin-inline: 0;
+  margin-top: 1rem;
 }
 .section.login .container.login .form .input {
   border: none;
   border-radius: 2rem;
   padding: 0.5rem;
+  outline: none;
 }

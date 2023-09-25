@@ -4,13 +4,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="Critos contact information, such as phonenumber, email and address">
 <meta name="keywords" content="">
 <script defer src="https://kit.fontawesome.com/4d5d7d75c3.js" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-<title>Contact</title>
+<title>Contact | Crito</title>
 </head>
+
 <body>
 
 <!-- HEADER & SECTION 1 -->
@@ -25,19 +26,18 @@
 
     <nav id="menu">
     <ul>
-        <li id="option-home"><a href="index.html"><h3>Home</h3></a></li>
+        <li id="option-home"><a href="index.html">Home</a></li>
         <hr class="menu-border">
-        <li id="option-services"><a href="services.html"><h3>Services</h3></a></li>
+        <li id="option-services"><a href="services.html">Services</a></li>
         <hr class="menu-border">
-        <li id="option-news"><a href="news&articles.html"><h3>News</h3></a></li>
+        <li id="option-news"><a href="news&articles.html">News</a></li>
         <hr class="menu-border">
-        <li id="option-contact"><a href="contact.html"><h3>Contact</h3></a></li>
+        <li id="option-contact"><a href="contact.html">Contact</a></li>
         <hr class="menu-border">
-        <li id="option-login"><a href="login.html"><h3>Login</h3></a></li>
+        <li id="option-login"><a href="login.html">Login</a></li>
     </ul>
     </nav>
       
-  
   <!-- Menu on desktop version --> 
         <div class="menu">
               <div class="top-menu">
@@ -84,19 +84,15 @@
                   </div>
   </header>
 
-
 <!-- 1. SECTION ONE / "Let's connect"  -->
 <section class="lets-connect">
-    <div class="element-container">
-        <img class="grey-element" src="images/Element-left.svg" alt="A design element"
-    </div>
+    <img class="element" src="images/Element-left.svg" alt="A design element">
     <div class="container">
         <div class="content">
         <p>Home Contact</p>
         <h1>Let’s Connect</h1§>
         </div>
     </div>
-
 </section>
 
 </div>
@@ -159,18 +155,18 @@
     <div class="wrapper-grid">
         <div class="container">
             <div class="textbox">
-              <h1>Leave us a message for any information.</h1>
+              <h1>Leave us a message<br>for any information.</h1>
             </div>
-            <div class="buttons">
-                <input class="input" type="name" id="name" name="name" placeholder="Name*">
-                <input class="input" type="email" id="email" name="email" placeholder="Email*">
-                <input class="input-message" type="text" id="message" name="message" placeholder="Yor Message*">
-              <button class="btn-yellow" onclick="alert"('Thanks for your message! We'll be in touch soon.')>Send
-                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                </svg>   
+            <form class="forms" method="post">
+              <input class="input" tabindex="1" type="text" id="name" name="name" title="Name" placeholder="Name*">
+              <input class="input" tabindex="2" type="email" id="email" name="email" title="Email" placeholder="Email*">
+              <textarea class="input" tabindex="3" type="textarea" id="message" title="Your meassage" name="message" placeholder="Your Message*"></textarea>
+              <button class="btn-yellow" tabindex="4" type="submit" title="Send" onclick="alert"('Thanks for your message! We'll be in touch soon.')>Send
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+              </svg>   
               </button>
-            </div>
+            </form>
         </div>
     </div>
 </section>
@@ -191,7 +187,7 @@
     </div>
 
       <div class="container-parent">
-        <div class="logo"><img src="images/Logo-black.svg">
+        <div class="logo"><img src="images/Logo-black.svg" alt="Critos logotype">
         <p class="p-company">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
         </div>  
     <!-- About -->
@@ -264,5 +260,6 @@
 
 <!-- JAVASCRIPT / BOOTSTRAP -->
 <script src="script.js"></script>
+
 </body>
 </html>

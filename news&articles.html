@@ -11,7 +11,7 @@
     </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>News & Articles</title>
+    <title>News & Articles | Crito</title>
     
 </head>
 
@@ -31,15 +31,15 @@
 
     <nav id="menu">
     <ul>
-        <li id="option-home"><a href="index.html"><h3>Home</h3></a></li>
+        <li id="option-home"><a href="index.html">Home</a></li>
         <hr class="menu-border">
-        <li id="option-services"><a href="services.html"><h3>Services</h3></a></li>
+        <li id="option-services"><a href="services.html">Services</a></li>
         <hr class="menu-border">
-        <li id="option-news"><a href="news&articles.html"><h3>News</h3></a></li>
+        <li id="option-news"><a href="news&articles.html">News</a></li>
         <hr class="menu-border">
-        <li id="option-contact"><a href="contact.html"><h3>Contact</h3></a></li>
+        <li id="option-contact"><a href="contact.html">Contact</a></li>
         <hr class="menu-border">
-        <li id="option-login"><a href="login.html"><h3>Login</h3></a></li>
+        <li id="option-login"><a href="login.html">Login</a></li>
     </ul>
     </nav>
 
@@ -92,15 +92,13 @@
        
 <!-- 1. SECTION ONE / "News & Articles"  -->
 <section class="lets-connect">
-    <div class="element-container">
-        <img class="grey-element" src="images/Element-left.svg" alt="A design element"
-    </div>
-        <div class="container">
-            <div class="content">
-            <p>Home News</p>
-            <h1>News & Articles</h1>
-            </div>
-        </div>
+  <img class="element" src="images/Element-left.svg" alt="A design element">
+  <div class="container">
+      <div class="content">
+      <p>Home News</p>
+      <h1>News & Articles</h1>
+      </div>
+  </div>
     
 </section>
 
@@ -321,17 +319,18 @@
   <div class="design-element-3">
     <img class="image-element-3" src="images/Element grey.svg" alt="A design element">
   </div>
-  <div class="container">
+  
+  <div class="my-container">
     <h1>Get News Updates By Signup</h1>
-    <div class="buttons">
-      <input class="input" type="email" id="email" name="email" placeholder="username@domain.com">
-      <div class="email">
-        <button class="btn-yellow" onclick="alert('You have now subscribed!')">Subscribe
+    <form class="buttons" method="post">
+      <input class="input" title="Email" type="email" id="email" name="email" placeholder="username@domain.com">
+        <button type="submit" title="Subscribe" class="btn-yellow" onclick="alert('You have now subscribed!')">Subscribe
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
         </svg>   
         </button>
-    </div>
+    </form>
+  </div>  
 </section>
 
 

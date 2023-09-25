@@ -264,11 +264,7 @@ p {
 //Overlay on bar-menu
 #overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
+    inset: 0;
     background-color: #00000042;
     display: none;
 }
@@ -276,11 +272,9 @@ p {
 
 // PAGE -- Index.html --
 
-
 //Header & section 1 / "Showcase"
 .header-section-1
 {
-
     // Header
     header
     {
@@ -305,11 +299,11 @@ p {
             display: none;
             background-color: #F0EFE9;
             color: #fff;
-            padding: 30px;
+            padding: 25px;
             position: fixed;
             right: 0;
             border: solid 2px #DAD9D3;
-            border-radius: 2rem;
+            border-radius: 1rem;
             text-align: center;      
           }
 
@@ -320,13 +314,13 @@ p {
           
           #menu ul {
             list-style-type: none;
-            padding: 0px;
+            padding-inline: 10px;
             margin: 0px;
           }
           
           #menu li
           {
-            padding: 1rem;
+            padding: 0.5rem;
 
             a{
                 text-decoration: none;
@@ -620,7 +614,6 @@ p {
         padding: 0rem;
         margin: none;
 
-
         @media (max-width: 1400px)
         {
             gap: 2rem;
@@ -632,23 +625,18 @@ p {
             {
                 grid-column: 1/3;
             }
-
         }
-
 
         .logo
         {
             display: flex;
-            padding-inline:3rem;
+            padding-inline: 3rem;
 
             @media (max-width: 768px)
             {
                 padding: 0rem; 
                 max-width: 83.69px;
-
             }
-
-
         }
     }
 }
@@ -885,9 +873,7 @@ p {
             @media (max-width: 1200px)
             {
                 display: block;
-
                 margin: 0rem;
-                padding: 0rem;
 
                 .btn-black
                 {
@@ -1051,7 +1037,7 @@ margin-right: 0.6rem;
         padding: 4rem;
     }
 
-.wrapper-grid
+    .wrapper-grid
     {
     background-color: transparent;
     position: relative;
@@ -1106,18 +1092,18 @@ margin-right: 0.6rem;
                 width: 19.2rem;
                 height: 20.5rem;   
                 padding:1.5rem;
+
+                @media (max-width: 768px)
+                {
                 border: solid 2px rgba(0, 0, 0, 0.132);
+                }
 
             .line
             {
                     border-color: #191919;
-                    color: #191919;
                     border-width: 0.2rem;
                     width: 25%;
-                    margin-right: auto;
-                    border-radius: 2rem;
                     margin-bottom: 3rem;
-
             }
 
                 &.yellow
@@ -1204,6 +1190,7 @@ margin-right: 0.6rem;
         padding-block: 2rem;
         flex-direction: column;
         padding-inline: 0;
+
         h4 {
             text-align: center;
         }
@@ -1232,7 +1219,6 @@ margin-right: 0.6rem;
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
-
 
         .svg{
             padding-bottom: 2rem;
@@ -1268,8 +1254,6 @@ margin-right: 0.6rem;
         top: -12rem;
         left: 7rem;
     }
-
-
 }
 
 // 7. SEVENTH SECTION / "Projects and Case Studies"
@@ -1546,7 +1530,6 @@ margin-right: 0.6rem;
         text-align: center;
         padding-top: 6rem;
 
-
         @media (max-width: 1400px)
         {
             inset: 0;
@@ -1583,7 +1566,6 @@ margin-right: 0.6rem;
             {
                 padding: 1rem;
             }
-
 
             @media(max-width: 840px)
             {
@@ -1700,7 +1682,7 @@ margin-right: 0.6rem;
         padding-block: 2rem;
         display: grid;
         align-items: center;
-        justify-items: center;;
+        justify-items: center;
     }
 
    .header
@@ -1755,11 +1737,6 @@ margin-right: 0.6rem;
    {
      inset: 0;
      padding-top: 2rem;
-
-     @media (max-width: 768px)
-     {
-
-     }
 
         .image-and-date
         {
@@ -1832,7 +1809,6 @@ margin-right: 0.6rem;
                 width: 60px;
                 border-radius: 50%;
                 margin-top: 8rem;
-                
             }
 
         .carousel-control-next
@@ -1912,13 +1888,12 @@ margin-right: 0.6rem;
         position: absolute;
         right: 0;
         bottom: 20%;
-        width: auto;
-        height: auto;
 
         .image-element-3
         {
             width: 100%;
             height: auto;
+            z-index: 0;
             
             @media (max-width: 1600px) 
             {
@@ -1929,7 +1904,7 @@ margin-right: 0.6rem;
 
     @media (max-width: 1600px)
     {
-        padding: 4rem;
+        padding: 6rem;
     }
 
     @media (max-width: 998px)
@@ -1940,10 +1915,11 @@ margin-right: 0.6rem;
         justify-items: center;;
     }
 
-    .container
+    .my-container
     {  
         padding: 0rem;
         margin: 0rem;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1963,21 +1939,15 @@ margin-right: 0.6rem;
         {
             display: flex;
             align-items: center;
+            z-index: 1;
 
             @media (max-width: 998px)
             {
                 padding: 0rem;
-                display: grid;
-                grid-template-columns: 1fr;
+                flex-direction: column;
                 justify-items: center;
-                padding-top: 3.5em;
-                padding-bottom: 1rem;
+                padding-block: 1rem;
                 margin: 0rem;
-
-                .btn-yellow
-                {
-                    margin-right: 0.8rem;
-                }
             }
         }
 
@@ -1985,25 +1955,19 @@ margin-right: 0.6rem;
         { 
             border-radius: 2rem;
             border: none;
-            padding: 0.9rem;
-            padding-right: 1rem;
+            padding: 0.8rem;
+            margin-right: 1rem;
             
             @media (max-width: 998px)
             {
                 padding: 1rem;
-                margin-bottom: 1.2rem;
+                margin: 1rem;
             }
 
             &:active
             {
                 border: none;
             }
-        }
-
-        .email
-        {
-
-            margin-left: 1rem;
         }
     }
 }
@@ -2027,7 +1991,7 @@ margin-right: 0.6rem;
         .design-element-4
         {
             position: absolute;
-            bottom: 0rem;
+            bottom: 0;
             right: 0;
 
             .image-element-4
@@ -2275,45 +2239,28 @@ margin-right: 0.6rem;
 .lets-connect
 {
     background-color: #F0EFE9;
-    
-    @media (max-width: 768px)
-    {
-        height: 160px;
-    }
+    position: relative;
+    display: block;
+    margin: auto;
 
-    .element-container
+    .element
     {
-        position: relative;
+        position: absolute;
+        width: 50%;
+        bottom: 0;
         left: -1%;
-        top: 8rem;
-
-        @media (max-width: 768px)
-        {
-            left: -1%;
-            top: 6rem;
-        }
     }
-
-        .grey-element
-        {
-            @media (max-width: 768px)
-            {
-                width: 16rem;
-                height: auto;
-            }
-        }
        
     .container
     {
-        position: relative;
-        top: -16rem;
         display: flex;
         justify-content: center;
         text-align: center;
+        padding: 5rem;
 
         @media (max-width: 768px)
         {
-            top: -10rem;
+            padding: 2rem;
         }
     }
 }
@@ -2328,7 +2275,7 @@ margin-right: 0.6rem;
         gap: 2rem;
         padding-block: 4rem; 
 
-        @media (max-width: 768px)
+        @media (max-width: 998px)
         {
             grid-template-columns: 1fr;
             padding-block: 1rem;
@@ -2343,7 +2290,7 @@ margin-right: 0.6rem;
             padding: 2rem;
             gap: 3rem;
 
-            @media (max-width: 768px)
+            @media (max-width: 998px)
             {
                 border-radius: 1rem;
                 padding: 0rem;
@@ -2355,7 +2302,7 @@ margin-right: 0.6rem;
                 width: 60px;
                 height: 60px;
 
-                @media (max-width: 768px)
+                @media (max-width: 998px)
                 {
                     width: 40px;
                     height: auto;
@@ -2364,7 +2311,7 @@ margin-right: 0.6rem;
 
             .text-content
             {
-                @media (max-width: 768px)
+                @media (max-width: 998px)
                 {
                     
                     margin-top: 1rem;
@@ -2415,13 +2362,10 @@ margin-right: 0.6rem;
             .textbox
             {
                 text-align: center;
-                width: 420px;
                 padding-bottom: 1rem;
 
                 @media (max-width: 768px)
                 {
-                    width: 300px;
-                    height: auto;
                     padding-bottom: 0rem;
 
                     h1
@@ -2431,17 +2375,23 @@ margin-right: 0.6rem;
                 }
             }
 
-            .buttons
+            .forms
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 52rem;
+                width: 75%;
                 gap: 1.8rem;
+                padding-block: 1rem;
 
                 @media (max-width: 768px)
                 {
-                    width: 300px;
+                    width: 90%;
+                }
+
+                textarea
+                {
+                    height: 8rem;
                 }
 
                 .input
@@ -2450,15 +2400,7 @@ margin-right: 0.6rem;
                     border-radius: 2rem;
                     width: 100%;
                     border: none;
-                }
-                .input-message
-                {
-                    text-align:left;
-                    padding: 1rem;
-                    border: none;
-                    border-radius: 2rem;
-                    width: 100%;
-                    padding-bottom: 100px;
+                    outline: none;
                 }
 
                 .btn-yellow
@@ -2712,7 +2654,8 @@ margin-right: 0.6rem;
 {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
 
     @media (max-width: 768px)
     {
@@ -3047,7 +2990,9 @@ margin-right: 0.6rem;
     }
 }
 
+
 //PAGE -- Login.html
+
 .section.login
 {
     background-color: #F0EFE9;
@@ -3085,14 +3030,21 @@ margin-right: 0.6rem;
         align-items: center;
         justify-items: center;
         width: 320px;
-        padding-block: 4rem;
+        padding-block: 2rem;
         gap: 1rem;
+
+        .btn-black
+        {
+            margin-inline: 0;
+            margin-top: 1rem;
+        }
 
         .input
         {
             border: none;
             border-radius: 2rem;
             padding: 0.5rem;
+            outline: none;
         }
     }
 }
