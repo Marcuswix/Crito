@@ -16,3 +16,27 @@ overlay.addEventListener('click', () => {
   menu.style.display = "none";
   overlay.style.display = "none";
 })
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slidez');
+
+function showSlide(index) {
+    slides.forEach((slidez, i) => {
+        if (i === index) {
+            slidez.style.display = 'block';
+        } else {
+            slidez.style.display = 'none';
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= slides.length -1) {
+        currentSlide = 0;
+    }
+    showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 4000); // Ändra bild var 4 sekunder (4000 ms)
