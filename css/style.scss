@@ -1946,7 +1946,7 @@ margin-right: 0.6rem;
     {
         position: relative;
         border-bottom: solid 1px #f0efe9b6;
-        padding-block: 6rem;
+        padding-block: 4rem;
 
         @media (max-width: 998px)
         {
@@ -1979,9 +1979,10 @@ margin-right: 0.6rem;
 
         .container-parent
         {
-            display: flex;
+            display: grid;
             align-items: center;
-            justify-content: space-between;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            column-gap: 4rem;
             z-index: 1;
             padding-inline: 18rem;
             
