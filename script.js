@@ -33,7 +33,7 @@ function showSlide(index) {
 
 function nextSlide() {
     currentSlide++;
-    if (currentSlide >= slides.length -1) {
+    if (currentSlide >= slides.length -0) {
         currentSlide = 0;
     }
     showSlide(currentSlide);
