@@ -1,3 +1,18 @@
+<!-- Info om projektet: 
+
+Eftersom att detta är min första webbsida, 
+har det blivit mycket onödig mycket kod på många ställen (både html och scss).
+Jag har dock valt att behålla en del onödig kod, då det skulle tagit mig
+många timmar att optimera koden (även om jag gjort det på några sätllen).
+Jag väljer därför att isätllet att lämna projektet så som det är och ta med mig 
+lärdomarna till kommande projekt istället.
+
+Alla sidor är gjorda i 1920-format och mobil-format. Men, bara de sidor som
+varit obligatoriska för uppgiften är gjorda helt responivt
+, dvs. går att ner från 1920 till 300.
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,23 +42,18 @@
       <img src="images/Logo.svg" alt="Crito logotype">
       <button id="toggle-menu" class="menu-bars" ><i class="fa-solid fa-bars"></i></button>
 
-      <!-- Menu on mobil version -->
-      <div id="overlay"></div>
-
-      <nav id="menu">
+    <!-- Menu on mobil version -->
+    <div id="overlay"></div>
+      <nav id="menu" class="">
       <ul>
-          <li id="option-home"><a href="index.html">Home</a></li>
-          <hr class="menu-border">
-          <li id="option-services"><a href="services.html">Services</a></li>
-          <hr class="menu-border">
-          <li id="option-news"><a href="news&articles.html">News</a></li>
-          <hr class="menu-border">
-          <li id="option-contact"><a href="contact.html">Contact</a></li>
-          <hr class="menu-border">
-          <li id="option-login"><a href="login.html">Login</a></li>
+          <img id="logo-menu-mobil" src="images/Logo.svg" alt="Crito logotype">
+          <a href="index.html"><li id="option-home">Home</li></a>
+          <a href="services.html"><li id="option-services">Services</li></a>
+          <a href="news&articles.html"><li id="option-news">News</li></a>
+          <a href="contact.html"><li id="option-contact">Contact</li></a>
+          <a href="login.html"><li id="option-login">Login</li></a>
       </ul>
       </nav>
-    
 
 <!-- Menu on desktop version --> 
       <div class="menu">
