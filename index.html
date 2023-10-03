@@ -1,15 +1,15 @@
 <!-- Info om projektet: 
 
 Eftersom att detta är min första webbsida, 
-har det blivit mycket onödig mycket kod på många ställen (både html och scss).
-Jag har dock valt att behålla en del onödig kod, då det skulle tagit mig
-många timmar att optimera koden (även om jag gjort det på några sätllen).
-Jag väljer därför att isätllet att lämna projektet så som det är och ta med mig 
+har det blivit mycket onödig kod på många ställen (både html och scss).
+Jag har dock medvetet valt att behålla en del onödig kod, då det skulle tagit mig
+många timmar att optimera koden (även om jag försökt göra detta på några ställen).
+Jag väljer att lämna projektet så som det är och tar med mig 
 lärdomarna till kommande projekt istället.
 
 Alla sidor är gjorda i 1920-format och mobil-format. Men, bara de sidor som
 varit obligatoriska för uppgiften är gjorda helt responivt
-, dvs. går att ner från 1920 till 300.
+, dvs. går att skala ner från 1920 till 300.
 
 -->
 
@@ -86,7 +86,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
                       <a href="news&articles.html">News</a>
                       <a href="contact.html">Contact</a>
                     </nav>
-                      <button class="btn-yellow ">
+                      <button class="btn-yellow">
                         <a  href="login.html">Login
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
@@ -300,7 +300,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
       <br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>   
   <!-- button black -->
-    <div class="btn">
+    <div class="btn-container">
       <button class="btn-black">Learn more<a href="LearnMore.html"></a>
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/> 
@@ -999,8 +999,8 @@ varit obligatoriska för uppgiften är gjorda helt responivt
         </div>
       </div>
       <p>Business</p>
-      <h3>How To Use Digitalization In The Classroom</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+      <a href="articles.html"><h3>How To Use Digitalization In The Classroom</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p></a> 
     </article>
 
     <!-- Article 2 -->
@@ -1010,8 +1010,8 @@ varit obligatoriska för uppgiften är gjorda helt responivt
         <div class="date"><h3 class="number">17</h3><p class="month">Mar</p></div>
       </div>
       <p>Business</p>
-      <h3>How To Implement Chat GPT In Your Projects</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+      <a href="articles.html"><h3>How To Implement Chat GPT In Your Projects</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p></a>
     </article>
 
       <!-- Article 3 -->
@@ -1021,8 +1021,8 @@ varit obligatoriska för uppgiften är gjorda helt responivt
           <div class="date"><h3 class="number">13</h3><p class="month">Mar</p></div>
         </div>
         <p>Business</p>
-        <h3>How To Use Digitalization In The Classroom</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+        <a href="articles.html"><h3>How To Use Digitalization In The Classroom</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p></a>
       </article>
   </div>
 
@@ -1032,8 +1032,9 @@ varit obligatoriska för uppgiften är gjorda helt responivt
   <div class="slider-mobilversion">
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-<!-- Articel 1 -->    
+
+<!-- Articel 1 -->  
+    <div class="carousel-item active">
     <article class="articels">
     <div class="image-and-date">
       <img class="image" src="images/image-article1.png" alt="A picture on a woman sitting beside a table">
@@ -1041,33 +1042,34 @@ varit obligatoriska för uppgiften är gjorda helt responivt
     </div>
     </div>
     <p>Business</p>
-    <h3>How To Use Digitalization In The Classroom</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+    <a href="articles.html"><h3>How To Use Digitalization In The Classroom</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p></a>
     </article>
-          </div>
+    </div>
 
+<!-- Articel 2 -->       
           <div class="carousel-item">
-<!-- Articel 2 -->    
             <article class="articels">
               <div class="image-and-date">
                 <img class="image" src="images/image-article2.png" alt="A picture on a computerscreen showing different texts">
                 <div class="date"><h3 class="number">17</h3><p class="month">Mar</p></div>
                 </div>
                 <p class="p-headline">Business</p>
-                <h3>How To Implement Chat GPT In Your Projects</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                <a href="articles.html"><h3>How To Implement Chat GPT In Your Projects</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p></a>
             </article>
           </div>
+
+<!-- Articel 3 -->  
           <div class="carousel-item">
-<!-- Articel 3 -->    
             <article class="articels">
               <div class="image-and-date">
                 <img class="image" src="images/Image-article3.png" alt="A picture on two book about javascript and css">
                 <div class="date"><h3 class="number">13</h3><p class="month">Mar</p></div>
               </div>
                 <p class="p-headline">Business</p>
-                <h3>The Guide To Support Modern CSS Design</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                <a href="articles.html"><h3>The Guide To Support Modern CSS Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p></a>
             </article>
           </div>
         </div>
@@ -1080,7 +1082,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-  </div>
+    </div>
   </div>   
 
 </section>
@@ -1190,6 +1192,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
 
 <!-- JAVASCRIPT / BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
