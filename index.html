@@ -1,13 +1,17 @@
 <!-- Info om projektet: 
 
 Eftersom att detta är min första webbsida, 
-har det blivit mycket onödig kod på många ställen (både html och scss).
-Jag har dock medvetet valt att behålla en del onödig kod, då det skulle tagit mig
-många timmar att optimera koden (även om jag försökt göra detta på några ställen).
-Jag väljer att lämna projektet så som det är och tar med mig 
+har det blivit mycket onödig kod på många ställen (både html- och scss-kod).
+Jag har dock valt att behålla en del onödig kod, då det skulle tagit mig
+många timmar att optimera koden (även om jag försökt göra detta och också gjort på några ställen).
+En sak som jag missat på är "Mobil first", dvs. hur man använder min-width för att göra sidorna
+responsiva / skalbara. Varför det blev så är för att jag inte hade kunskaperna om "Mobil first" 
+förrän efter jag redan gjort klart sidorna i 1920-mode och 320-mode.
+
+Jag väljer därför att lämna projektet så som det är och tar med mig 
 lärdomarna till kommande projekt istället.
 
-Alla sidor är gjorda i 1920-format och mobil-format. Men, bara de sidor som
+Alla sidor är gjorda i 1920-format och "mobil"-format. Men, bara de sidor som
 varit obligatoriska för uppgiften är gjorda helt responivt
 , dvs. går att skala ner från 1920 till 300.
 
@@ -46,7 +50,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
     <div id="overlay"></div>
       <nav id="menu" class="">
       <ul>
-          <img id="logo-menu-mobil" src="images/Logo.svg" alt="Crito logotype">
+          <li><img id="logo-menu-mobil" src="images/Logo.svg" alt="Crito logotype"></li>
           <a href="index.html"><li id="option-home">Home</li></a>
           <a href="services.html"><li id="option-services">Services</li></a>
           <a href="news&articles.html"><li id="option-news">News</li></a>
@@ -86,7 +90,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
                       <a href="news&articles.html">News</a>
                       <a href="contact.html">Contact</a>
                     </nav>
-                      <button class="btn-yellow">
+                      <button class="btn-yellow" title="login">
                         <a  href="login.html">Login
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
@@ -116,7 +120,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
 <!-- Buttons -->
   <div class="btn">
 <!-- Buttton yellow -->
-      <button class="btn-yellow">
+      <button class="btn-yellow" title="Get-consulting">
         <a href="counsulting.html">Get counsulting
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
@@ -124,7 +128,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
         </a>
       </button>
 <!-- Buttton transparent -->
-      <button class="btn-transparent">
+      <button class="btn-transparent" title="Learn-more">
         <a href="services.html">Learn More
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
@@ -159,7 +163,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
         <h4>Features</h4>
         <h1>Our Accounting is trusted by thousand of companies</h1>
   <!-- Botton 1 -->
-        <button class="btn-yellow"><a href="LearnMore.html">Learn More<svg class="arrow" xmlns="http://www.w3.org/2000/svg">
+        <button class="btn-yellow" title="Learn-more-features"><a href="LearnMore.html">Learn More<svg class="arrow" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
         </a>
         </button>
@@ -291,7 +295,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
         </div>
 
   <!-- Headlines and textxontainer -->
-    <div class="content2">
+    <div class="content">
       <h4>About company</h4>
       <hr class="hr-768px">
       <h1>We Are Business Consulting & Credit Repair Experts</h1>
@@ -301,14 +305,14 @@ varit obligatoriska för uppgiften är gjorda helt responivt
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>   
   <!-- button black -->
     <div class="btn-container">
-      <button class="btn-black">Learn more<a href="LearnMore.html"></a>
+      <button class="btn-black" title="Learn-more-black">Learn more<a href="LearnMore.html"></a>
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/> 
         </a>
       </button>
 
   <!-- button play -->
-      <button class="btn-play">
+      <button class="btn-play" title="Play">
         <a href="https://www.youtube.com/watch?v=7TIr9ajYzfQ&ab_channel=Wix-Topic">
           <svg class="playicon" id="Video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
             <g id="Ellipse_24" data-name="Ellipse 24" fill="none" stroke="#191919" stroke-width="1">
@@ -351,7 +355,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
   
 <!-- button 1 -->
     <div class="circlearrow">
-      <button class="btn-round"><a href="services.html">
+      <button class="btn-round" title="Read-more-business"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
           <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
           <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -370,7 +374,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
   <h3>Startup Business</h3>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
   <div class="circlearrow">
-    <button class="btn-round white"><a href="services.html">
+    <button class="btn-round white" title="Read-more-Start-up"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
         <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
         <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -391,7 +395,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
     <h3>Financial Advice</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
     <div class="circlearrow">
-      <button class="btn-round"><a href="services.html">
+      <button class="btn-round" title="Read-more-finacial"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
           <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
           <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -410,7 +414,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
     <h3>Risk Management</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
     <div class="circlearrow">
-      <button class="btn-round"><a href="services.html">
+      <button class="btn-round" title="Read-more-Risk"><a href="services.html">
         <svg class=arrow-in-circle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.517 35.517">
           <g id="Arrow_right_up" data-name="Arrow right up" transform="translate(7.51 -20.49) rotate(30)">
           <path id="Vector" d="M0,0H26V26H0Z" transform="translate(15 15)" fill="none"/>
@@ -428,7 +432,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
 
   <!-- End of section / button -->
   <div class="end">
-    <button class="btn-transparent"><a href="services.html">Browse Service
+    <button class="btn-transparent" title="Browse-Service"><a href="services.html">Browse Service
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
       </svg>
@@ -625,7 +629,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
 
   <!-- Button -->
   <div class="btn-position">
-    <button class="btn-black"><a href="RecentProjects.html">All Recent Projects
+    <button class="btn-black" title="All-recent-projects"><a href="RecentProjects.html">All Recent Projects
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/> 
       </a>
@@ -646,7 +650,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
     <h1>Experience Team Members</h1>
   </div>
   <div>
-      <button class="btn-yellow  yellow"><a href="BrowseTeam.html">Browse Team
+      <button class="btn-yellow  yellow" title="Meet-our-team"><a href="BrowseTeam.html">Browse Team
           <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
           </svg>     
@@ -708,7 +712,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
     <div class="container-reviews">
     
   <!-- Client 1 Cassandra-->
-      <div id="Cassandra" class="slider-item">
+      <div id="Cassandra-slide" class="slider-item">
         <div class="slider-content">
           <!-- Stars -->
           <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -738,7 +742,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
           <!-- Picture+name+title -->
           <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
             <div class="foto-name-title">
-            <img src="images/Image-Cassandra.svg" alt="A picture on Cassandra Warren">
+            <img class="round-foto" src="images/Image-Cassandra.png" alt="A picture on Cassandra Warren">
             <div class="name-title">
             <h3>Cassandra Warren</h3>
             <h4>Business Manager, Dorfus</h4>
@@ -748,7 +752,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
       </div>
 
   <!-- Client 2 Amanda-->     
-      <div id="Amanda" class="slider-item">
+      <div id="Amanda-slide" class="slider-item">
         <div class="slider-content">
         <!-- Stars -->
         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -780,7 +784,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
         </p>
           <div class="foto-name-title">
-            <img src="images/Image AManda.svg" alt="A picture on Amanda Tulling">
+            <img class="round-foto" src="images/Image Amanda.png" alt="A picture on Amanda Tulling">
             <div class="name-title">
             <h3>Amanda Tulling</h3>
             <h4>Senior Developer, Square</h4>
@@ -790,7 +794,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
       </div>
 
   <!-- Client 3 Jack-->  
-      <div id="Jack" class="slider-item">
+      <div id="Jack-slide" class="slider-item">
         <div class="slider-content">
       <!-- Stars -->
         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
@@ -821,7 +825,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
         <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
         </p>
         <div class="foto-name-title">
-          <img src="images/Image Jack.svg " alt="A picture on Jack McDogglas">
+          <img class="round-foto" src="images/Image Jack.png " alt="A picture on Jack McDogglas">
           <div class="name-title">
             <h3>Jack McDogglas</h3>
             <h4>Key Account Manager, Gobona</h4>
@@ -866,7 +870,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
                 <!-- Picture+name+title -->
                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                   <div class="foto-name-title">
-                  <img src="images/Image-Cassandra.svg" alt="A picture on Cassandra Warren">
+                  <img class="round-foto" src="images/Image-Cassandra.png" alt="A picture on Cassandra Warren">
                   <div class="name-title">
                   <h3>Cassandra Warren</h3>
                   <h4>Business Manager, Dorfus</h4>
@@ -908,7 +912,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
                     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
               </p>
                 <div class="foto-name-title">
-                  <img src="images/Image AManda.svg" alt="A picture on Amanda Tulling">
+                  <img class="round-foto" src="images/Image Amanda.png" alt="A picture on Amanda Tulling">
                   <div class="name-title">
                   <h3>Amanda Tulling</h3>
                   <h4>Senior Developer, Square</h4>
@@ -949,7 +953,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
               <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
               </p>
               <div class="foto-name-title">
-                <img src="images/Image Jack.svg " alt="A picture on Jack McDogglas">
+                <img class="round-foto" src="images/Image Jack.png " alt="A picture on Jack McDogglas">
                 <div class="name-title">
                   <h3>Jack McDogglas</h3>
                   <h4>Key Account Manager, Gobona</h4>
@@ -962,7 +966,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
 
   <!-- Button -->
   <div class="end-of-section">
-    <button class="btn-black"><a href="AllReviews.html">All Reviews
+    <button class="btn-black" title="All-reviews"><a href="AllReviews.html">All Reviews
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/> 
       </a>
@@ -980,7 +984,7 @@ varit obligatoriska för uppgiften är gjorda helt responivt
       <hr class="hr-768px">
       <h1>Get Every Single Articles & News</h1>
     </div>
-    <div class="button"><button class="btn-transparent"><a href="news&articles.html">Browse Articles
+    <div class="button"><button class="btn-transparent" title="All-articles"><a href="news&articles.html">Browse Articles
       <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
       </svg>  

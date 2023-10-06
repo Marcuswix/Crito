@@ -71,8 +71,7 @@ p {
   border-style: none;
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
-  transition: background-color ease-in-out 100ms;
-  transition: transform ease-in-out 100ms;
+  transition: background-color ease-in-out 100ms, transform ease-in-out 100ms;
 }
 .btn-yellow a {
   color: #191919;
@@ -103,8 +102,7 @@ p {
   padding: 0.8rem 2rem;
   border: solid 1px #191919;
   border-radius: 1.5rem;
-  transition: background-color ease-in-out 100ms;
-  transition: transform ease-in-out 100ms;
+  transition: background-color ease-in-out 100ms, transform ease-in-out 100ms;
 }
 .btn-transparent a {
   color: #191919;
@@ -133,8 +131,7 @@ p {
   color: #FFFFFF;
   padding: 0.8rem 2rem;
   border-radius: 2rem;
-  transition: background-color ease-in-out 100ms;
-  transition: transform ease-in-out 100ms;
+  transition: background-color ease-in-out 100ms, transform ease-in-out 100ms;
 }
 .btn-black a {
   color: #FFFFFF;
@@ -166,11 +163,10 @@ p {
   border: none;
   padding: 0;
   border-radius: 3rem;
-  transition: background-color ease-in-out 100ms;
-  transition: transform ease-in-out 100ms;
+  transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms;
 }
 .btn-play:hover {
-  box-shadow: 0 0 12px 0px rgba(25, 25, 25, 0.2392156863), inset 0 0 28px 0px rgba(25, 25, 25, 0.2392156863);
+  box-shadow: 0 0 16px 0px rgba(25, 25, 25, 0.2392156863), inset 0 0 16px 0px rgba(25, 25, 25, 0.2392156863);
 }
 .btn-play:active {
   transform: scale(1.05);
@@ -320,6 +316,9 @@ p {
 }
 .header-and-section-1 header .container .menu .top-menu .contact-information a {
   text-decoration: none;
+  transition: -webkit-text-decoration ease-in-out 100ms;
+  transition: text-decoration ease-in-out 100ms;
+  transition: text-decoration ease-in-out 100ms, -webkit-text-decoration ease-in-out 100ms;
   color: #191919;
 }
 .header-and-section-1 header .container .menu .top-menu .contact-information a:hover {
@@ -331,21 +330,29 @@ p {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  transition: transform ease-in-out 100ms;
 }
 .header-and-section-1 header .container .menu .top-menu .contact-information .box-content i {
   margin-right: 0.4rem;
   font-size: 1.2rem;
   color: #666666;
 }
+.header-and-section-1 header .container .menu .top-menu .contact-information .box-content:hover {
+  transform: scale(1.05);
+}
 .header-and-section-1 header .container .menu .top-menu .contact-information .box-content-last {
   font-size: 1rem;
   font-weight: 300;
   border: none;
+  transition: transform ease-in-out 100ms;
 }
 .header-and-section-1 header .container .menu .top-menu .contact-information .box-content-last i {
   margin-right: 0.4rem;
   font-size: 1.2rem;
   color: #666666;
+}
+.header-and-section-1 header .container .menu .top-menu .contact-information .box-content-last:hover {
+  transform: scale(1.05);
 }
 .header-and-section-1 header .container .menu .top-menu .social-media {
   height: 2rem;
@@ -376,9 +383,11 @@ p {
   color: #191919;
   text-decoration: none;
   margin-right: 2.5rem;
+  transition: transform ease-in-out 100ms, border-bottom ease-in-out 100ms;
 }
 .header-and-section-1 header .container .menu .main-menu nav a:hover {
   border-bottom: solid 1px #666666;
+  transform: scale(1.1);
 }
 .header-and-section-1 header .container .menu .main-menu nav a:hover:active {
   color: #868686;
@@ -470,19 +479,19 @@ p {
   }
 }
 .header-and-section-1 .section-showcase .container .content h1 {
-  font-size: 76px;
+  font-size: 4.5rem;
   font-weight: 1000;
   padding-bottom: 1rem;
   line-height: 1.2;
 }
 @media (max-width: 1400px) {
   .header-and-section-1 .section-showcase .container .content h1 {
-    font-size: 64px;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 768px) {
   .header-and-section-1 .section-showcase .container .content h1 {
-    font-size: 44px;
+    font-size: 2.5rem;
   }
 }
 .header-and-section-1 .section-showcase .container .content p {
@@ -700,16 +709,16 @@ p {
     row-gap: 4rem;
   }
 }
-.section-about-company .container .content2 {
+.section-about-company .container .content {
   width: 500px;
 }
 @media (max-width: 1200px) {
-  .section-about-company .container .content2 {
+  .section-about-company .container .content {
     width: 300px;
   }
 }
 @media (max-width: 768px) {
-  .section-about-company .container .content2 {
+  .section-about-company .container .content {
     width: 100%;
     margin-top: 1rem;
     flex-direction: column;
@@ -717,27 +726,27 @@ p {
   }
 }
 @media (max-width: 498px) {
-  .section-about-company .container .content2 {
+  .section-about-company .container .content {
     margin-top: 3rem;
   }
 }
-.section-about-company .container .content2 .btn-container {
+.section-about-company .container .content .btn-container {
   margin-top: 4rem;
   display: flex;
   justify-content: left;
   gap: 2rem;
 }
 @media (max-width: 1200px) {
-  .section-about-company .container .content2 .btn-container {
+  .section-about-company .container .content .btn-container {
     display: block;
     margin: 0rem;
   }
-  .section-about-company .container .content2 .btn-container .btn-black {
+  .section-about-company .container .content .btn-container .btn-black {
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 768px) {
-  .section-about-company .container .content2 .btn-container {
+  .section-about-company .container .content .btn-container {
     padding: 1rem;
   }
 }
@@ -941,13 +950,12 @@ p {
   width: 3.5rem;
   background-color: black;
   border: none;
-  transition: ease-out 80ms;
+  transition: margin-right ease-out 200ms;
 }
 .section-our-services .btn-round:hover {
   background-color: #868686;
   color: #191919;
   margin-right: -5px;
-  transition: ease-in 120ms;
 }
 .section-our-services .btn-round:active {
   background-color: #DAD9D3;
@@ -1079,6 +1087,7 @@ p {
   font-weight: 500;
   color: #191919;
   padding-top: 15px;
+  transition: color ease-in-out 100ms;
 }
 .section-project-and-case .container .project-and-cases article a .arrow {
   padding: 0rem;
@@ -1314,6 +1323,10 @@ p {
     opacity: 0;
   }
 }
+.section-testimonial .round-foto {
+  width: 70px;
+  height: 70px;
+}
 .section-testimonial .slider-content {
   border-radius: 1rem;
 }
@@ -1402,6 +1415,7 @@ p {
 .section.section-article a {
   color: #191919;
   text-decoration: none;
+  transition: color ease-in-out 100ms;
 }
 .section.section-article a:hover {
   color: rgba(25, 25, 25, 0.631372549);
@@ -1437,7 +1451,7 @@ p {
   width: 100%;
   height: auto;
 }
-.section.section-article .slider .articels .date {
+.section.section-article .date {
   position: absolute;
   text-align: center;
   padding: 1rem;
@@ -1447,10 +1461,10 @@ p {
   height: 4rem;
   background-color: #F9D783;
 }
-.section.section-article .slider .articels .date .number {
+.section.section-article .date .number {
   margin-top: -0.5rem;
 }
-.section.section-article .slider .articels .date .month {
+.section.section-article .date .month {
   margin-top: -1.45rem;
 }
 .section.section-article .slider-mobilversion {
@@ -1493,27 +1507,6 @@ p {
 .section.section-article .slider-mobilversion .articels .image {
   width: 100%;
   height: auto;
-}
-.section.section-article .slider-mobilversion .articels .date {
-  position: absolute;
-  text-align: center;
-  padding: 1rem;
-  top: 7%;
-  left: 4%;
-  width: 3.4rem;
-  height: 4rem;
-  background-color: #F9D783;
-}
-@media (max-width: 768px) {
-  .section.section-article .slider-mobilversion .articels .date {
-    padding: 0.5rem;
-  }
-}
-.section.section-article .slider-mobilversion .articels .date .number {
-  margin-top: 0rem;
-}
-.section.section-article .slider-mobilversion .articels .date .month {
-  margin-top: -1.7rem;
 }
 
 .section-get-news {
@@ -1740,11 +1733,10 @@ p {
   line-height: 3rem;
 }
 .footer .wrapper-grid a:hover {
-  border-bottom: solid 2px white;
+  text-decoration: underline;
 }
 .footer .wrapper-grid a:active {
   color: #DAD9D3;
-  border-color: #DAD9D3;
 }
 .footer .page-end {
   color: white;

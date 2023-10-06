@@ -36,7 +36,7 @@ h3
     }
 }
 
-//Orange-headlines on differnet sections//
+//Orange-headlines on different sections//
 h4
 {
 font-size: 1.05rem;
@@ -65,7 +65,7 @@ p {
     }
 }
 
-//Borders on mobilversion
+//Borders on mobil-version
 .hr-768px
 {
     display: none;
@@ -86,8 +86,8 @@ p {
     border-style: none;
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
-    transition: background-color ease-in-out 100ms;
-    transition: transform ease-in-out 100ms;
+    transition: background-color ease-in-out 100ms, transform ease-in-out 100ms;
+
 
     a {
         color: #191919;
@@ -127,8 +127,7 @@ p {
     padding: 0.8rem 2rem;
     border: solid 1px #191919;
     border-radius: 1.5rem;
-    transition: background-color ease-in-out 100ms;
-    transition: transform ease-in-out 100ms;
+    transition: background-color ease-in-out 100ms, transform ease-in-out 100ms;
 
     a {
         color: #191919;
@@ -166,8 +165,7 @@ p {
     color:#FFFFFF;
     padding: 0.8rem 2rem;
     border-radius: 2rem;
-    transition: background-color ease-in-out 100ms;
-    transition: transform ease-in-out 100ms;
+    transition: background-color ease-in-out 100ms, transform ease-in-out 100ms;
 
     a {
     color:#FFFFFF;
@@ -212,13 +210,12 @@ p {
     border: none;
     padding: 0;
     border-radius: 3rem;  
-    transition: background-color ease-in-out 100ms;
-    transition: transform ease-in-out 100ms;
+    transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms;
     
 
     &:hover
         {
-            box-shadow: 0 0 12px 0px #1919193d, inset 0 0 28px 0px #1919193d;
+            box-shadow: 0 0 16px 0px #1919193d, inset 0 0 16px 0px #1919193d;
         }
 
         &:active
@@ -282,7 +279,7 @@ p {
 
 // PAGE -- Index.html --
 
-//Header & section 1 / "Showcase"
+//Header & section 1 - "Showcase"
 .header-and-section-1
 {
     // Header
@@ -351,6 +348,7 @@ p {
             border-bottom: solid 1px #DAD9D3;
             transition: backgreound-color ease-in-out 100ms;
             z-index: 1;
+
             &:hover
                 {
                     background-color: #e4e4e4;
@@ -409,7 +407,8 @@ p {
                     a
                     {
                         text-decoration: none;
-                        color: #191919;
+                        transition: text-decoration ease-in-out 100ms;
+                        color: #191919;      
 
                         &:hover
                         {
@@ -424,12 +423,18 @@ p {
                         font-family: 'Inter', sans-serif;
                         font-size: 1rem;
                         font-weight: 300;
+                        transition: transform ease-in-out 100ms;
                         
                         i {
                             margin-right: 0.4rem;
                             font-size: 1.2rem;
                             color:#666666;
-                        }                  
+                        }
+                        
+                        &:hover
+                        {
+                            transform: scale(1.05);
+                        }
                     } 
                     
                     .box-content-last
@@ -437,11 +442,17 @@ p {
                         font-size: 1rem;
                         font-weight: 300;
                         border: none;
+                        transition: transform ease-in-out 100ms;
                         
                         i {
                             margin-right: 0.4rem;
                             font-size: 1.2rem;
                             color:#666666;
+                        }
+
+                        &:hover
+                        {
+                            transform: scale(1.05);
                         }
                     }
                 }
@@ -483,10 +494,12 @@ p {
                         color: #191919;
                         text-decoration: none;
                         margin-right: 2.5rem;
- 
+                        transition: transform ease-in-out 100ms, border-bottom ease-in-out 100ms;
+
                         &:hover
                         { 
                         border-bottom: solid 1px #666666;
+                        transform: scale(1.1);
 
                         &:active
                         {
@@ -612,21 +625,20 @@ p {
 
             h1 
             {
-            font-size: 76px;
+            font-size: 4.5rem;
             font-weight: 1000;
             padding-bottom: 1rem;
             line-height: 1.2;
 
                 @media (max-width: 1400px)
                 {
-                font-size: 64px;
+                font-size: 3.5rem;
                 }
 
                 @media (max-width: 768px)
                 {
-                font-size: 44px;
+                font-size: 2.5rem;
                 }
-
             }
 
             p 
@@ -763,8 +775,8 @@ p {
     }
 }
 
-.advices
-{  
+    .advices
+    {  
         display: grid;
         justify-self:center;
         align-self: center;
@@ -850,7 +862,7 @@ p {
             }
         }
     }
-}
+    }
 }
 
 //4. Forth section/ "About comapny"
@@ -892,7 +904,7 @@ p {
         row-gap: 4rem;
     }
     
-    .content2
+    .content
     {
         width: 500px;
 
@@ -1031,10 +1043,10 @@ p {
 
 }
 
-.playicon
-{
-margin-right: 0.6rem;
-}
+    .playicon
+    {
+    margin-right: 0.6rem;
+    }
 
 }
 
@@ -1184,14 +1196,13 @@ margin-right: 0.6rem;
         width: 3.5rem;      
         background-color: black;
         border: none;
-        transition: ease-out 80ms;
+        transition: margin-right ease-out 200ms;
 
         &:hover
         {
             background-color: #868686;
             color: #191919;
             margin-right: -5px;
-            transition: ease-in 120ms;
         }
 
         &:active
@@ -1357,6 +1368,7 @@ margin-right: 0.6rem;
                     font-weight: 500;
                     color:#191919;
                     padding-top: 15px;
+                    transition: color ease-in-out 100ms;
 
                     .arrow
                     {
@@ -1641,6 +1653,12 @@ margin-right: 0.6rem;
         }
     }
 
+    .round-foto
+    {
+        width: 70px;
+        height: 70px;
+    }
+
     .slider-content
     {
         border-radius: 1rem;
@@ -1752,6 +1770,7 @@ margin-right: 0.6rem;
     {
     color:#191919;
     text-decoration: none;
+    transition: color ease-in-out 100ms;
 
     &:hover
         {
@@ -1776,7 +1795,6 @@ margin-right: 0.6rem;
    {
      padding-top: 2rem;
 
-
         .image-and-date
         {
             position: relative;
@@ -1795,29 +1813,29 @@ margin-right: 0.6rem;
             width: 100%;
             height: auto;
         }
-
-        .date
-        {
-            position:absolute;
-            text-align: center;
-            padding:1rem;
-            top: 7%;
-            left:4%;
-            width: 3.4rem;
-            height: 4rem;
-            background-color: #F9D783;
-
-            .number
-            {
-                margin-top: -0.5rem;
-            }
-
-            .month
-            {
-                margin-top: -1.45rem;
-            }
-        }
     }
+   }
+
+   .date
+   {
+       position:absolute;
+       text-align: center;
+       padding:1rem;
+       top: 7%;
+       left:4%;
+       width: 3.4rem;
+       height: 4rem;
+       background-color: #F9D783;
+
+       .number
+       {
+           margin-top: -0.5rem;
+       }
+
+       .month
+       {
+           margin-top: -1.45rem;
+       }
    }
 
    .slider-mobilversion
@@ -1870,33 +1888,6 @@ margin-right: 0.6rem;
         {
             width: 100%;
             height: auto;
-        }
-
-        .date
-        {
-            position:absolute;
-            text-align: center;
-            padding:1rem;
-            top: 7%;
-            left:4%;
-            width: 3.4rem;
-            height: 4rem;
-            background-color: #F9D783;
-
-            @media (max-width: 768px)
-            {
-                padding: 0.5rem;
-            }
-
-            .number
-            {
-                margin-top: 0rem;
-            }
-
-            .month
-            {
-                margin-top: -1.7rem;
-            }
         }
     }
    }
@@ -2168,13 +2159,12 @@ margin-right: 0.6rem;
 
         &:hover
         {
-            border-bottom: solid 2px white;
+            text-decoration: underline;
         }
 
         &:active
         {
             color: #DAD9D3;
-            border-color: #DAD9D3;
         }
         }
     }
