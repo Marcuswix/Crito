@@ -36,3 +36,30 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 4000); // Ändra bild var 4 sekunder (4000 ms)
+
+// Go to top function
+function goToTop()
+{
+    window.scrollTo(
+        {
+            top: 0,
+            behavior: "smooth"
+        }
+    )
+}
+
+window.addEventListener("scroll", function()
+{
+    let element = document.getElementById("to-top-btn")
+
+    if(window.scrollY > 100)
+    {
+        element.classList.remove("hide-btn")
+    }
+
+    else
+    {
+        element.classList.add("hide-btn")
+    }
+})
+
